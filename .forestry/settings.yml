@@ -21,7 +21,7 @@ sections:
   label: Components
   create: documents
   match: "**/*"
-  new_doc_ext: ".vue"
+  new_doc_ext: vue
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
