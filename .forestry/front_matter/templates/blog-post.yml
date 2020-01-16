@@ -1,4 +1,24 @@
 ---
 label: Blog post
 hide_body: false
-fields: []
+fields:
+- name: publish_date
+  type: datetime
+  label: Publish date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: MM/DD/YYYY
+  default: now
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
