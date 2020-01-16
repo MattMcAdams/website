@@ -4,27 +4,11 @@ auto_deploy: false
 admin_path: ".vuepress/public/admin"
 webhook_url: 
 sections:
-- type: heading
-  label: Content
 - type: directory
-  path: src/blog
-  label: Posts
+  path: src
+  label: Content
   create: all
   match: "**/*"
-- type: heading
-  label: Pages
-- type: document
-  path: src/index.md
-  label: Home
-- type: document
-  path: src/about/index.md
-  label: About
-- type: document
-  path: src/portfolio/index.md
-  label: Portfolio
-- type: document
-  path: src/blog/index.md
-  label: Blog
 upload_dir: ''
 public_path: https://assets.mattmcadams.com
 front_matter_path: ''
