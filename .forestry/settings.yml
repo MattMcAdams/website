@@ -7,21 +7,16 @@ sections:
 - type: heading
   label: Content
 - type: directory
-  path: src
-  label: Pages
-  create: all
-  match: "**/*"
-- type: directory
   path: src/blog
   label: Posts
   create: all
   match: "**/*"
-- type: directory
-  path: src/.vuepress/components
-  label: Components
-  create: documents
+- type: heading
+  label: Pages
+- type: document
+  path: src/index.md
+  label: Home
   match: "**/*"
-  new_doc_ext: vue
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
