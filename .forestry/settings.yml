@@ -20,6 +20,14 @@ sections:
   path: src/about/index.md
   label: About
   match: "**/*"
+- type: document
+  path: src/portfolio/index.md
+  label: Portfolio
+  match: "**/*"
+- type: document
+  path: src/blog/index.md
+  label: Blog
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
