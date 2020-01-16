@@ -50,4 +50,3 @@ fields:
   label: Thumbnail
 pages:
 - src/index.md
-- src/test-content.md
