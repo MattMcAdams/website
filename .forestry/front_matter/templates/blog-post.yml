@@ -2,6 +2,11 @@
 label: Blog post
 hide_body: false
 fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
 - name: publish_date
   type: datetime
   label: Publish date
@@ -17,8 +22,29 @@ fields:
   type: tag_list
   default: []
   label: Tags
-- name: title
-  type: text
+- name: excerpt
+  type: textarea
+  default: ''
   config:
-    required: true
-  label: Title
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Excerpt
+- name: layout
+  type: select
+  default: ''
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
+- name: thumbnail
+  type: file
+  config:
+    maxSize: 250
+  label: Thumbnail
