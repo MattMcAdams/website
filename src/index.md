@@ -1,10 +1,11 @@
 ---
-excerpt = ""
-layout = ""
-publish_date = "01/16/2020"
-tags = []
-thumbnail = ""
-title = "Home"
+
+excerpt:
+layout:
+publish_date: 01/16/2020
+tags:
+thumbnail:
+title:
 
 ---
 # Home
