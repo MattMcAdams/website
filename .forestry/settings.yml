@@ -19,19 +19,16 @@ sections:
 - type: document
   path: src/about/index.md
   label: About
-  match: "**/*"
 - type: document
   path: src/portfolio/index.md
   label: Portfolio
-  match: "**/*"
 - type: document
   path: src/blog/index.md
   label: Blog
-  match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: ''
+public_path: https://assets.mattmcadams.com
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_output_directory: ".vuepress/dist"
