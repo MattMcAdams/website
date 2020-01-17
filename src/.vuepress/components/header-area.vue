@@ -1,5 +1,5 @@
 <template>
-  <heeader>
+  <header>
     <p>This is my header</p>
-  </heeader>
+  </header>
 </template>
