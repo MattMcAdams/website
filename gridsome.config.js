@@ -51,7 +51,8 @@ module.exports = {
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       plugins: [
         '@gridsome/remark-prismjs',
-        'remark-containers'
+        ['remark-containers', { default: true }]
+
       ]
     }
   }
