@@ -1,6 +1,6 @@
 ---
 title: Cahaba River
-date: 2018-3-23
+date: 2018-03-23
 published: true
 tags: ['illustration', 'silkscreen']
 cover_image: https://www.mattmcadams.com/wp-content/uploads/2019/07/Cahaba_Print-detail1.jpg
