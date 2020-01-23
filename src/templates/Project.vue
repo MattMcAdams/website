@@ -53,7 +53,6 @@ query Project ($id: ID!) {
     title
     path
     date (format: "D. MMMM YYYY")
-    timeToRead
     description
     content
     cover_image
