@@ -22,6 +22,7 @@ query Tag ($id: ID!) {
             path
             date (format: "D. MMMM YYYY")
             timeToRead
+            cover_image
             description
             content
           }
@@ -33,12 +34,10 @@ query Tag ($id: ID!) {
 </page-query>
 
 <script>
-import Author from '~/components/Author.vue'
 import PostCard from '~/components/PostCard.vue'
 
 export default {
   components: {
-    Author,
     PostCard
   },
   metaInfo: {
