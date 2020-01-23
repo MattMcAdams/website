@@ -1,20 +1,21 @@
 {
   "name": "mattmcadams.com",
-  "version": "0.1.0",
-  "description": "Personal website of Matthew McAdams",
-  "author": "Matthew McAdams",
+  "private": true,
   "scripts": {
-    "site:dev": "vuepress dev src",
-    "site:build": "vuepress build src"
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MattMcAdams/website.git"
+  "dependencies": {
+    "@gridsome/plugin-google-analytics": "^0.1.0",
+    "@gridsome/remark-prismjs": "^0.2.0",
+    "@gridsome/source-filesystem": "^0.6.0",
+    "@gridsome/transformer-remark": "^0.3.0",
+    "gridsome": "^0.7.0",
+    "remark-containers": "^1.1.2"
   },
-  "homepage": "https://mattmcadams.com",
   "devDependencies": {
-    "sass": "^1.24.4",
-    "sass-loader": "^8.0.2",
-    "vuepress": "^1.2.0"
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.0"
   }
 }
