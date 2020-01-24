@@ -5,9 +5,9 @@ admin_path: ".vuepress/public/admin"
 webhook_url: 
 sections:
 - type: directory
-  path: src
-  label: Content
-  create: all
+  path: content/posts
+  label: Blog Posts
+  create: documents
   match: "**/*"
 upload_dir: ''
 public_path: https://assets.mattmcadams.com
