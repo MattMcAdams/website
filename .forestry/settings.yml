@@ -4,6 +4,15 @@ auto_deploy: false
 admin_path: ".vuepress/public/admin"
 webhook_url: 
 sections:
+- type: document
+  path: src/pages/Index.vue
+  label: Home
+  match: "**/*"
+- type: directory
+  path: content/projects
+  label: Portfolio
+  create: documents
+  match: "**/*"
 - type: directory
   path: content/posts
   label: Blog Posts
