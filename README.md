@@ -1,29 +1,64 @@
-# Gridsome Blog Starter
+mattmcadams.com/humans.txt
 
-> A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.
+-------------------------------------------------------------------------------
+### AUTHOR
+-------------------------------------------------------------------------------
 
-## Features
-- Beautiful and simple design.
-- Markdown for content.
-- Tags support.
-- Dark / Light toggle.
-- CSS variables, SCSS & BEM for styling.
-- 100, 100, 100, 100 score on Google Lighthouse.
-- Uses same front-matter fields as Dev.to.
+Matthew McAdams
+- Twitter: MattMakesArt
+- GitHub: MattMcAdams
+- Location: Birmingham, Alabama, USA
 
-## Demo URL
+-------------------------------------------------------------------------------
+### THANKS
+-------------------------------------------------------------------------------
 
-https://gridsome-starter-blog.netlify.com
+__Doug Barrett__
+| Associate Professor of Graphic Design, UAB
 
-## Install
+__Elisabeth Pellathy__
+| Assistant Professor of New Media, UAB
 
-### 1. Install Gridsome CLI tool if you don't have
+__Miriam Suzanne__
+| Artist, CSS Wizard, and an absolute inspiration
 
-`npm install --global @gridsome/cli`
+Special thanks to all the developers and technical writers responsible
+for the fantastic documentation and learning materials I relied on to make
+this website possible. You all are the true heros.
 
-### 2. Install this starter
+-------------------------------------------------------------------------------
+### TECHNOLOGY COLOPHON
+-------------------------------------------------------------------------------
 
-1. `gridsome create my-gridsome-site https://github.com/gridsome/gridsome-starter-blog.git`
-2. `cd my-gridsome-site` to open folder
-3. `gridsome develop` to start local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+USED TO WRITE
+- Markdown
+- Sass
+- JavaScript
+- Vue
+- GraphQL
+
+USED TO BUILD
+- VS Code
+- Node
+- Gridsome
+- Remark
+
+USED TO HOST
+- Hover
+- GitHub
+- Amazon S3
+- Forestry
+- Netlify
+
+-------------------------------------------------------------------------------
+### OPEN SOURCE & MADE WITH LOVE
+-------------------------------------------------------------------------------
+
+```
+   __                      __
+  /  )     /              /  )    _/_
+ /   __ __/ _    o _     /--/ __  /
+(__/(_)(_/_</_  <_/_)_  /  (_/ (_<__
+
+https://github.com/MattMcAdams/website
+```
