@@ -10,7 +10,7 @@
           <p><a class="button" href="#">curriculum vitae</a></p>
         </div>
         <div>
-          <img src="https://www.mattmcadams.com/wp-content/uploads/2019/10/IMG_20170525_172245-1024x768.jpg">
+          <img src="https://assets.mattmcadams.com/portrait.jpg">
         </div>
       </div>
     </section>

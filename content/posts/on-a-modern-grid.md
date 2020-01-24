@@ -1,5 +1,5 @@
 ---
-title: On a modern grid
+title: On a Modern Grid
 date: 2020-01-23
 published: true
 tags: ['code']
