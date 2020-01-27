@@ -96,11 +96,6 @@ query Post ($id: ID!) {
       margin-top: 0;
     }
 
-    p:first-of-type {
-      font-size: 1.2em;
-      color: var(--title-color);
-    }
-
     img {
       width: calc(100% + var(--space) * 2);
       margin-left: calc(var(--space) * -1);
@@ -116,9 +111,5 @@ query Post ($id: ID!) {
   &:empty {
     display: none;
   }
-}
-
-.post-author {
-  margin-top: calc(var(--space) / 2);
 }
 </style>

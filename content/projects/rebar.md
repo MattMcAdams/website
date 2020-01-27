@@ -17,20 +17,38 @@ body[data-theme="dark"] {
 
 ![](https://assets.mattmcadams.com/Rebar_cover-alt.jpg)
 
+<hr class="spacer">
+
 Inspired by humanistic sans-serif and slab serif typefaces, Rebar is a unique and modern hybrid serif / sans-serif font.
+
+<hr class="spacer">
 
 ![](https://assets.mattmcadams.com/Rebar.gif)
 
-![](https://assets.mattmcadams.com/Rebar_anatomy-wide.jpg)
+<hr class="spacer">
+
+![](https://assets.mattmcadams.com/Rebar_anatomy-alt.jpg)
+
+<hr class="spacer">
 
 Rebar is more than a typeface, it explores the anatomy of typography and looks at type as from and texture.
 
+<hr class="spacer">
+
 ![](https://assets.mattmcadams.com/Rebar_characters-alt.jpg)
 
-![](https://assets.mattmcadams.com/Rebar_special.jpg)
+<hr class="spacer">
+
+![](https://assets.mattmcadams.com/Rebar_poster-square.jpg)
+
+<hr class="spacer">
+
+![](https://assets.mattmcadams.com/Rebar_special-animated.gif)
+
+<hr class="spacer">
 
 The typeface includes uppercase and lowercase letters A-Z, numbers, punctuation, and special characters. Rebar is available for free, and can be downloaded below.
 
-<p style="text-align: center">
 <a class="button" href="https://assets.mattmcadams.com/Rebar.otf" download>Download</a>
-</p>
+
+<hr class="spacer">

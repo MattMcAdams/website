@@ -4,7 +4,7 @@ date: 2020-01-23
 published: true
 tags: ['code']
 series: false
-cover_image: https://assets.mattmcadams.com/grid-cover.jpg
+cover_image:
 canonical_url: false
 description: "Back in October, Marvin Danig made a fantastic blog post on the state of responsive web design and the future of CSS frameworks. I wanted to continue some of his points and see how a responsive first grid system might look."
 ---

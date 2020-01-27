@@ -5,3 +5,10 @@
 .space-bottom {
 	margin-bottom: var(--space);
 }
+
+hr.spacer {
+	border: none;
+	margin: 0;
+	padding-bottom: var(--space);
+	padding-top: var(--space);
+}

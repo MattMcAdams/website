@@ -63,7 +63,7 @@ export default {
     align-items: center;
   }
 
-  @media screen and (min-width: 1300px) {
+  @media screen and (orientation: landscape) {
     //Make header sticky for large screens
     position: sticky;
     width: 100%;
