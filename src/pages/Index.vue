@@ -3,7 +3,7 @@
     <Parallax/>
 
     <section id="about">
-      <div class="grid content-box-wide" style="margin-bottom: var(--space)">
+      <div class="grid-landscape content-box-wide" style="margin-bottom: var(--space)">
         <div>
           <h2>About Me</h2>
           <p>I'm a front-end developer with a background in graphic design. In the spring of 2020, I got my bachelor of fine arts from the University of Alabama at Birmingham while researching UX design, code semantics, and design systems. My award winning work is bold, precise, and modern, focusing on the division of space and the use of strong color. When I'm not pecking at code or pushing pixels, I enjoy exploring fantasy worlds through books and video games.</p>
