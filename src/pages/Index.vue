@@ -7,7 +7,7 @@
         <div>
           <h2>About Me</h2>
           <p>I'm a front-end developer with a background in graphic design. In the spring of 2020, I got my bachelor of fine arts from the University of Alabama at Birmingham while researching UX design, code semantics, and design systems. My award winning work is bold, precise, and modern, focusing on the division of space and the use of strong color. When I'm not pecking at code or pushing pixels, I enjoy exploring fantasy worlds through books and video games.</p>
-          <p><a class="button" href="#">curriculum vitae</a></p>
+          <p><a class="button" href="https://assets.mattmcadams.com/McAdams-CV-Jan-2020.pdf" download>curriculum vitae</a></p>
         </div>
         <div>
           <img src="https://assets.mattmcadams.com/portrait.jpg">
