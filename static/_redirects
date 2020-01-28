@@ -1,2 +1,6 @@
+# Redirects for actively maintained github projects
 /stratus                https://github.com/MattMcAdams/stratus
 /chipboard              https://github.com/MattMcAdams/chipboard
+
+# Redirect default Netlify subdomain to primary domain
+https://mattmcadams.netlify.com/* https://www.mattmcadams.com/:splat 301!
