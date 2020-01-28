@@ -38,6 +38,16 @@
   background-position: bottom;
 }
 
+.background_image {
+    background-image: var(--back-layer);
+  }
+  .middle_image {
+    background-image: var(--middle-layer);
+  }
+  .foreground_image {
+    background-image: var(--front-layer);
+  }
+
 @media (hover: hover) {
 
   #app {
@@ -56,17 +66,14 @@
   .background_image {
     transform-origin: 0,0;
     transform: translateZ(-1px) scale(1.5);
-    background-image: var(--back-layer);
   }
   .middle_image {
     transform-origin: 0,0;
     transform: translateZ(-0.5px) scale(1.3);
-    background-image: var(--middle-layer);
   }
   .foreground_image {
     transform-origin: 0,0;
     transform: translateZ(0px) scale(1);
-    background-image: var(--front-layer);
   }
   .parallax_mask {
     position: absolute;
