@@ -2,7 +2,7 @@
 title: On a Modern Grid
 date: 2020-01-23
 published: true
-tags: ['code']
+tags: ['code', 'css']
 series: false
 cover_image:
 canonical_url: false
