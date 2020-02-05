@@ -62,6 +62,7 @@ export default {
   }
 
   &__tags {
+    --alt-bg-color: var(--bg-color);
     z-index: 1;
     position: relative;
   }
@@ -78,4 +79,5 @@ export default {
     z-index: 0;
   }
 }
+
 </style>
