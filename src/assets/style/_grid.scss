@@ -1,24 +1,33 @@
-.grid {
-  --grid-gap: 1.6rem;
+@mixin basic-grid {
+  --grid-gap: calc(var(--space) / 2);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: var(--grid-gap);
 }
 
+.grid { @include basic-grid; }
+
 @media (orientation: portrait) {
-  .grid-portrait {
-    --grid-gap: 1.6rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: var(--grid-gap);
-  }
+  .grid-portrait { @include basic-grid; }
 }
 
 @media (orientation: landscape) {
-  .grid-landscape {
-    --grid-gap: 1.6rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: var(--grid-gap);
-  }
+  .grid-landscape { @include basic-grid; }
 }
+
+.img-grid p {
+  grid-gap: calc(var(--space) / 2);
+  display: grid;
+  grid-template-areas: 'img1 img2' 'img3 img3';
+  grid-template-columns: 1fr 1fr;
+}
+.img-grid--tall p {
+  grid-template-columns: 'img1 img2' 'img3 img2';
+}
+.img-grid p img {
+  margin: 0;
+  width: 100%;
+}
+.img-grid p img:nth-child(1){ grid-area: img1; }
+.img-grid p img:nth-child(2){ grid-area: img2; }
+.img-grid p img:nth-child(3){ grid-area: img3; }
