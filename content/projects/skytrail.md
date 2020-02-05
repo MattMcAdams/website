@@ -10,14 +10,28 @@ description: "This branding project is a work of design fiction exploring the br
 
 This branding project is a work of design fiction exploring the brand identity of a proposed public works project. The Birmingham SkyTrail is an inexpensive, environmentally-friendly form of transportation that will serve the communities in and around Birmingham by connecting people to parks, medicine, jobs, education and more in the downtown area.
 
-![](https://assets.mattmcadams.com/SkyTrail_logo-wide.jpg)
+![](https://assets.mattmcadams.com/SkyTrail_logo.jpg)
 
-![](https://assets.mattmcadams.com/SkyTrial_sketch-wide.jpg)
+<hr class="spacer">
+<div class="video-wrapper" style="padding-bottom: 125%;">
+<iframe width="1206" height="729" src="https://www.youtube.com/embed/ZxlY2IjodmM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<hr class="spacer">
 
-![](https://assets.mattmcadams.com/SkyTrail_postcards-wide.jpg)
+![](https://assets.mattmcadams.com/SkyTrail_sketch.jpg)
 
-![](https://assets.mattmcadams.com/SkyTrail_merch-wide.jpg)
+<hr class="spacer">
+
+![](https://assets.mattmcadams.com/SkyTrail_cards.gif)
+
+<hr class="spacer">
+
+![](https://assets.mattmcadams.com/SkyTrail_merch.jpg)
+
+<hr class="spacer">
 
 ![](https://assets.mattmcadams.com/SkyTrail_cards2-wide.jpg)
 
-![](https://assets.mattmcadams.com/SkyTrail_people-wide.jpg)
+<hr class="spacer">
+
+![](https://assets.mattmcadams.com/SkyTrail_people.jpg)
