@@ -24,7 +24,7 @@ export default {
   	background-color: var(--alt-bg-color);
   	color: currentColor!important; //Todo: remove important;
   	padding: .5em;
-  	border-radius: var(--radius);
+  	border-radius: calc(var(--radius) / 2);
   }
 }
 </style>
