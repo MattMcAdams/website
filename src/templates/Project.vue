@@ -86,6 +86,7 @@ query Project ($id: ID!) {
   }
 
   &__content {
+
     h2:first-child {
       margin-top: 0;
     }

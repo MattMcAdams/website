@@ -26,6 +26,7 @@
   height: 90vh;
   z-index: -1;
 }
+
 .background_image,
 .middle_image,
 .foreground_image {
@@ -38,47 +39,49 @@
   background-position: bottom;
 }
 
-.background_image { background-image: var(--back-layer); }
-.middle_image { background-image: var(--middle-layer); }
-.foreground_image { background-image: var(--front-layer); }
+#app {
+  perspective: 2px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  perspective-origin-x: 100%;
+}
 
+.parallax-group,
+main {
+  position: relative;
+  transform-style: preserve-3d;
+}
 
-  #app {
-    perspective: 2px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    perspective-origin-x: 100%;
-  }
-  .parallax-group,
-  main {
-    position: relative;
-    transform-style: preserve-3d;
-  }
-  .background_image {
-    transform-origin: 0,0;
-    transform: translateZ(-1px) scale(1.5);
-  }
-  .middle_image {
-    transform-origin: 0,0;
-    transform: translateZ(-0.5px) scale(1.3);
-  }
-  .foreground_image {
-    transform-origin: 0,0;
-    transform: translateZ(0px) scale(1);
-  }
-  .parallax_mask {
-    position: absolute;
-    right: 0;
-    bottom: -200px;
-    left: 0;
-    height: 200px;
-    transform-origin-x: 100%;
-    transform: translateZ(0) scale(1);
-    background-color: var(--bg-color);
-  }
+.background_image {
+  background-image: var(--back-layer);
+  transform-origin: 0,0;
+  transform: translateZ(-1px) scale(1.5);
+}
 
+.middle_image {
+  background-image: var(--middle-layer);
+  transform-origin: 0,0;
+  transform: translateZ(-0.5px) scale(1.3);
+}
+
+.foreground_image {
+  background-image: var(--front-layer);
+  transform-origin: 0,0;
+  transform: translateZ(0px) scale(1);
+}
+
+.parallax_mask {
+  position: absolute;
+  right: 0;
+  bottom: -200px;
+  left: 0;
+  height: 200px;
+  transform-origin-x: 100%;
+  transform: translateZ(0) scale(1);
+  background-color: var(--bg-color);
+}
 
 :root {
   --front-layer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1442' height='820' viewBox='0 0 1442 820'%3E%3Cg transform='translate(1625 249)'%3E%3Cpath style='fill: %23f7f7f7' d='M2,820V538.682L80.046,523.7l69.437,26.808,42.543,41.131,17.98,33.106,50.786-14.908,41.635,5.5,34.718,9.411L365.9,640.535l20.813,19.9,17.9,22.73,16.531,36.228,70.279,19.991L519.5,702.089l65.7-24.9,66.919,20.033,28.522-33.248,44.444-27.6,52.092-11.624L852.8,640.535l54.095,46.431,23.867,48.348,55,4.07,15.817,11.351,34.556-40.142,62.143-20.7,76.995,29.919,19.526,30.926h66.766l14.75-63.769,30.964-33.855,43.242-22.46,39.169-6.187L1440,634.712V820Z' transform='translate(-1625 -249)'/%3E%3Cpath fill='%23556f8b' d='M1237.616,685.851a107.871,107.871,0,0,0-153.188,42.389,107.346,107.346,0,0,0-57.372-16.511,109.091,109.091,0,0,0-14.836,1.013,151.557,151.557,0,0,0-222.53-89.987,152.454,152.454,0,0,0-54.381,54.429A107.862,107.862,0,0,0,575.257,714.9a107.34,107.34,0,0,0-57.371-16.511,109.082,109.082,0,0,0-14.836,1.013A151.418,151.418,0,0,0,357.055,588.7a152.392,152.392,0,0,0-34.214,3.877,150.713,150.713,0,0,0-31.468,11.056A151.75,151.75,0,0,0,96.267,513.638q-6.053,2.247-11.929,5.024V504.8q5.188-2.546,10.544-4.684a150.8,150.8,0,0,1,27.14-7.964,152.688,152.688,0,0,1,75.628,4.539A151.938,151.938,0,0,1,293.075,588a150.74,150.74,0,0,1,30.705-10.463,151.664,151.664,0,0,1,158.712,62.8,150.644,150.644,0,0,1,20.555,44.239,109.112,109.112,0,0,1,14.837-1.013,107.336,107.336,0,0,1,57.372,16.512A107.787,107.787,0,0,1,735.308,662.36a152.462,152.462,0,0,1,54.381-54.429,151.654,151.654,0,0,1,222.529,89.987,109.135,109.135,0,0,1,14.837-1.013,107.346,107.346,0,0,1,57.371,16.511,107.871,107.871,0,0,1,192.214.236,121.272,121.272,0,0,1,64.346-2.394c-.036-1.216-.053-2.43-.053-3.606a121.341,121.341,0,0,1,2.447-24.272,119.763,119.763,0,0,1,18.122-43.066,120.788,120.788,0,0,1,52.988-43.635,119.836,119.836,0,0,1,22.607-7.018,121.329,121.329,0,0,1,24.272-2.446,119.938,119.938,0,0,1,62.968,17.753v10.318a119.9,119.9,0,0,0-54.967-13.247,121.322,121.322,0,0,0-24.272,2.446,119.792,119.792,0,0,0-43.065,18.122A120.788,120.788,0,0,0,1358.4,675.6a119.806,119.806,0,0,0-7.017,22.607,121.321,121.321,0,0,0-2.447,24.272c0,1.932.047,3.892.139,5.822a121.14,121.14,0,0,0-72.43.178A108.231,108.231,0,0,0,1237.616,685.851Z' transform='translate(-1707.337 -219)'/%3E%3Crect fill='none' width='1440' height='820' transform='translate(-1625 -249)'/%3E%3C/g%3E%3C/svg%3E%0A");

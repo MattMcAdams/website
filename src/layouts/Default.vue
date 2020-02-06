@@ -54,7 +54,7 @@ export default {
   align-items: center;
   min-height: var(--header-height);
   padding: 0 calc(var(--space) / 2);
-  top:0;
+  top: 0;
   z-index: 10;
 
   &__left,
@@ -63,7 +63,7 @@ export default {
     align-items: center;
   }
 
-  @media screen and (orientation: landscape) {
+  @media screen and ( orientation: landscape ) {
     //Make header sticky for large screens
     position: sticky;
     width: 100%;
@@ -78,6 +78,6 @@ export default {
   background-color: var(--alt-bg-color);
   padding: calc(var(--space) / 2);
   text-align: center;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 </style>
