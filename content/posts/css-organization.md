@@ -1,7 +1,7 @@
 ---
 title: CSS Organization
 date: 2019-12-06
-published: false
+published: true
 tags: ['code', 'css']
 series: false
 cover_image:
