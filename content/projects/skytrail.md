@@ -30,7 +30,15 @@ This branding project is a work of design fiction exploring the brand identity o
 
 <hr class="spacer">
 
-![](https://assets.mattmcadams.com/SkyTrail_cards2-wide.jpg)
+::: div img-grid
+![](https://assets.mattmcadams.com/SkyTrail_building-1.jpg)
+![](https://assets.mattmcadams.com/SkyTrail_building-2.jpg)
+![](https://assets.mattmcadams.com/SkyTrail_building-3.jpg)
+:::
+
+<hr class="spacer">
+
+![](https://assets.mattmcadams.com/SkyTrail_swipe.gif)
 
 <hr class="spacer">
 
