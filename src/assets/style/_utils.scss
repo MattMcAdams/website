@@ -1,14 +1,30 @@
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 
 .space-bottom {
-	margin-bottom: var(--space);
+  margin-bottom: var(--space);
 }
 
 hr.spacer {
-	border: none;
-	margin: 0;
-	padding-bottom: var(--space);
-	padding-top: var(--space);
+  border: none;
+  margin: 0;
+  padding-bottom: var(--space);
+  padding-top: var(--space);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: calc(var(--space) / 2);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

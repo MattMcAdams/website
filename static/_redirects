@@ -1,6 +1,21 @@
+# Redirect for administration
+/admin                  https://app.netlify.com/sites/mattmcadams/overview
+
 # Redirects for actively maintained github projects
 /stratus                https://github.com/MattMcAdams/stratus
 /chipboard              https://github.com/MattMcAdams/chipboard
+
+# Redirects for social media
+/github                 https://github.com/MattMcAdams/
+/github/stratus         https://github.com/MattMcAdams/stratus
+/github/chipboard       https://github.com/MattMcAdams/chipboard
+
+/linkedin               https://www.linkedin.com/in/mcadamsmatthew/
+/instagram              https://www.instagram.com/mattmcadams/
+/twitter                https://twitter.com/mattmakesart
+/dribbble               https://dribbble.com/mattmcadams
+/kofi                   https://ko-fi.com/F2F77H9M
+/behance                https://www.behance.net/mattmcadams
 
 # Redirect default Netlify subdomain to primary domain
 https://mattmcadams.netlify.com/* https://www.mattmcadams.com/:splat 301!

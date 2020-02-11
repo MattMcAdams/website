@@ -45,3 +45,16 @@ query Tag ($id: ID!) {
   }
 }
 </page-query>
+
+<script>
+import PostCard from '~/components/PostCard.vue'
+
+export default {
+  components: {
+    PostCard
+  },
+  metaInfo: {
+    title: 'Blog'
+  }
+}
+</script>
