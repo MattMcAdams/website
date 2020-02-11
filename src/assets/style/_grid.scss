@@ -7,11 +7,11 @@
 
 .grid { @include basic-grid; }
 
-@media (orientation: portrait) {
+@media ( orientation: portrait ) {
   .grid-portrait { @include basic-grid; }
 }
 
-@media (orientation: landscape) {
+@media ( orientation: landscape ) {
   .grid-landscape { @include basic-grid; }
 }
 
@@ -21,13 +21,16 @@
   grid-template-areas: 'img1 img2' 'img3 img3';
   grid-template-columns: 1fr 1fr;
 }
+
 .img-grid--tall p {
   grid-template-columns: 'img1 img2' 'img3 img2';
 }
+
 .img-grid p img {
   margin: 0;
   width: 100%;
 }
+
 .img-grid p img:nth-child(1){ grid-area: img1; }
 .img-grid p img:nth-child(2){ grid-area: img2; }
 .img-grid p img:nth-child(3){ grid-area: img3; }
