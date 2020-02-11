@@ -10,6 +10,19 @@
   </Layout>
 </template>
 
+<script>
+import PostCard from '~/components/PostCard.vue'
+
+export default {
+  components: {
+    PostCard
+  },
+  metaInfo: {
+    title: 'Blog'
+  }
+}
+</script>
+
 <page-query>
 query Tag ($id: ID!) {
   tag (id: $id) {

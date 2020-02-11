@@ -34,6 +34,22 @@
   </layout>
 </template>
 
+<script>
+import Parallax from '~/components/Parallax.vue'
+import ProjectCard from '~/components/ProjectCard.vue'
+import PostCard from '~/components/PostCard.vue'
+export default {
+  components: {
+    Parallax,
+    PostCard,
+    ProjectCard
+  },
+  metaInfo: {
+    title: 'Home'
+  }
+}
+</script>
+
 <page-query>
 query {
   projects: allProject(filter: { published: { eq: true }}) {
@@ -68,19 +84,3 @@ query {
   }
 }
 </page-query>
-
-<script>
-import Parallax from '~/components/Parallax.vue'
-import ProjectCard from '~/components/ProjectCard.vue'
-import PostCard from '~/components/PostCard.vue'
-export default {
-  components: {
-    Parallax,
-    PostCard,
-    ProjectCard
-  },
-  metaInfo: {
-    title: 'Home'
-  }
-}
-</script>

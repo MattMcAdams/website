@@ -1,26 +1,43 @@
+<style lang="scss">
+
+.post_title {
+  padding: 0 0 calc(var(--space));
+  text-align: center;
+}
+
+.post {
+  img {
+    width: calc(100% + var(--space) * 2);
+    margin-left: calc(var(--space) * -1);
+    margin-bottom: var(--space);
+    display: block;
+    max-width: none;
+  }
+
+  h2:first-child {
+    margin-top: 0;
+  }
+}
+</style>
+
 <template>
   <Layout>
-    <div class="post-title">
-      <h1 class="post-title__text">
-        {{ $page.post.title }}
-      </h1>
+    <article class="content-box post">
 
-      <PostMeta :post="$page.post" />
+      <header class="post_title">
+        <h1 class="post_title_text"> {{ $page.post.title }} </h1>
+        <PostMeta :post="$page.post" />
+      </header>
 
-    </div>
+      <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
 
-    <div class="post content-box">
-      <div class="post__header">
-        <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
-      </div>
+      <div class="post_content" v-html="$page.post.content" />
 
-      <div class="post__content" v-html="$page.post.content" />
-
-      <div class="post__footer">
+      <footer class="post_footer">
         <PostTags :post="$page.post" />
-      </div>
-    </div>
+      </footer>
 
+    </article>
   </Layout>
 </template>
 

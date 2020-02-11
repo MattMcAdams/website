@@ -9,6 +9,19 @@
   </Layout>
 </template>
 
+<script>
+import PostCard from '~/components/PostCard.vue'
+
+export default {
+  components: {
+    PostCard
+  },
+  metaInfo: {
+    title: 'Blog'
+  }
+}
+</script>
+
 <page-query>
 query {
   posts: allPost(filter: { published: { eq: true }}) {
@@ -31,16 +44,3 @@ query {
   }
 }
 </page-query>
-
-<script>
-import PostCard from '~/components/PostCard.vue'
-
-export default {
-  components: {
-    PostCard
-  },
-  metaInfo: {
-    title: 'Blog'
-  }
-}
-</script>

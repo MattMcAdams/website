@@ -1,3 +1,39 @@
+<style lang="scss">
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: var(--header-height);
+  padding: 0 calc(var(--space) / 2);
+  top:0;
+  z-index: 10;
+
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (orientation: landscape) {
+    //Make header sticky for large screens
+    position: sticky;
+    width: 100%;
+  }
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: var(--alt-bg-color);
+  padding: calc(var(--space) / 2);
+  text-align: center;
+  font-size: .8em;
+}
+</style>
+
+
 <template>
   <div id="app">
 
@@ -32,6 +68,7 @@
   </div>
 </template>
 
+
 <script>
 import Logo from '~/components/Logo.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
@@ -46,7 +83,6 @@ export default {
   }
 }
 </script>
-
 <style lang="scss">
 .header {
   display: flex;
