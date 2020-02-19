@@ -6,6 +6,8 @@ $header-line-height: 1.15;
 $radius: 10px;
 $radius-small: 5px;
 
+$dark-theme: 'body[data-theme="dark"]';
+
 @function space($input: 1) {
   @if $input != 1 {
     @return calc(var(--space) * #{$input});
