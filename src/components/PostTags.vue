@@ -7,8 +7,8 @@
 }
 
 .ui-tag {
-  color: currentColor;
-  background-color: color('gray', '300');
+  color: var(--body-color);
+  background-color: color('gray', '200');
 
   font-size: var(--ms-small);
   text-decoration: none;
@@ -18,6 +18,10 @@
   & + & {
     margin-left: space(0.5);
   }
+}
+
+#{$dark-theme} .ui-tag {
+  background-color: color('gray', '700');
 }
 </style>
 
