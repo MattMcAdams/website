@@ -1,25 +1,32 @@
 <style lang="scss">
-.post-tags {
-  margin: 1em 0 0;
+@import "@/assets/tokens";
 
-  &__link {
-    margin-right: 0.7em;
-    font-size: 0.8em;
-    color: currentColor;
-    text-decoration: none;
-    background-color: var(--alt-bg-color);
-    padding: 0.5em;
-    border-radius: calc(var(--radius) / 2);
+.tags {
+  display: flex;
+  margin-top: space(0.5);
+}
+
+.ui-tag {
+  color: currentColor;
+  background-color: color('gray', '300');
+
+  font-size: var(--ms-small);
+  text-decoration: none;
+  padding: 0.2em 0.5em;
+  border-radius: calc(var(--radius) / 2);
+
+  & + & {
+    margin-left: space(0.5);
   }
 }
 </style>
 
 <template>
-   <div class="post-tags">
-   		<g-link class="post-tags__link" v-for="tag in post.tags" :key="tag.id" :to="tag.path">
-   			<span>#</span> {{ tag.title }}
-   		</g-link>
-    </div>
+  <div class="tags">
+   	<g-link class="ui-tag" v-for="tag in post.tags" :key="tag.id" :to="tag.path">
+   		<span>#</span> {{ tag.title }}
+   	</g-link>
+  </div>
 </template>
 
 <script>
