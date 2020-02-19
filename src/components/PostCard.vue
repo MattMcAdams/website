@@ -1,8 +1,10 @@
 <style lang="scss">
+@import '@/assets/tokens';
+
 .post-card {
   margin-bottom: var(--space);
   position: relative;
-  background-color: var(--alt-bg-color);
+  background-color: var(--card-bg-color);
   border-radius: var(--radius);
   transition: transform 0.2s;
 
