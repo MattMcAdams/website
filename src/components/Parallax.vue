@@ -4,7 +4,7 @@
       <div class="middle_image"></div>
       <div class="foreground_image" style="display: flex; align-items: center; justify-content: center;">
 
-        <div class="content-box" style="margin: 0; margin-top: -15vh;">
+        <div class="content-box" style="margin: 0; margin-top: -15vh; width: 100%;">
           <h1 style="text-align: center;">Hi! I'm Matt McAdams</h1>
           <p style="text-align: center;">Graphic designer, web developer, and creative problem solver</p>
 
@@ -45,7 +45,6 @@
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  perspective-origin-x: 100%;
 }
 
 .parallax-group,
