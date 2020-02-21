@@ -78,7 +78,7 @@ I'm conflicted about this because it feels hacky, but I've seen several other de
 
 You can attach a suffix representing a media query to the end of a class like this: `.l-grid@landscape`. This would show the contents of that container as a grid if the screen orientation is landscape. The problem with this is that the `@` symbol isn't technically valid - you'll have to escape the character in the CSS.
 
-```
+```scss
 @media (orientation: landscape) {
   .l-grid\@landscape {
     ...

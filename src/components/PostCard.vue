@@ -1,8 +1,10 @@
 <style lang="scss">
+@import '@/assets/tokens';
+
 .post-card {
   margin-bottom: var(--space);
   position: relative;
-  background-color: var(--alt-bg-color);
+  border: 1px solid color('gray', '400');
   border-radius: var(--radius);
   transition: transform 0.2s;
 
@@ -32,7 +34,6 @@
   }
 
   &__tags {
-    --alt-bg-color: var(--bg-color);
     z-index: 1;
     position: relative;
   }

@@ -1,18 +1,29 @@
-// Default variables
+@import '@/assets/tokens';
 
 html {
   --base-font-size: 20px;
 }
 
+:root {
+  --space: 3.5rem;
+
+  --ms-small: 0.889em;
+  --ms-normal: 1em;
+  --ms-medium: 1.125em;
+  --ms-large: 1.266em;
+  --ms-xlarge: 1.424em;
+  --ms-xxlarge: 1.602em;
+  --ms-huge: 1.802em;
+}
+
 // Light default theme
 
 body {
-  --bg-color: #f7f7f7;
-  --alt-bg-color: #fff;
-  --bg-code: #fff;
-  --body-color: #4f6f8e;
-  --title-color: #294159;
-  --link-color: #1ea8d1;
+  --bg-color: #{color('gray', '100')};
+  --alt-bg-color: #{color('gray', '200')};
+  --body-color: #{color('gray', '700')};
+  --title-color: #{color('gray', '800')};
+  --link-color: #{color('blue')};
   --border-color: rgba(0,0,0,0.1);
   --space: 3.5rem;
   --content-width: 75ch;
@@ -22,7 +33,7 @@ body {
 
 // Make  things smaller for mobile
 
-@media screen and ( orientation: portrait ) {
+@include media(portrait) {
 
   html {
     --base-font-size: 17px;
@@ -37,11 +48,9 @@ body {
 
 // Override variables for Dark theme
 
-body[data-theme="dark"] {
-  --bg-color: #1e3144;
-  --alt-bg-color: #294159;
-  --bg-content-color: #1e3144;
-  --bg-code: rgba(0,0,0,0.3);
+#{$dark-theme} {
+  --bg-color: #{color('gray', '800')};
+  --alt-bg-color: #{color('gray', '900')};
   --border-color: rgba(255,255,255,0.1);
   --body-color: #ced8de;
   --title-color: #fff;
