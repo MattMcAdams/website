@@ -1,7 +1,7 @@
 ---
 title: Monument Wine
 date: 2018-03-09
-published: true
+published: false
 tags: ['typography', 'packaging']
 cover_image: https://assets.mattmcadams.com/Monument_Mockup.jpg
 canonical_url: false
