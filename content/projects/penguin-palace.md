@@ -12,8 +12,18 @@ This delightfully retro design is a fresh and playful brand exploration for a fi
 
 ![](https://assets.mattmcadams.com/Penguin_Palace-logo.jpg)
 
-![](https://assets.mattmcadams.com/Penguin_Palace-colors-wide.jpg)
+<hr class="spacer">
 
-![](https://assets.mattmcadams.com/Penguin_Palace-cards-wide.jpg)
+![](https://assets.mattmcadams.com/Penguin_Palace-colors.jpg)
+
+<hr class="spacer">
+
+![](https://assets.mattmcadams.com/Penguin_Palace-cards.jpg)
+
+<hr class="spacer">
+
+![](https://assets.mattmcadams.com/Penguin_Palace-merch.jpg)
+
+<hr class="spacer">
 
 ![](https://assets.mattmcadams.com/Penguin_Palace-letter-square.jpg)
