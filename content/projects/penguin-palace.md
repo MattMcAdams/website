@@ -27,3 +27,7 @@ This retro design is a fresh and playful brand exploration for a fictional ice c
 <hr class="spacer">
 
 ![](https://assets.mattmcadams.com/Penguin_Palace-letter-square.jpg)
+
+<hr class="spacer">
+
+![](https://assets.mattmcadams.com/Penguin_Palace-mockup.jpg)
