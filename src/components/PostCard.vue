@@ -1,6 +1,4 @@
-<style lang="scss">
-@import '@/assets/tokens';
-
+<style>
 .post-card {
   margin-bottom: var(--space);
   position: relative;

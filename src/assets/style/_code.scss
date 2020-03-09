@@ -1,35 +1,9 @@
 /* PrismJS 1.15.0
-https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
-/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript
 
-pre {
-  font-size: 0.85em;
-  margin-bottom: 2em;
-}
-
-code {
-  color: color('gray', '800');
-  background-color: color('gray', '200');
-  font-size: var(--ms-small);
-  border-radius: $radius-small;
-  padding: 0.2em 0.5em;
-}
-
-pre code {
-  display: block;
-  padding: space(0.5);
-  font-size: var(--ms-small);
-  border-radius: $radius;
-}
-
-/**
- * GHColors theme by Avi Aryan (http://aviaryan.in)
- * Inspired by Github syntax coloring
- */
+* GHColors theme by Avi Aryan (http://aviaryan.in)
+* Inspired by Github syntax coloring
+*/
 
 code[class*="language-"],
 pre[class*="language-"] {

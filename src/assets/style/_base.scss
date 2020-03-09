@@ -1,5 +1,3 @@
-// Default
-
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -9,21 +7,229 @@
 body {
   background-color: var(--bg-color);
   color: var(--body-color);
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif;
+  font-family: $font-body;
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  line-height: $line-height;
 }
 
-a {
+a:not([class]) {
   color: var(--link-color);
-  transition: opacity 0.2s;
+  text-decoration: none;
 
   &:hover {
-    opacity: 0.8;
+    text-decoration: underline;
   }
 }
 
 img {
+  display: block;
   max-width: 100%;
+}
+
+.button {
+  border: 2px solid var(--body-color);
+  border-radius: $radius-small;
+  color: var(--body-color);
+  padding: 0.4em 1em;
+
+  &:hover {
+    border-color: var(--link-color);
+    color: var(--link-color);
+  }
+}
+
+pre {
+  font-size: var(--ms-small);
+  margin-bottom: space(1);
+}
+
+code {
+  color: color('gray', '800');
+  background-color: color('gray', '200');
+  font-size: var(--ms-small);
+  border-radius: $radius-small;
+  padding: 0.2em 0.5em;
+}
+
+pre code {
+  display: block;
+  padding: space(1);
+  border-radius: $radius;
+}
+
+.content-box {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--space);
+  //box-shadow: 1px 1px 5px 0 rgba(0,0,0,.02), 1px 1px 15px 0 rgba(0,0,0,.03);
+}
+
+.content-box-wide {
+  max-width: calc(var(--content-width) * 1.5);
+  margin: 0 auto;
+  padding: var(--space);
+  //box-shadow: 1px 1px 5px 0 rgba(0,0,0,.02), 1px 1px 15px 0 rgba(0,0,0,.03);
+}
+
+@mixin basic-grid {
+  --grid-gap: #{space(1)};
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: var(--grid-gap);
+}
+
+.grid { @include basic-grid; }
+
+@media ( orientation: portrait ) {
+  .grid-portrait { @include basic-grid; }
+}
+
+@media ( orientation: landscape ) {
+  .grid-landscape { @include basic-grid; }
+}
+
+.img-grid p {
+  grid-gap: calc(var(--space) / 2);
+  display: grid;
+  grid-template-areas: 'img1 img2' 'img3 img3';
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-grid--tall p {
+  grid-template-columns: 'img1 img2' 'img3 img2';
+}
+
+.img-grid p img {
+  margin: 0;
+  width: 100%;
+}
+
+.img-grid p img:nth-child(1){ grid-area: img1; }
+.img-grid p img:nth-child(2){ grid-area: img2; }
+.img-grid p img:nth-child(3){ grid-area: img3; }
+
+.section {
+  margin-top: space(4);
+  margin-bottom: space(4);
+}
+
+.has-background {
+  background-color: var(--alt-bg-color);
+}
+
+.section.has-background {
+  padding: space(4);
+}
+
+
+body {
+  font-family: $font-body;
+  line-height: $line-height;
+}
+
+p {
+  margin-bottom: space(1);
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--title-color);
+  margin: 0 0 space(1);
+  font-family: $font-head;
+  line-height: $header-line-height;
+}
+
+h1,
+.u-h1 {
+  font-size: var(--ms-xxlarge);
+}
+
+h2,
+.u-h2 {
+  font-size: var(--ms-xlarge);
+}
+
+h3,
+.u-h3 {
+  font-size: var(--ms-large);
+}
+
+h4,
+.u-h4 {
+  font-size: var(--ms-medium);
+}
+
+h5,
+.u-h5 {
+  font-size: var(--ms-normal);
+}
+
+small,
+.u-small {
+  font-size: var(--ms-small);
+}
+
+strong {
+  font-weight: 600;
+}
+
+blockquote {
+  border-left: 4px solid var(--link-color);
+  padding-left: space(1);
+  color: var(--title-color);
+}
+
+em {
+  font-style: italic;
+}
+
+ul:not([class]) {
+  list-style-type: disc;
+  margin-left: space(0.5);
+  margin-bottom: space(1);
+
+  li {
+    margin-bottom: space(0.5);
+  }
+}
+
+ol:not([class]) {
+  list-style-type: decimal;
+  margin-left: space(0.5);
+  margin-bottom: space(1);
+
+  li {
+    margin-left: space(0.5);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.space-bottom {
+  margin-bottom: var(--space);
+}
+
+hr.spacer {
+  border: none;
+  margin: 0;
+  padding-bottom: var(--space);
+  padding-top: var(--space);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: calc(var(--space) / 2);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

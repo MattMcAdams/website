@@ -1,14 +1,7 @@
-<style lang="scss">
-@import "@/assets/tokens";
-
-.tags {
-  display: flex;
-  margin-top: space(0.5);
-}
-
+<style>
 .ui-tag {
   color: var(--body-color);
-  background-color: color('gray', '200');
+  background-color: var(--dark-bg-color);
 
   font-size: var(--ms-small);
   text-decoration: none;
@@ -19,15 +12,11 @@
     margin-left: space(0.5);
   }
 }
-
-#{$dark-theme} .ui-tag {
-  background-color: color('gray', '700');
-}
 </style>
 
 <template>
-  <div class="tags">
-   	<g-link class="ui-tag" v-for="tag in post.tags" :key="tag.id" :to="tag.path">
+  <div class="mt-1" style="display: flex;">
+   	<g-link class="ui-tag radius-small text-small bg-dark py-025 px-05 mx-025" v-for="tag in post.tags" :key="tag.id" :to="tag.path">
    		<span>#</span> {{ tag.title }}
    	</g-link>
   </div>

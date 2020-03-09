@@ -12,10 +12,13 @@
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.0",
     "gridsome": "^0.7.0",
-    "remark-containers": "^1.1.2"
+    "remark-containers": "^1.1.2",
+    "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
-    "sass": "^1.25.0",
-    "sass-loader": "^8.0.0"
+    "prettier": "^1.19.1",
+    "stylelint": "^13.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-prettier": "^8.0.1"
   }
 }
