@@ -3,11 +3,11 @@
     <Parallax/>
 
     <section id="about" class="my-4">
-      <div class="grid-landscape content-box-wide">
+      <div class="grid-landscape content-box-wide" style="--grid-gap: calc(var(--space) * 4);">
         <div>
           <h2>Nice to meet you</h2>
-          <p class="txt-h4">I’m a front end developer with a background in graphic design currently living in the Birmingham area. Let’s make something cool together.</p>
-          <p>In the spring of 2020, I got my bachelor of fine arts from the University of Alabama at Birmingham while researching UX design, code semantics, and design systems. My award winning work is bold, precise, and modern, focusing on the division of space and the use of strong color. When I’m not pecking at code or pushing pixels, I enjoy exploring fantasy worlds through books and video games.</p>
+          <p>I’m a front end developer with a background in graphic design currently living in the Birmingham area. Let’s make something cool together.</p>
+          <p class="txt-small">In the spring of 2020, I got my bachelor of fine arts from the University of Alabama at Birmingham while researching UX design, code semantics, and design systems. My award winning work is bold, precise, and modern, focusing on the division of space and the use of strong color. When I’m not pecking at code or pushing pixels, I enjoy exploring fantasy worlds through books and video games.</p>
           <p><a class="button" href="https://assets.mattmcadams.com/McAdams-CV-Jan-2020.pdf">Curriculum Vitae</a></p>
         </div>
         <div>
