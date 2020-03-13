@@ -1,8 +1,8 @@
 <template>
   <div id="app">
 
-    <header class="header">
-      <nav class="header__right">
+    <header>
+      <nav>
         <ToggleTheme />
       </nav>
     </header>
@@ -11,8 +11,8 @@
       <slot/>
     </main>
 
-    <footer class="footer">
-      <p class="footer__copyright">Copyright © {{ new Date().getFullYear() }} Matthew McAdams </p>
+    <footer>
+      <p>Copyright © {{ new Date().getFullYear() }} Matthew McAdams </p>
       <p style="margin-bottom: 0;">
         <a href="https://twitter.com/mattmakesart" target="_blank">Twitter</a> &#183;
         <a href="https://www.instagram.com/mattmcadams/" target="_blank">Instagram</a> &#183;

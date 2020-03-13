@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Matt McAdams',
-  siteDescription: 'A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.',
+  siteDescription: '',
 
   // plugins: [
 
@@ -46,24 +46,24 @@ module.exports = {
   //   //Project: '/portfolio/:title'
   // },
 
-  transformers: {
-    //Add markdown support to all file-system sources
-    remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      plugins: [
-        '@gridsome/remark-prismjs',
-        ['remark-containers', { default: true }]
+  // transformers: {
+  //   //Add markdown support to all file-system sources
+  //   remark: {
+  //     externalLinksTarget: '_blank',
+  //     externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+  //     plugins: [
+  //       '@gridsome/remark-prismjs',
+  //       ['remark-containers', { default: true }]
 
-      ]
-    }
-  },
+  //     ]
+  //   }
+  // },
 
-  css: {
-    loaderOptions: {
-      postcss: {
-        plugins: [require('tailwindcss')]
-      }
-    }
-  }
+  // css: {
+  //   loaderOptions: {
+  //     postcss: {
+  //       plugins: [require('tailwindcss')]
+  //     }
+  //   }
+  // }
 }
