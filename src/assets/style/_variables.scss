@@ -1,0 +1,234 @@
+$dark-theme: 'body[data-theme="dark"]';
+
+$variables: (
+  'space': 1.5rem,
+  'content-width': 70ch,
+  'line-height': 1.5
+);
+
+$font-sizes: (
+  'small': 0.889em 1.6,
+  'normal': 1em 1.6,
+  'medium': 1.125em 1.5,
+  'large': 1.266em 1.4,
+  'xlarge': 1.424em 1.3,
+  'xxlarge': 1.602em 1.2,
+  'huge': 1.802em 1.1,
+);
+
+$border-radius: (
+  'default': 10px,
+  'small': 5px,
+  'large': 25px,
+  'xlarge': 50px,
+);
+
+$fonts: (
+  'body': #{'Poppins', sans-serif},
+  'head': #{'Poppins', sans-serif},
+  'mono': monospace,
+  'icon': #{"IcoMoon", monospace},
+);
+
+// @function space($input: 1) {
+//   @if $input != 1 {
+//     @return calc(var(--space) * #{$input});
+//   } @else {
+//     @return var(--space);
+//   }
+// }
+
+$colors: (
+  'gray': (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c
+  ),
+  'blue': (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365
+  ),
+  'red': (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a
+  ),
+  'yellow': (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210
+  ),
+  'green': (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d
+  ),
+  'teal': (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52
+  )
+);
+
+// @function color($name, $shade: 500) {
+//   $_color: map-get($colors, $name);
+//   @return map-get($_color, $shade);
+// }
+
+:root {
+
+  @each $name, $value in $variables {
+    --#{$name}: #{$value};
+  }
+
+  @each $font, $value in $fonts {
+    --font-#{$font}: #{$value};
+  }
+
+  @each $size, $value in $border-radius {
+    @if ($size != 'default') {
+      --radius-#{$size}: #{$value};
+    } @else {
+      --radius: #{$value};
+    }
+  }
+
+  @each $size, $values in $font-sizes {
+    --ms-#{$size}: #{nth($values, 1)};
+    --ms-#{$size}-lh: #{nth($values, 2)};
+  }
+
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --color-#{$color}-#{$shade}: #{$value};
+      @if ($shade == 500) { --color-#{$color}: #{$value}; }
+    }
+  }
+
+}
+
+@each $color, $shades in $colors {
+  @each $shade, $value in $shades {
+    .txt-#{$color}-#{$shade} { color: var(--color-#{$color}-#{$shade}); }
+    .bg-#{$color}-#{$shade} { background: var(--color-#{$color}-#{$shade}); }
+    .bdr-#{$color}-#{$shade} { border-color: var(--color-#{$color}-#{$shade}); }
+    @if ($shade == 500) {
+      .txt-#{$color} { color: var(--color-#{$color}); }
+      .bg-#{$color} { background: var(--color-#{$color}); }
+      .bdr-#{$color} { border-color: var(--color-#{$color}); }
+    }
+  }
+}
+
+@each $size, $value in $border-radius {
+  @if ($size != 'default') {
+    .rounded-#{$size} { border-radius: var(--radius-#{$size}); }
+  } @else {
+    .rounded { border-radius: var(--radius); }
+  }
+}
+
+.rounded-full { border-radius: 9999px; }
+
+#{$dark-theme} {
+
+  :root {
+    @each $color, $shades in $colors {
+      @each $shade, $value in $shades {
+        @if ($shade != 500) { --color-#{$color}-#{1000 - $shade}: #{$value}; }
+      }
+    }
+  }
+
+}
+
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1000;
+  --fluid-min-size: 17;
+  --fluid-max-size: 20;
+  --fluid-min-ratio: 1.2;
+  --fluid-max-ratio: 1.33;
+}
+
+:root {
+  --fluid-screen: 100vw;
+  --fluid-bp: calc((var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) / ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16)));
+}
+
+@media screen and ( min-width: 1000px ) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+
+:root {
+  --fluid-min-scale-0: var(--fluid-min-ratio);
+  --fluid-max-scale-0: var(--fluid-max-ratio);
+  --fluid-min-size-0: (var(--fluid-min-size)) / 16;
+  --fluid-max-size-0: (var(--fluid-max-size)) / 16;
+  --fluid-0: calc(((var(--fluid-min-size-0) * 1rem) + (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)));
+
+  --fluid-min-scale-01: var(--fluid-min-scale-0) / var(--fluid-min-ratio);
+  --fluid-max-scale-01: var(--fluid-max-scale-0) / var(--fluid-max-ratio);
+  --fluid-min-size-01: (var(--fluid-min-size) / var(--fluid-min-scale-0)) / 16;
+  --fluid-max-size-01: (var(--fluid-max-size) / var(--fluid-max-scale-0)) / 16;
+  --fluid-01: calc(((var(--fluid-min-size-01) * 1rem) + (var(--fluid-max-size-01) - var(--fluid-min-size-01)) * var(--fluid-bp)));
+
+  --fluid-min-scale-1: var(--fluid-min-scale-0) * var(--fluid-min-ratio);
+  --fluid-max-scale-1: var(--fluid-max-scale-0) * var(--fluid-max-ratio);
+  --fluid-min-size-1: (var(--fluid-min-size) * var(--fluid-min-scale-0)) / 16;
+  --fluid-max-size-1: (var(--fluid-max-size) * var(--fluid-max-scale-0)) / 16;
+  --fluid-1: calc(((var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)));
+
+  --fluid-min-scale-2: var(--fluid-min-scale-1) * var(--fluid-min-ratio);
+  --fluid-max-scale-2: var(--fluid-max-scale-1) * var(--fluid-max-ratio);
+  --fluid-min-size-2: (var(--fluid-min-size) * var(--fluid-min-scale-1)) / 16;
+  --fluid-max-size-2: (var(--fluid-max-size) * var(--fluid-max-scale-1)) / 16;
+  --fluid-2: calc(((var(--fluid-min-size-2) * 1rem) + (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)));
+
+  --fluid-min-scale-3: var(--fluid-min-scale-2) * var(--fluid-min-ratio);
+  --fluid-max-scale-3: var(--fluid-max-scale-2) * var(--fluid-max-ratio);
+  --fluid-min-size-3: (var(--fluid-min-size) * var(--fluid-min-scale-2)) / 16;
+  --fluid-max-size-3: (var(--fluid-max-size) * var(--fluid-max-scale-2)) / 16;
+  --fluid-3: calc(((var(--fluid-min-size-3) * 1rem) + (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)));
+
+  --space: var(--fluid-0);
+}

@@ -1,9 +1,9 @@
-/* PrismJS 1.15.0
-https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript
-
-* GHColors theme by Avi Aryan (http://aviaryan.in)
-* Inspired by Github syntax coloring
-*/
+/** -----------------------------------------------------------------
+ * SECTION PrismJS
+ * https://prismjs.com/
+ * GHColors theme by Avi Aryan (http://aviaryan.in)
+ * Inspired by Github syntax coloring
+------------------------------------------------------------------ */
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -112,3 +112,5 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 .token.italic {
   font-style: italic;
 }
+
+/* END !SECTION PrismJS */

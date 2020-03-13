@@ -1,5 +1,5 @@
 <template>
-  <layout :show-logo="false">
+  <layout>
     <Parallax/>
 
     <section id="about" class="my-4">
@@ -25,10 +25,35 @@
       </div>
     </section>
 
-    <section class="content-box-wide" id="blog">
-      <h2 style="text-align: center; margin-bottom: var(--space);">Thoughts & Adventures</h2>
-      <div class="posts">
-        <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+    <section>
+      <div class="content-box section">
+        <h2 class="txt-center">Say Hello</h2>
+        <p class="txt-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero.</p>
+      </div>
+
+      <div class="content-box-wide">
+        <div class="grid-landscape" style="--grid-gap: calc(var(--space) * 4);">
+          <form
+            class="bg-gray-200 rounded-large"
+            style="padding: calc(var(--space) * 2); margin-bottom: calc(var(--space) * -8);"
+            method="POST"
+            data-netlify-recaptcha="true"
+            data-netlify="true"
+            name="contact"
+          >
+            <label>Name</label>
+            <input type="text" name="name">
+            <label>Email Address</label>
+            <input type="email" name="email">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <div class="grid-landscape" style="grid-template-columns: 1fr 1fr;">
+              <div><div data-netlify-recaptcha="true">Captcha</div></div>
+              <div><p class="txt-right" style="margin-bottom: 0;"><button type="submit">Submit</button></p></div>
+            </div>
+          </form>
+          <div style="align-self: end;"><img src="https://assets.mattmcadams.com/city-outline.png" alt="" style="margin-bottom: 0;"></div>
+        </div>
       </div>
     </section>
 
@@ -36,52 +61,13 @@
 </template>
 
 <script>
-import Parallax from '~/components/Parallax.vue'
-import ProjectCard from '~/components/ProjectCard.vue'
-import PostCard from '~/components/PostCard.vue'
+import Parallax from '../components/Parallax.vue'
 export default {
   components: {
-    Parallax,
-    PostCard,
-    ProjectCard
+    Parallax
   },
   metaInfo: {
     title: 'Home'
   }
 }
 </script>
-
-<page-query>
-query {
-  projects: allProject(filter: { published: { eq: true }}) {
-    edges {
-      node {
-        id
-        title
-        date (format: "D. MMMM YYYY")
-        description
-        cover_image
-        path
-      }
-    }
-  },
-  posts: allPost(filter: { published: { eq: true }}) {
-    edges {
-      node {
-        id
-        title
-        date (format: "D. MMMM YYYY")
-        timeToRead
-        description
-        cover_image
-        path
-        tags {
-          id
-          title
-          path
-        }
-      }
-    }
-  }
-}
-</page-query>

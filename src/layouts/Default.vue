@@ -1,51 +1,8 @@
-<style lang="scss">
-
-.header {
-  float: left; // Removes the header from the document flow, allows parallax to sit at top
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: var(--header-height);
-  padding: 0 calc(var(--space) / 2);
-  top: 0;
-  z-index: 10;
-
-  &__left,
-  &__right {
-    display: flex;
-    align-items: center;
-  }
-
-  @media screen and ( orientation: landscape ) {
-    //Make header sticky for large screens
-    position: sticky;
-    width: 100%;
-  }
-}
-
-.main {
-  margin: 0 auto;
-}
-
-.footer {
-  background-color: var(--alt-bg-color);
-  padding: calc(var(--space) / 2);
-  text-align: center;
-  font-size: 0.8em;
-}
-</style>
-
-
 <template>
   <div id="app">
 
     <header class="header">
-      <div class="header__left">
-        <Logo v-if="showLogo" />
-      </div>
-
       <nav class="header__right">
-        <!--<a href="/blog/" style="padding-bottom: 0.3em">Blog</a>-->
         <ToggleTheme />
       </nav>
     </header>
@@ -72,15 +29,10 @@
 
 
 <script>
-import Logo from '~/components/Logo.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
 
 export default {
-  props: {
-    showLogo: { default: true }
-  },
   components: {
-    Logo,
     ToggleTheme
   }
 }

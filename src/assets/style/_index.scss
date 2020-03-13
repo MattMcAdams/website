@@ -1,0 +1,294 @@
+@import 'reset';
+
+/** -----------------------------------------------------------------
+ * SECTION TYPOGRAPHY
+------------------------------------------------------------------ */
+
+body {
+  font-family: var(--font-body);
+  line-height: var(--normal-lh);
+  background-color: var(--color-gray-100);
+  font-size: var(--fluid-0);
+}
+
+p {
+  font-family: var(--font-body);
+  color: var(--color-gray-800);
+  margin: 0 0 var(--space) 0;
+}
+
+h1, h2, h3, h4, h5,
+.txt-h1, .txt-h2, .txt-h3, .txt-h4, .txt-h4, .txt-h5 {
+  font-family: var(--font-head);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--space) 0;
+  line-height: 1.2;
+}
+
+h1,
+.txt-h1 {
+  font-size: var(--fluid-4);
+}
+
+h2,
+.txt-h2 {
+  font-size: var(--fluid-3);
+}
+
+h3,
+.txt-h3 {
+  font-size: var(--fluid-2);
+}
+
+h4, h5, h6,
+.txt-h4, .txt-h5, .txt-h6 {
+  font-size: var(--fluid-1);
+}
+
+p,
+.txt-p {
+  font-size: var(--fluid-0);
+  line-height: 1.6;
+}
+
+small,
+.txt-small {
+  font-size: var(--fluid-01);
+}
+
+/** -----------------------------------------------------------------
+ * SECTION SEMANTICS
+------------------------------------------------------------------ */
+
+strong { font-weight: 600; }
+em { font-style: italic; }
+
+/* END !SECTION SEMANTICS */
+/** -----------------------------------------------------------------
+ * SECTION BLOCKQUOTE
+------------------------------------------------------------------ */
+
+blockquote {
+  --theme-color: var(--color-blue);
+  border-left: 5px solid var(--theme-color);
+  padding-left: var(--space);
+  color: var(--color-gray-900);
+}
+
+/* END !SECTION BLOCKQUOTE */
+/** -----------------------------------------------------------------
+ * SECTION LISTS
+------------------------------------------------------------------ */
+
+ul:not([class]) { list-style-type: disc; }
+
+ol:not([class]) { list-style-type: decimal; }
+
+ul:not([class]), ol:not([class]) {
+  list-style-type: disc;
+  margin-left: var(--space);
+  margin-bottom: var(--space);
+
+  li { margin-bottom: calc(var(--space) / 2); }
+
+  ol, ul { margin-bottom: calc(var(--space) / 2); }
+}
+
+/* END !SECTION LISTS */
+/* END !SECTION TYPOGRAPHY */
+/** -----------------------------------------------------------------
+ * SECTION LINKS & BUTTONS
+------------------------------------------------------------------ */
+
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: var(--color-blue-800);
+    text-decoration: underline;
+  }
+}
+
+.button,
+button {
+  --theme-color: var(--color-gray-800);
+  --theme-color-hover: var(--color-blue);
+
+  display: inline-block;
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid var(--theme-color);
+  border-radius: var(--radius);
+  color: var(--theme-color);
+  text-decoration: none;
+  padding: calc(var(--space) / 2) var(--space);
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  font-size: var(--fluid-01);
+
+  &:hover, &:focus {
+    --theme-color: var(--theme-color-hover);
+    color: var(--theme-color);
+    text-decoration: none;
+  }
+}
+
+.button--solid {
+  --theme-contrast-color: white;
+
+  color: var(--theme-contrast-color);
+  background-color: var(--theme-color);
+
+  &:hover, &:focus {
+    color: var(--theme-contrast-color);
+  }
+}
+
+.button--primary {
+  --theme-color: var(--color-blue);
+  --theme-color-hover: var(--color-blue-600);
+  --theme-contrast-color: white;
+}
+
+.button--full {
+  display: block;
+  text-align: center;
+}
+
+/* END !SECTION LINKS & BUTTONS */
+/** -----------------------------------------------------------------
+ * SECTION MEDIA
+------------------------------------------------------------------ */
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: var(--space);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* END !SECTION MEDIA */
+/** -----------------------------------------------------------------
+ * SECTION UTILITIES
+------------------------------------------------------------------ */
+
+hr.spacer {
+  border: none;
+  margin: 0;
+  padding-bottom: calc(var(--space) * 4);
+  padding-top: calc(var(--space) * 4);
+}
+
+::selection {
+  background-color: var(--color-blue-200);
+}
+
+.txt-center { text-align: center; }
+.txt-left { text-align: left; }
+.txt-right { text-align: right; }
+
+/* END !SECTION UUTILITIES */
+/** -----------------------------------------------------------------
+ * SECTION CODE
+------------------------------------------------------------------ */
+
+pre {
+  font-size: var(--ms-small);
+  margin-bottom: var(--space);
+}
+
+code {
+  color: var(--color-gray-800);
+  background-color: var(--color-gray-100);
+  font-size: var(--ms-small);
+  border-radius: var(--radius-small);
+  padding: 0.1em;
+}
+
+pre code {
+  display: block;
+  padding: var(--space);
+  font-size: var(--ms-small);
+  border-radius: var(--radius);
+}
+
+/* END !SECTION CODE */
+/** -----------------------------------------------------------------
+ * SECTION LAYOUT
+------------------------------------------------------------------ */
+
+.content-box {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--space);
+}
+
+.content-box-wide {
+  max-width: calc(var(--content-width) * 1.5);
+  margin: 0 auto;
+  padding: var(--space);
+}
+
+.section {
+  margin-top: calc(var(--space) * 8);
+  margin-bottom: calc(var(--space) * 8);
+}
+
+.section-pad {
+  padding-top: calc(var(--space) * 8);
+  padding-bottom: calc(var(--space) * 8);
+}
+
+@mixin basic-grid {
+  --grid-gap: var(--space);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: var(--grid-gap);
+}
+
+.grid { @include basic-grid; }
+@media ( orientation: portrait ) { .grid-portrait { @include basic-grid; } }
+@media ( orientation: landscape ) { .grid-landscape { @include basic-grid; } }
+
+
+.img-grid p {
+  grid-gap: calc(var(--space) / 2);
+  display: grid;
+  grid-template-areas: 'img1 img2' 'img3 img3';
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-grid--tall p {
+  grid-template-columns: 'img1 img2' 'img3 img2';
+}
+
+.img-grid p img {
+  margin: 0;
+  width: 100%;
+}
+
+.img-grid p img:nth-child(1){ grid-area: img1; }
+.img-grid p img:nth-child(2){ grid-area: img2; }
+.img-grid p img:nth-child(3){ grid-area: img3; }
+
+/* END !SECTION LAYOUT */
+
+@import 'forms';
+@import 'prismjs';
+@import 'variables';
