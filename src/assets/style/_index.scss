@@ -53,7 +53,7 @@ p,
 
 small,
 .txt-small {
-  font-size: var(--fluid-01);
+  font-size: var(--fluid--1);
 }
 
 /** -----------------------------------------------------------------
@@ -100,13 +100,24 @@ ul:not([class]), ol:not([class]) {
  * SECTION LINKS & BUTTONS
 ------------------------------------------------------------------ */
 
-a {
+a:not([class]) {
   color: var(--color-blue);
   text-decoration: none;
 
   &:hover, &:focus {
     color: var(--color-blue-800);
     text-decoration: underline;
+  }
+  &[target="_blank"]::after,
+  &[data-link-type="external"] {
+    content: ' \e91f';
+    font-size: 90%;
+  }
+  &[href$='.pdf']::after,
+  &[data-link-type='document']::after {
+    content: '\e91d';
+    font-size: 90%;
+    padding-left: 0.1em;
   }
 }
 
@@ -235,13 +246,13 @@ pre code {
 .content-box {
   max-width: var(--content-width);
   margin: 0 auto;
-  padding: var(--space);
+  padding: 0 calc(var(--space) * 2);
 }
 
 .content-box-wide {
   max-width: calc(var(--content-width) * 1.5);
   margin: 0 auto;
-  padding: var(--space);
+  padding: 0 calc(var(--space) * 2);
 }
 
 .section {

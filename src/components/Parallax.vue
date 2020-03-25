@@ -5,10 +5,10 @@
       <div class="foreground_image" style="display: flex; align-items: center; justify-content: center;">
 
         <div class="content-box" style="margin: 0; margin-top: -15vh; width: 100%;">
-          <h1 style="text-align: center;">Hi! I'm Matt McAdams</h1>
+          <h1 style="text-align: center;" class="txt-h2">Hi! I'm Matt McAdams</h1>
           <p style="text-align: center;">Graphic designer, web developer, and creative problem solver</p>
 
-          <div class="grid">
+          <div class="grid" style="max-width: 500px; grid-template-columns: 1fr 1fr; margin: auto; --grid-gap: calc(var(--space) * 2)">
             <a class="button" href="https://github.com/MattMcAdams/" target="_blank" style="display: block; text-align: center;">GitHub</a>
             <a class="button" href="/portfolio/" style="display: block; text-align: center;">Portfolio</a>
           </div>
@@ -79,7 +79,7 @@ main {
   height: 200px;
   transform-origin-x: 100%;
   transform: translateZ(0) scale(1);
-  background-color: var(--bg-color);
+  background-color: var(--color-gray-100);
 }
 
 :root {

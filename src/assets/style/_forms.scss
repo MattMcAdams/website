@@ -14,9 +14,10 @@ input, textarea {
   width: 100%;
   padding: calc(var(--space) / 2);
   border-radius: var(--radius);
-  border: 2px solid var(--color-gray-800);
+  border: 2px solid var(--color-gray-600);
   font-size: var(--fluid-0);
   font-family: var(--font-mono);
+  color: var(--color-gray-800);
 
   &:active, &:focus {
     border-color: var(--color-blue-500);

@@ -1,19 +1,7 @@
 $dark-theme: 'body[data-theme="dark"]';
 
 $variables: (
-  'space': 1.5rem,
-  'content-width': 70ch,
-  'line-height': 1.5
-);
-
-$font-sizes: (
-  'small': 0.889em 1.6,
-  'normal': 1em 1.6,
-  'medium': 1.125em 1.5,
-  'large': 1.266em 1.4,
-  'xlarge': 1.424em 1.3,
-  'xxlarge': 1.602em 1.2,
-  'huge': 1.802em 1.1,
+  'content-width': 70ch
 );
 
 $border-radius: (
@@ -24,19 +12,11 @@ $border-radius: (
 );
 
 $fonts: (
-  'body': #{'Poppins', sans-serif},
-  'head': #{'Poppins', sans-serif},
-  'mono': monospace,
-  'icon': #{"IcoMoon", monospace},
+  'body': #{'Lato', sans-serif, 'mcadams-website'},
+  'head': #{'Roboto Slab', serif, 'mcadams-website'},
+  'mono': #{monospace, 'mcadams-website'},
+  'icon': 'mcadams-website',
 );
-
-// @function space($input: 1) {
-//   @if $input != 1 {
-//     @return calc(var(--space) * #{$input});
-//   } @else {
-//     @return var(--space);
-//   }
-// }
 
 $colors: (
   'gray': (
@@ -107,32 +87,18 @@ $colors: (
   )
 );
 
-// @function color($name, $shade: 500) {
-//   $_color: map-get($colors, $name);
-//   @return map-get($_color, $shade);
-// }
+/** -----------------------------------------------------------------
+ * VARIABLES
+------------------------------------------------------------------ */
 
-:root {
-
-  @each $name, $value in $variables {
-    --#{$name}: #{$value};
-  }
-
-  @each $font, $value in $fonts {
-    --font-#{$font}: #{$value};
-  }
+body {
+  @each $name, $value in $variables { --#{$name}: #{$value}; }
+  @each $font, $value in $fonts { --font-#{$font}: #{$value}; }
 
   @each $size, $value in $border-radius {
     @if ($size != 'default') {
       --radius-#{$size}: #{$value};
-    } @else {
-      --radius: #{$value};
-    }
-  }
-
-  @each $size, $values in $font-sizes {
-    --ms-#{$size}: #{nth($values, 1)};
-    --ms-#{$size}-lh: #{nth($values, 2)};
+    } @else { --radius: #{$value}; }
   }
 
   @each $color, $shades in $colors {
@@ -141,8 +107,11 @@ $colors: (
       @if ($shade == 500) { --color-#{$color}: #{$value}; }
     }
   }
-
 }
+
+/** -----------------------------------------------------------------
+ * Utility Classes
+------------------------------------------------------------------ */
 
 @each $color, $shades in $colors {
   @each $shade, $value in $shades {
@@ -167,68 +136,71 @@ $colors: (
 
 .rounded-full { border-radius: 9999px; }
 
-#{$dark-theme} {
+/** -----------------------------------------------------------------
+ * Dark theme colors
+------------------------------------------------------------------ */
 
-  :root {
-    @each $color, $shades in $colors {
-      @each $shade, $value in $shades {
-        @if ($shade != 500) { --color-#{$color}-#{1000 - $shade}: #{$value}; }
-      }
+.light-theme-only { display: block; }
+.dark-theme-only { display: none; }
+
+#{$dark-theme} {
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      @if ($shade != 500) { --color-#{$color}-#{1000 - $shade}: #{$value}; }
     }
   }
 
+  .light-theme-only { display: none; }
+  .dark-theme-only { display: block; }
 }
 
-:root {
-  --fluid-min-width: 320;
-  --fluid-max-width: 1000;
-  --fluid-min-size: 17;
-  --fluid-max-size: 20;
-  --fluid-min-ratio: 1.2;
-  --fluid-max-ratio: 1.33;
+/** -----------------------------------------------------------------
+ * Typography
+------------------------------------------------------------------ */
+
+@function pow($number, $exponent) {
+  $value: 1;
+  @if $exponent > 0 { @for $i from 1 through $exponent { $value: $value * $number; } }
+  @return $value;
 }
+
+@mixin fluid($step: 0, $min-size: 18, $max-size: 20, $min-ratio: 1.2, $max-ratio: 1.33) {
+  $_min-size: null;
+  $_max-size: null;
+
+  @if ($step < 0) {
+    $_step: $step * -1;
+    $_min-size: ($min-size / pow($min-ratio, $_step)) / 16;
+    $_max-size: ($max-size / pow($max-ratio, $_step)) / 16;
+  } @else if ($step > 0) {
+    $_min-size: ($min-size * pow($min-ratio, $step)) / 16;
+    $_max-size: ($max-size * pow($max-ratio, $step)) / 16;
+  } @else {
+    $_min-size: ($min-size) / 16;
+    $_max-size: ($max-size) / 16;
+  }
+
+  $_difference: $_max-size - $_min-size;
+  --fluid-#{$step}: calc(#{$_min-size * 1rem} + (#{$_difference} * var(--fluid-bp)));
+}
+
+$fluid-max-width: 1000;
+$fluid-min-width: 320;
 
 :root {
   --fluid-screen: 100vw;
-  --fluid-bp: calc((var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) / ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16)));
-}
+  --fluid-bp: calc((var(--fluid-screen) - #{($fluid-min-width / 16) * 1rem}) / #{($fluid-max-width / 16) - ($fluid-min-width / 16)});
 
-@media screen and ( min-width: 1000px ) {
-  :root {
-    --fluid-screen: calc(var(--fluid-max-width) * 1px);
-  }
-}
-
-:root {
-  --fluid-min-scale-0: var(--fluid-min-ratio);
-  --fluid-max-scale-0: var(--fluid-max-ratio);
-  --fluid-min-size-0: (var(--fluid-min-size)) / 16;
-  --fluid-max-size-0: (var(--fluid-max-size)) / 16;
-  --fluid-0: calc(((var(--fluid-min-size-0) * 1rem) + (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)));
-
-  --fluid-min-scale-01: var(--fluid-min-scale-0) / var(--fluid-min-ratio);
-  --fluid-max-scale-01: var(--fluid-max-scale-0) / var(--fluid-max-ratio);
-  --fluid-min-size-01: (var(--fluid-min-size) / var(--fluid-min-scale-0)) / 16;
-  --fluid-max-size-01: (var(--fluid-max-size) / var(--fluid-max-scale-0)) / 16;
-  --fluid-01: calc(((var(--fluid-min-size-01) * 1rem) + (var(--fluid-max-size-01) - var(--fluid-min-size-01)) * var(--fluid-bp)));
-
-  --fluid-min-scale-1: var(--fluid-min-scale-0) * var(--fluid-min-ratio);
-  --fluid-max-scale-1: var(--fluid-max-scale-0) * var(--fluid-max-ratio);
-  --fluid-min-size-1: (var(--fluid-min-size) * var(--fluid-min-scale-0)) / 16;
-  --fluid-max-size-1: (var(--fluid-max-size) * var(--fluid-max-scale-0)) / 16;
-  --fluid-1: calc(((var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)));
-
-  --fluid-min-scale-2: var(--fluid-min-scale-1) * var(--fluid-min-ratio);
-  --fluid-max-scale-2: var(--fluid-max-scale-1) * var(--fluid-max-ratio);
-  --fluid-min-size-2: (var(--fluid-min-size) * var(--fluid-min-scale-1)) / 16;
-  --fluid-max-size-2: (var(--fluid-max-size) * var(--fluid-max-scale-1)) / 16;
-  --fluid-2: calc(((var(--fluid-min-size-2) * 1rem) + (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)));
-
-  --fluid-min-scale-3: var(--fluid-min-scale-2) * var(--fluid-min-ratio);
-  --fluid-max-scale-3: var(--fluid-max-scale-2) * var(--fluid-max-ratio);
-  --fluid-min-size-3: (var(--fluid-min-size) * var(--fluid-min-scale-2)) / 16;
-  --fluid-max-size-3: (var(--fluid-max-size) * var(--fluid-max-scale-2)) / 16;
-  --fluid-3: calc(((var(--fluid-min-size-3) * 1rem) + (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)));
+  @include fluid(-1);
+  @include fluid(0);
+  @include fluid(1);
+  @include fluid(2);
+  @include fluid(3);
+  @include fluid(4);
 
   --space: var(--fluid-0);
+}
+
+@media screen and (min-width: #{$fluid-max-width * 1px}) {
+  :root { --fluid-screen: #{$fluid-max-width * 1px}; }
 }
