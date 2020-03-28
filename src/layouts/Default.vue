@@ -6,13 +6,34 @@
   footer small a {
     color: var(--color-gray-600) !important;
   }
+  header {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+  }
+  .top-navigation li {
+    display: inline-block;
+    padding: var(--space);
+  }
+  .top-navigation {
+    text-align: right;
+  }
+  .top-navigation a {
+    color: var(--color-gray-600) !important;
+  }
 </style>
 <template>
   <div id="app">
 
     <header>
       <nav>
-        <ToggleTheme />
+        <ul class="top-navigation">
+          <li><a href="/">About</a></li>
+          <li><a href="/portfolio/">Work</a></li>
+          <li><a href="/thoughts/">Thoughts</a></li>
+          <li><a href="/github">GitHub</a></li>
+          <li><ToggleTheme /></li>
+        </ul>
       </nav>
     </header>
 

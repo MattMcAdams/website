@@ -242,7 +242,7 @@ body {
   @return $value;
 }
 
-@mixin fluid($step: 0, $min-size: 18, $max-size: 20, $min-ratio: 1.2, $max-ratio: 1.33) {
+@mixin fluid($step: 0, $min-size: 18, $max-size: 20, $min-ratio: 1.2, $max-ratio: 1.25) {
   $_min-size: null;
   $_max-size: null;
 
@@ -277,6 +277,7 @@ $fluid-min-width: 320;
   @include fluid(4);
 
   --space: var(--fluid-0);
+  --section-space: calc((var(--fluid-0) * 3) + (8 * var(--fluid-bp)));
 }
 
 @media screen and (min-width: #{$fluid-max-width * 1px}) {

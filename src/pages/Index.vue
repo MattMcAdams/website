@@ -1,8 +1,83 @@
+<style>
+  .parallax-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .parallax-foreground,
+  .parallax-background,
+  .parallax-midground {
+    position: absolute;
+  }
+  .top-lines { left: 5%; top: -8vw; width: 35%; }
+  .bottom-lines { left: 10%; bottom: 6vw; width: 35%; }
+  .right-lines { right: 0; bottom: 75%; width: 10%; }
+  .left-cloud { left: 1rem; bottom: -1%; width: 35%; }
+  .planet { right: 20%; bottom: 3vw; width: 25%; }
+  .right-cloud { right: 1rem; bottom: -1%; width: 50%; }
+
+  @media (orientation: portrait) {
+    .parallax-container {
+      max-height: 140vw;
+    }
+    .left-cloud,
+    .bottom-lines {
+      display: none;
+    }
+    .right-cloud { width: 90%; right: 5%; left: 5%; }
+    .planet { width: 40%; right: 35%; bottom: 5vw;}
+  }
+
+  .contact-form {
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: var(--space);
+  }
+  @media (orientation: landscape) {
+    .contact-form{
+      padding: calc(var(--space) * 2);
+      margin-bottom: calc(var(--space) * -6);
+    }
+  }
+</style>
 <template>
   <layout>
 
+    <div style="background-image: linear-gradient(var(--color-gray-200), var(--color-gray-100));">
+    <section id="hero" class="parallax-container">
+      <img src="/images/assets/lines-top.png" alt="" class="parallax-background light-theme-only top-lines">
+      <img src="/images/assets/lines-top-dark.png" alt="" class="parallax-background dark-theme-only top-lines">
+
+      <img src="/images/assets/lines-bottom.png" alt="" class="parallax-background light-theme-only bottom-lines">
+      <img src="/images/assets/lines-bottom-dark.png" alt="" class="parallax-background dark-theme-only bottom-lines">
+
+      <img src="/images/assets/lines-right.png" alt="" class="parallax-background light-theme-only right-lines">
+      <img src="/images/assets/lines-right-dark.png" alt="" class="parallax-background dark-theme-only right-lines">
+
+      <img src="/images/assets/planet.png" alt="" class="parallax-midground planet">
+      <img src="/images/assets/left-cloud.png" alt="" class="parallax-foreground left-cloud light-theme-only">
+      <img src="/images/assets/left-cloud-dark.png" alt="" class="parallax-foreground left-cloud dark-theme-only">
+
+      <img src="/images/assets/right-cloud.png" alt="" class="parallax-foreground right-cloud light-theme-only">
+      <img src="/images/assets/right-cloud-dark.png" alt="" class="parallax-foreground right-cloud dark-theme-only">
+
+      <div class="content-box" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center;">
+        <div style="width: 100%; margin-bottom: 10vw;">
+          <h1 style="text-align: center;">Matthew McAdams</h1>
+          <p style="text-align: center;">Designer, web developer, and creative problem solver.</p>
+          <br>
+          <p style="text-align: center;">SCROLL<br><i class="icon-arrow_up txt-h2" aria-label="down arrow" style="transform: rotate(180deg); display: block;"></i></p>
+        </div>
+      </div>
+    </section>
+    </div>
+
     <section id="about" class="my-4">
-      <div class="grid content-box-wide" style="--grid-gap: calc(var(--fluid-4) * 2); align-items: center; margin: calc(var(--fluid-4) * 4) auto;">
+      <div class="grid content-box-wide" style="--grid-gap: calc(var(--fluid-4) * 2); align-items: center; margin: var(--section-space) auto;">
         <div>
           <h2>Nice to meet you</h2>
           <p>I’m a front end developer with a background in graphic design currently living in the Birmingham area. Let’s make something cool together.</p>
@@ -10,17 +85,17 @@
           <p><a class="button" href="https://assets.mattmcadams.com/McAdams-CV-Jan-2020.pdf">Curriculum Vitae</a></p>
         </div>
         <div>
-          <img src="/images/website-portrait.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." class="light-theme-only">
-          <img src="/images/website-portrait-dark.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." class="dark-theme-only">
+          <img src="/images/assets/website-portrait@2x.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." class="light-theme-only" style="max-width: 500px; margin: auto; width: 100%;">
+          <img src="/images/assets/website-portrait-dark@2x.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." class="dark-theme-only">
         </div>
       </div>
     </section>
 
-    <section class="bg-gray-200" style="margin: calc(var(--fluid-4) * 4) 0; padding: calc(var(--fluid-4) * 4) 0;">
+    <section class="bg-gray-200" style="margin: var(--section-space) 0; padding: var(--section-space) 0;">
       <div class="grid-landscape content-box-wide" style="--grid-gap: calc(var(--space) * 4);">
         <div style="max-width: 500px; margin: 0 auto calc(var(--space) * 2) auto;">
-          <img src="/images/art-logic.png" alt="Illustration of a sketchbook and desktop computer displaying code" class="light-theme-only">
-          <img src="/images/art-logic-dark.png" alt="Illustration of a sketchbook and desktop computer displaying code" class="dark-theme-only">
+          <img src="/images/assets/art-logic@2x.png" alt="Illustration of a sketchbook and desktop computer displaying code" class="light-theme-only">
+          <img src="/images/assets/art-logic-dark@2x.png" alt="Illustration of a sketchbook and desktop computer displaying code" class="dark-theme-only">
         </div>
         <div>
           <h2>Art &amp; Logic</h2>
@@ -51,10 +126,10 @@
       </div>
 
       <div class="content-box-wide">
-        <div class="grid" style="--grid-gap: calc(var(--space) * 4);">
+        <div class="grid-landscape" style="--grid-gap: calc(var(--space) * 4);">
           <form
-            class="bg-gray-100 rounded-large"
-            style="padding: calc(var(--space) * 2); margin-bottom: calc(var(--space) * -6);"
+            class="bg-gray-100 rounded-large contact-form"
+            style="z-index: 5;"
             method="POST"
             data-netlify="true"
             name="contact"
@@ -68,8 +143,8 @@
             <p class="txt-right" style="margin-bottom: 0;"><button type="submit">Submit</button></p>
           </form>
           <div style="align-self: end;">
-            <img src="/images/city.png" alt="" style="margin-bottom: 0;" class="light-theme-only">
-            <img src="/images/city-dark.png" alt="" style="margin-bottom: 0;" class="dark-theme-only">
+            <img src="/images/assets/city@2x.png" alt="" style="margin: auto; margin-bottom: 0; max-width: 500px; width: 100%;" class="light-theme-only">
+            <img src="/images/assets/city-dark@2x.png" alt="" style="margin-bottom: 0;" class="dark-theme-only">
           </div>
         </div>
       </div>
@@ -79,9 +154,32 @@
 </template>
 
 <script>
+// Import parallax js
+import simpleParallax from 'simple-parallax-js'
+
 export default {
   metaInfo: {
     title: 'Home'
+  },
+  mounted() {
+    let parallaxFront = document.getElementsByClassName('parallax-foreground')
+    new simpleParallax(parallaxFront, {
+      overflow: true,
+      orientation: 'down',
+      scale: 1
+    });
+    let parallaxMid = document.getElementsByClassName('parallax-midground')
+    new simpleParallax(parallaxMid, {
+      overflow: true,
+      orientation: 'down',
+      scale: 1.3
+    });
+    let parallaxBack = document.getElementsByClassName('parallax-background')
+    new simpleParallax(parallaxBack, {
+      overflow: true,
+      orientation: 'down',
+      scale: 2
+    });
   }
 }
 </script>
