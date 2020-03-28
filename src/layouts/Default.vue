@@ -28,7 +28,7 @@
     <header>
       <nav>
         <ul class="top-navigation">
-          <li><a href="https://mattmcadams.com">About</a></li>
+          <li><a href="/">About</a></li>
           <li><a href="/portfolio/">Work</a></li>
           <li><a href="/thoughts/">Thoughts</a></li>
           <li><a href="/github">GitHub</a></li>
