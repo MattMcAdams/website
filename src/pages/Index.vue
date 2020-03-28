@@ -24,8 +24,10 @@
       max-height: 140vw;
     }
     .left-cloud,
-    .bottom-lines {
-      display: none;
+    .bottom-lines,
+    .top-lines,
+    .right-lines {
+      display: none !important;
     }
     .right-cloud { width: 90%; right: 5%; left: 5%; }
     .planet { width: 40%; right: 35%; bottom: 5vw;}

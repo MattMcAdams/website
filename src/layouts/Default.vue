@@ -18,6 +18,15 @@
   .top-navigation {
     text-align: right;
   }
+  @media (orientation: portrait) {
+    .top-navigation {
+      text-align: center;
+      font-size: var(--fluid--1);
+    }
+    .top-navigation li {
+      padding: calc(var(--space) / 2);
+    }
+  }
   .top-navigation a {
     color: var(--color-gray-600) !important;
   }
