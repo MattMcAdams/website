@@ -18,16 +18,17 @@ p {
 }
 
 h1, h2, h3, h4, h5,
-.txt-h1, .txt-h2, .txt-h3, .txt-h4, .txt-h4, .txt-h5 {
+.txt-h1, .txt-h2, .txt-h3, .txt-h4, .txt-h5, .txt-h6 {
   font-family: var(--font-head);
   color: var(--color-gray-900);
-  margin: 0 0 var(--space) 0;
+  margin: calc(var(--space) * 2) 0 var(--space) 0;
   line-height: 1.2;
 }
 
 h1,
 .txt-h1 {
   font-size: var(--fluid-4);
+  margin-top: 0;
 }
 
 h2,
@@ -269,7 +270,7 @@ pre code {
   --grid-gap: var(--space);
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: var(--grid-gap);
 }
 

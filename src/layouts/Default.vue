@@ -6,7 +6,7 @@
   footer small a {
     color: var(--color-gray-600) !important;
   }
-  header {
+  #top-header {
     position: absolute;
     z-index: 1000;
     width: 100%;
@@ -34,7 +34,7 @@
 <template>
   <div id="app">
 
-    <header>
+    <header id="top-header">
       <nav>
         <ul class="top-navigation">
           <li><a href="/">About</a></li>

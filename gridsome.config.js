@@ -8,18 +8,18 @@ module.exports = {
   siteName: 'Matt McAdams',
   siteDescription: '',
 
-  // plugins: [
+  plugins: [
 
-  //   {
-  //     // Create posts from markdown files
-  //     use: '@gridsome/source-filesystem',
-  //     options: {
-  //       typeName: 'Project',
-  //       baseDir: './content/projects',
-  //       pathPrefix: '/portfolio',
-  //       path: '*.md'
-  //     }
-  //   },
+    {
+      // Create posts from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Project',
+        baseDir: './content/projects',
+        pathPrefix: '/portfolio',
+        path: '*.md'
+      }
+    },
 
   //   {
   //     // Create posts from markdown files
@@ -38,7 +38,7 @@ module.exports = {
   //       }
   //     }
   //   }
-  // ],
+  ],
 
   // templates: {
   //   //Post: '/blog/:title',

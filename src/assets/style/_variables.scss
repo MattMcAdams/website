@@ -277,7 +277,8 @@ $fluid-min-width: 320;
   @include fluid(4);
 
   --space: var(--fluid-0);
-  --section-space: calc((var(--fluid-0) * 3) + (8 * var(--fluid-bp)));
+  --space-fluid: calc((var(--fluid-0) * 3) + (8 * var(--fluid-bp)));
+  --space-fluid-half: calc((var(--fluid-0) * 1.5) + (4 * var(--fluid-bp)));
 }
 
 @media screen and (min-width: #{$fluid-max-width * 1px}) {

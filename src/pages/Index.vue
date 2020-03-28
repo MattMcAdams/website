@@ -79,7 +79,7 @@
     </div>
 
     <section id="about" class="my-4">
-      <div class="grid content-box-wide" style="--grid-gap: calc(var(--fluid-4) * 2); align-items: center; margin: var(--section-space) auto;">
+      <div class="grid content-box-wide" style="--grid-gap: calc(var(--fluid-4) * 2); align-items: center; margin: var(--space-fluid) auto;">
         <div>
           <h2>Nice to meet you</h2>
           <p>I’m a front end developer with a background in graphic design currently living in the Birmingham area. Let’s make something cool together.</p>
@@ -93,7 +93,7 @@
       </div>
     </section>
 
-    <section class="bg-gray-200" style="margin: var(--section-space) 0; padding: var(--section-space) 0;">
+    <section class="bg-gray-200" style="margin: var(--space-fluid) 0; padding: var(--space-fluid) 0;">
       <div class="grid-landscape content-box-wide" style="--grid-gap: calc(var(--space) * 4);">
         <div style="max-width: 500px; margin: 0 auto calc(var(--space) * 2) auto;">
           <img src="/images/assets/art-logic@2x.png" alt="Illustration of a sketchbook and desktop computer displaying code" class="light-theme-only">
