@@ -46,24 +46,16 @@ module.exports = {
   //   //Project: '/portfolio/:title'
   // },
 
-  // transformers: {
-  //   //Add markdown support to all file-system sources
-  //   remark: {
-  //     externalLinksTarget: '_blank',
-  //     externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-  //     plugins: [
-  //       '@gridsome/remark-prismjs',
-  //       ['remark-containers', { default: true }]
+  transformers: {
+    //Add markdown support to all file-system sources
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      plugins: [
+        '@gridsome/remark-prismjs',
+        ['remark-containers', { default: true }]
 
-  //     ]
-  //   }
-  // },
-
-  // css: {
-  //   loaderOptions: {
-  //     postcss: {
-  //       plugins: [require('tailwindcss')]
-  //     }
-  //   }
-  // }
+      ]
+    }
+  }
 }
