@@ -1,11 +1,21 @@
 {
   "name": "mattmcadams.com",
+  "description": "Personal website/blog/portfolio for Matt McAdams",
   "private": true,
+  "license": "MPL-2.0",
+  "author": "Matthew McAdams <mattmcadams@outlook.com> (https://mattmcadams.com)",
+  "version": "2.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattmcadams/website.git"
+  },
+  "bugs": { "url": "https://github.com/mattmcadams/website/issues" },
+  "homepage": "https://github.com/mattmcadams/website",
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "gsync-down": "gsutil rsync -r gs://mattmcadams.com/ static/images",
+    "gsync-down": "gsutil -m rsync -r gs://mattmcadams.com/ static/images",
     "gsync-up": "gsutil rsync -r static/images gs://mattmcadams.com/"
   },
   "dependencies": {

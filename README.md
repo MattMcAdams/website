@@ -58,3 +58,5 @@ gsutil rsync -r static/images gs://mattmcadams.com/
 ## Contribute
 
 If you see a spelling mistake, notice a bug, want to give feedback, or have any ideas / solutions to some of those problems; feel free to open an issue here on GitHub or reach out to me at mattmcadams@outlook.com
+
+All code in this project is licensed under the Mozilla Public License 2.0 exclusive to any intellectual property in the form of blog post content, visual design, or any other material that may be considered "website content". If you have any questions please fell free to reach out to me at mattmcadams@outlook.com
