@@ -121,7 +121,7 @@
       </div>
     </section>
 
-    <section>
+    <!-- <section>
       <div class="content-box">
         <h2 class="txt-center">Say Hello</h2>
         <p class="txt-center">Feel free to reach out to me for any questions, concerns, or comments. I'm also open to full-time opportunities as well as freelance work. If you'd like to report a bug with my website, please check out its <a href="https://github.com/MattMcAdams/website" target="_blank">GitHub page</a> for more.</p>
@@ -150,7 +150,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
   </layout>
 </template>
@@ -160,27 +160,27 @@ export default {
   metaInfo: {
     title: 'Home'
   },
-  // mounted() {
-  //   window.simpleParallax = require('simple-parallax-js')
+  mounted() {
+    window.simpleParallax = require('simple-parallax-js')
 
-  //   let parallaxFront = document.getElementsByClassName('parallax-foreground')
-  //   new simpleParallax(parallaxFront, {
-  //     overflow: true,
-  //     orientation: 'down',
-  //     scale: 1
-  //   })
-  //   let parallaxMid = document.getElementsByClassName('parallax-midground')
-  //   new simpleParallax(parallaxMid, {
-  //     overflow: true,
-  //     orientation: 'down',
-  //     scale: 1.3
-  //   })
-  //   let parallaxBack = document.getElementsByClassName('parallax-background')
-  //   new simpleParallax(parallaxBack, {
-  //     overflow: true,
-  //     orientation: 'down',
-  //     scale: 2
-  //   })
-  // }
+    let parallaxFront = document.getElementsByClassName('parallax-foreground')
+    new simpleParallax(parallaxFront, {
+      overflow: true,
+      orientation: 'down',
+      scale: 1
+    })
+    let parallaxMid = document.getElementsByClassName('parallax-midground')
+    new simpleParallax(parallaxMid, {
+      overflow: true,
+      orientation: 'down',
+      scale: 1.3
+    })
+    let parallaxBack = document.getElementsByClassName('parallax-background')
+    new simpleParallax(parallaxBack, {
+      overflow: true,
+      orientation: 'down',
+      scale: 2
+    })
+  }
 }
 </script>
