@@ -160,27 +160,27 @@ export default {
   metaInfo: {
     title: 'Home'
   },
-  mounted() {
-    window.simpleParallax = require('simple-parallax-js')
+  // mounted() {
+  //   window.simpleParallax = require('simple-parallax-js')
 
-    let parallaxFront = document.getElementsByClassName('parallax-foreground')
-    new simpleParallax(parallaxFront, {
-      overflow: true,
-      orientation: 'down',
-      scale: 1
-    })
-    let parallaxMid = document.getElementsByClassName('parallax-midground')
-    new simpleParallax(parallaxMid, {
-      overflow: true,
-      orientation: 'down',
-      scale: 1.3
-    })
-    let parallaxBack = document.getElementsByClassName('parallax-background')
-    new simpleParallax(parallaxBack, {
-      overflow: true,
-      orientation: 'down',
-      scale: 2
-    })
-  }
+  //   let parallaxFront = document.getElementsByClassName('parallax-foreground')
+  //   new simpleParallax(parallaxFront, {
+  //     overflow: true,
+  //     orientation: 'down',
+  //     scale: 1
+  //   })
+  //   let parallaxMid = document.getElementsByClassName('parallax-midground')
+  //   new simpleParallax(parallaxMid, {
+  //     overflow: true,
+  //     orientation: 'down',
+  //     scale: 1.3
+  //   })
+  //   let parallaxBack = document.getElementsByClassName('parallax-background')
+  //   new simpleParallax(parallaxBack, {
+  //     overflow: true,
+  //     orientation: 'down',
+  //     scale: 2
+  //   })
+  // }
 }
 </script>

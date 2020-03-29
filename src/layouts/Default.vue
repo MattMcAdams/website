@@ -37,10 +37,10 @@
     <header id="top-header">
       <nav>
         <ul class="top-navigation">
-          <li><g-link to="/">Home</g-link></li>
-          <li><g-link to="/portfolio">Work</g-link></li>
-          <li><g-link to="/thoughts">Thoughts</g-link></li>
-          <li><g-link to="/github">GitHub</g-link></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/portfolio">Work</a></li>
+          <li><a href="/thoughts">Thoughts</a></li>
+          <li><a href="/github">GitHub</a></li>
           <li><ToggleTheme /></li>
         </ul>
       </nav>
