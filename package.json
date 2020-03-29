@@ -4,7 +4,9 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "gsync-down": "gsutil rsync -r gs://mattmcadams.com/ static/images",
+    "gsync-up": "gsutil rsync -r static/images gs://mattmcadams.com/"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
