@@ -202,8 +202,8 @@ img {
 hr.spacer {
   border: none;
   margin: 0;
-  padding-bottom: calc(var(--space) * 4);
-  padding-top: calc(var(--space) * 4);
+  padding-bottom: var(--space-fluid-half);
+  padding-top: var(--space-fluid-half);
 }
 
 ::selection {
@@ -257,13 +257,13 @@ pre code {
 }
 
 .section {
-  margin-top: calc(var(--space) * 8);
-  margin-bottom: calc(var(--space) * 8);
+  margin-top: var(--space-fluid);
+  margin-bottom: var(--space-fluid);
 }
 
 .section-pad {
-  padding-top: calc(var(--space) * 8);
-  padding-bottom: calc(var(--space) * 8);
+  padding-top: var(--space-fluid);
+  padding-bottom: var(--space-fluid);
 }
 
 @mixin basic-grid {
@@ -280,7 +280,7 @@ pre code {
 
 
 .img-grid p {
-  grid-gap: calc(var(--space) / 2);
+  grid-gap: var(--space);
   display: grid;
   grid-template-areas: 'img1 img2' 'img3 img3';
   grid-template-columns: 1fr 1fr;

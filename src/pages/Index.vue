@@ -72,7 +72,7 @@
           <h1 style="text-align: center;">Matthew McAdams</h1>
           <p style="text-align: center;">Designer, web developer, and creative problem solver.</p>
           <br>
-          <p style="text-align: center;">SCROLL<br><i class="icon-arrow_up txt-h2" aria-label="down arrow" style="transform: rotate(180deg); display: block;"></i></p>
+          <p style="text-align: center;">SCROLL<br><i class="icon-arrow_up txt-h2" aria-label="down arrow" style="transform: rotate(180deg); display: block; margin-top: 0;"></i></p>
         </div>
       </div>
     </section>

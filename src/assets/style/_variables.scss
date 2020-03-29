@@ -269,6 +269,7 @@ $fluid-min-width: 320;
   --fluid-screen: 100vw;
   --fluid-bp: calc((var(--fluid-screen) - #{($fluid-min-width / 16) * 1rem}) / #{($fluid-max-width / 16) - ($fluid-min-width / 16)});
 
+  @include fluid(-2);
   @include fluid(-1);
   @include fluid(0);
   @include fluid(1);

@@ -1,8 +1,8 @@
 <style lang="scss">
 .post__content {
   img {
-    width: calc(100% + var(--space) * 2);
-    margin-left: calc(var(--space) * -1);
+    width: calc(100% + (var(--space) * 4));
+    margin-left: calc(var(--space) * -2);
     max-width: none;
   }
 }
@@ -10,7 +10,7 @@
 
 <template>
 <Layout>
-  <article class="content-box" style="padding-top: var(--space-fluid);">
+  <article class="content-box" style="padding-top: var(--space-fluid); padding-bottom: var(--space-fluid);">
 
     <header class="post__header" style="text-align: center; margin-bottom: var(--space-fluid-half)">
       <h1> {{ $page.post.title }} </h1>
