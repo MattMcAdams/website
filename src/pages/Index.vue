@@ -135,13 +135,19 @@
             method="POST"
             data-netlify="true"
             name="contact"
+            v-on:submit.prevent="handleSubmit"
+            action="/success/"
           >
-            <label>Name</label>
-            <input type="text" name="name">
-            <label>Email Address</label>
-            <input type="email" name="email">
-            <label>Message</label>
-            <textarea name="message"></textarea>
+            <input type="hidden" name="form-name" value="contact" />
+            <label for="name" class="label" >Name</label>
+            <input type="text" name="name" v-model="formData.name" />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" v-model="formData.email" />
+
+            <label for="message">Message</label>
+            <textarea name="message" v-model="formData.message"></textarea>
+
             <p class="txt-right" style="margin-bottom: 0;"><button type="submit">Submit</button></p>
           </form>
           <div style="align-self: end;">
@@ -159,6 +165,28 @@
 export default {
   metaInfo: {
     title: 'Home'
+  },
+  data() {
+    return { formData: {} }
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&')
+    },
+    handleSubmit(e) {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({
+          'form-name': e.target.getAttribute('name'),
+          ...this.formData,
+        }),
+      })
+      .then(() => this.$router.push('/success'))
+      .catch(error => alert(error))
+    }
   },
   mounted() {
     window.simpleParallax = require('simple-parallax-js')
