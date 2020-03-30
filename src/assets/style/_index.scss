@@ -226,8 +226,9 @@ pre {
 
 code {
   color: var(--color-gray-800);
-  background-color: var(--color-gray-100);
+  background-color: white;
   font-size: var(--ms-small);
+  border: 1px solid var(--color-gray-200);
   border-radius: var(--radius-small);
   padding: 0.1em;
 }
