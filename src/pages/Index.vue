@@ -46,9 +46,15 @@
     }
   }
 </style>
-<template>
-  <layout>
 
+
+<template>
+<div id="app">
+  <header id="top-header">
+    <TopNav/>
+  </header>
+
+  <main class="main">
     <div style="background-image: linear-gradient(var(--color-gray-200), var(--color-gray-100));">
     <section id="hero" class="parallax-container">
       <img src="/images/assets/lines-top.png" alt="" class="parallax-background light-theme-only top-lines">
@@ -157,14 +163,29 @@
         </div>
       </div>
     </section>
+  </main>
 
-  </layout>
+  <footer class="bg-gray-200" style="padding: calc(var(--space) * 2) 0;">
+    <div class="content-box-wide grid-landscape">
+      <div></div>
+      <FooterInfo/>
+    </div>
+  </footer>
+</div>
 </template>
 
+
 <script>
+import FooterInfo from '~/components/FooterInfo.vue'
+import TopNav from '~/components/TopNav.vue'
+
 export default {
   metaInfo: {
     title: 'Home'
+  },
+  components: {
+    FooterInfo,
+    TopNav
   },
   data() {
     return { formData: {} }
