@@ -46,8 +46,7 @@ USED TO BUILD
 USED TO HOST
 - Hover
 - GitHub
-- Amazon S3
-- Forestry
+- Google Cloud Services
 - Netlify
 
 ---------------------------------------

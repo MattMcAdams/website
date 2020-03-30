@@ -1,27 +1,20 @@
 <style lang="scss">
-@import "@/assets/tokens";
-
 .tags {
   display: flex;
-  margin-top: space(0.5);
+  margin-top: var(--space);
 }
 
 .ui-tag {
-  color: var(--body-color);
-  background-color: color('gray', '200');
-
-  font-size: var(--ms-small);
+  color: var(--color-gray-900);
+  background-color: var(--color-gray-300);
+  font-size: var(--fluid--1);
   text-decoration: none;
   padding: 0.2em 0.5em;
-  border-radius: calc(var(--radius) / 2);
+  border-radius: var(--radius);
 
   & + & {
-    margin-left: space(0.5);
+    margin-left: calc(var(--space) / 2);
   }
-}
-
-#{$dark-theme} .ui-tag {
-  background-color: color('gray', '700');
 }
 </style>
 

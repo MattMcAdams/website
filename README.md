@@ -1,17 +1,62 @@
 # mattmcadams.com
+
 Welcome to the repo for my personal website! I'm not really sure what to say here since its just my website, but feel free to poke around.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/69ea7e24-27c8-410f-89d0-6a597c117be3/deploy-status)](https://app.netlify.com/sites/mattmcadams/deploys)
 
 ## Roadmap
-I have always used my website as a testbed for things I'm interested in or learning. That being said, anything is subject to change at any time.
+
+I have always used my website as a testbed for things I'm interested in or learning. That being said, anything is subject to change at any time. A few things I'm interested in:
+
+1. Implementing somee kind of CMS (Looking at Netlify CMS)
+2. Better image organization/handling
+3. Maybe look into Gatsby/React?
 
 ## Tools & workflow
-I write my content in markdown and store my media assets in an S3 bucket at assets.mattmcadams.com. This ensures maximum content portability if I decide to change up how the website it built or hosted in the future. The website code itself is written in Vue with a GraphQL layer provided by the static site generator Gridsome.
 
-The site is built on two branches, `master` for production which can be found at mattmcadams.com, and `dev` for major changes which can be previewed on dev.mattmcadams.com.
+This website is built with [Gridsome](https://gridsome.org/) and hosted on [Netlify](https://www.netlify.com/). Images are currently hosted in a Google Cloud bucket, but I'm looking into options.
 
-A few other things to note are that I use Hover as my domain registrar, but use Netlify's DNS because I couldn't figure out how to get everything to work properly while keeping the DNS with Hover (which would have been prefered). I'm also looking into a possible CMS solution that would allow me to upload images to S3 in the same content editor, but as of now I haven't found a solution I'm 100% happy with.
+### Requirements
 
-## Contribute!
-If you see a spelling mistake, notice a bug, want to give feedback, or have any ideas / solutions to some of those problems; feel free to open an issue here on GitHub.
+1. Install [Node & NPM](https://nodejs.org/en/download/)
+2. Install the [Google Cloud SDK](https://cloud.google.com/sdk)
+3. (Optional) Install [VS Code](https://code.visualstudio.com/) and my [Extensions]()
+4. (Optional) Install the [Netlify CLI](https://docs.netlify.com/cli/get-started/)
+5. Install [node-gyp](https://github.com/nodejs/node-gyp)
+
+Clone this repo, (Optional) Switch to the Dev branch for major work
+
+```txt
+git clone https://github.com/MattMcAdams/website.git
+git checkout dev
+```
+
+Install dependancies & sync images
+
+```txt
+npm install
+gsutil rsync -r gs://mattmcadams.com/ static/images
+```
+
+Remember to sync-up images if any changes has been made to them before pushing changes to remote
+
+```txt
+gsutil rsync -r static/images gs://mattmcadams.com/
+```
+
+### Technology & Links
+
+* [Vue.js](https://vuejs.org/)
+* [rsync](https://cloud.google.com/storage/docs/gsutil/commands/rsync)
+* [Sass](https://sass-lang.com/)
+* [Remark containers](https://github.com/Nevenall/remark-containers)
+* [Tiny helpers](https://tiny-helpers.dev/)
+* [Github Calendar](https://github.com/IonicaBizau/github-calendar)
+* [How to fix node-gyp on MacOS](https://github.com/nodejs/node-gyp/blob/master/macOS_Catalina.md)
+* [Parallax](https://simpleparallax.com/)
+
+## Contribute
+
+If you see a spelling mistake, notice a bug, want to give feedback, or have any ideas / solutions to some of those problems; feel free to open an issue here on GitHub or reach out to me at mattmcadams@outlook.com
+
+All code in this project is licensed under the Mozilla Public License 2.0 exclusive to any intellectual property in the form of blog post content, visual design, or any other material that may be considered "website content". If you have any questions please fell free to reach out to me at mattmcadams@outlook.com

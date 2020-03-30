@@ -6,12 +6,12 @@
 </style>
 
 <template>
-   <div class="post-meta">
-      Posted {{ post.date }}.
-      <template v-if="post.timeToRead">
-        <strong>{{ post.timeToRead }} min read.</strong>
-      </template>
-    </div>
+<div class="post-meta">
+  Posted {{ post.date }}.
+  <div v-if="post.timeToRead">
+    <strong>{{ post.timeToRead }} min read.</strong>
+  </div>
+</div>
 </template>
 
 <script>
