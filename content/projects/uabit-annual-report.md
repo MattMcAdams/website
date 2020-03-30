@@ -9,11 +9,9 @@ canonical_url: false
 description: "2018 was a great year for the University of Alabama at Birmingham’s Department of Information Technology and we wanted to create a website to showcase the team’s efforts and achievements throughout the year."
 ---
 
-2018 was a great year for the University of Alabama at Birmingham’s Department of Information Technology and we wanted to create a website to showcase the team’s efforts and achievements throughout the year.
-
 ![](/images/projects/annual-report-2018/ITAR2018.gif)
 
-Parallax effect on visuals in the margins
+2018 was a great year for the University of Alabama at Birmingham’s Department of Information Technology and we wanted to create a website to showcase the team’s efforts and achievements throughout the year.
 
 <hr class="spacer">
 
