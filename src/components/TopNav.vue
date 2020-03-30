@@ -26,7 +26,7 @@
   <ul class="top-navigation">
     <li><a href="/">Home</a></li>
     <li><a href="/portfolio">Work</a></li>
-    <li><a href="/thoughts">Thoughts</a></li>
+    <!-- <li><a href="/thoughts">Thoughts</a></li> -->
     <li><a href="/github">GitHub</a></li>
     <li><ToggleTheme /></li>
   </ul>
