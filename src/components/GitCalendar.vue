@@ -52,10 +52,8 @@ export default {
 
     function changeCalendarColors() {
       let days = document.getElementsByClassName("day")
-      console.log("days", days)
 
       for (let i = 0; i < days.length; i++) {
-        console.log("day", days[i])
         let day = days[i]
         let count = day.getAttribute("data-count")
 
