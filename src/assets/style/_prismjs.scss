@@ -31,15 +31,15 @@ pre[class*="language-"] {
   overflow: auto;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  background: #b3d4fc;
-}
+// pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+// code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+//   background: #b3d4fc;
+// }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-  background: #b3d4fc;
-}
+// pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+// code[class*="language-"]::selection, code[class*="language-"] ::selection {
+//   background: #b3d4fc;
+// }
 
 /* Inline code */
 
@@ -53,7 +53,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: color('gray', '600');
+  color: var(--color-gray-600);
   font-style: italic;
 }
 
@@ -63,12 +63,12 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 
 .token.string,
 .token.attr-value {
-  color: #e3116c;
+  color: var(--color-red-500);
 }
 
 .token.punctuation,
 .token.operator {
-  color: #393a34; /* no highlight */
+  color: var(color-gray-800); /* no highlight */
 }
 
 .token.entity,
@@ -81,26 +81,26 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 .token.property,
 .token.regex,
 .token.inserted {
-  color: #36acaa;
+  color: var(--color-teal-500);
 }
 
 .token.tag,
 .token.selector,
 .language-autohotkey .token.keyword {
-  color: #00009f;
+  color: var(--color-blue-700);
 }
 
 .token.atrule,
 .token.keyword,
 .token.attr-name,
 .language-autohotkey .token.selector {
-  color: #00a4db;
+  color: var(--color-blue-500);
 }
 
 .token.function,
 .token.deleted,
 .language-autohotkey .token.tag {
-  color: #9a050f;
+  color: var(--color-red-700);
 }
 
 .token.important,
