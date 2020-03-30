@@ -4,15 +4,36 @@ date: 2018-12-15
 published: true
 tags: ['code', 'design']
 series: false
-cover_image: https://assets.mattmcadams.com/ITAR2018-cards.jpg
+cover_image: /images/projects/annual-report-2018/ITAR2018-cards.jpg
 canonical_url: false
 description: "2018 was a great year for the University of Alabama at Birmingham’s Department of Information Technology and we wanted to create a website to showcase the team’s efforts and achievements throughout the year."
 ---
 
 2018 was a great year for the University of Alabama at Birmingham’s Department of Information Technology and we wanted to create a website to showcase the team’s efforts and achievements throughout the year.
 
-![](https://assets.mattmcadams.com/ITAR2018-browser.jpg)
+![](/images/projects/annual-report-2018/ITAR2018.gif)
 
-![](https://assets.mattmcadams.com/ITAR2018-cards.jpg)
+Parallax effect on visuals in the margins
 
-![](https://assets.mattmcadams.com/ITAR2018-devices.jpg)
+<hr class="spacer">
+
+![](/images/projects/annual-report-2018/ITAR2018-cards.jpg)
+
+Section colors controlled by CSS variables allowed faster prototyping, more reusable code, and less repetitive CSS
+
+```css
+#section-1 { --theme: #1f6b52; }
+.header { color: var(--theme); }
+```
+
+<hr class="spacer">
+
+![](/images/projects/annual-report-2018/ITAR2018-devices-square.jpg)
+
+Designed and developed to adjust to device screen size
+
+<hr class="spacer">
+
+![](/images/projects/annual-report-2018/ITAR2018-long.jpg)
+
+Check out the site live at [uab.edu/it/annualreport/2018](https://uab.edu/it/annualreport/2018), or check out the repo [on GitHub](https://github.com/UAB-IT/AnnualReport2018)
