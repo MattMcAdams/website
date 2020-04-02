@@ -25,7 +25,7 @@
       </div>
       <div>
       <h2 class="txt-h4" style="margin-top: 0;">Contact</h2>
-      <p>mattmcadams@outlook.com<br><a href="/images/McAdams-CV-Jan-2020.pdf" target="_blank">Curriculum Vitae</a></p>
+      <p>mattmcadams@outlook.com<br><a href="/images/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
       </div>
     </aside>
     <div style="min-width: 0;">

@@ -96,7 +96,7 @@
           <h2>Nice to meet you</h2>
           <p>I’m a front end developer with a background in graphic design currently living in the Birmingham area. Let’s make something cool together.</p>
           <p class="txt-small">In the spring of 2020, I got my bachelor of fine arts from the University of Alabama at Birmingham while researching UX design, code semantics, and design systems. My award winning work is bold, precise, and modern, focusing on the division of space and the use of strong color. When I’m not pecking at code or pushing pixels, I enjoy exploring fantasy worlds through books and video games.</p>
-          <p><a class="button" href="/images/McAdams-CV-Jan-2020.pdf">Curriculum Vitae</a></p>
+          <p><a class="button" href="/images/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
         </div>
         <div>
           <img src="/images/assets/website-portrait@2x.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." class="light-theme-only" style="max-width: 500px; margin: auto; width: 100%;">
@@ -136,7 +136,7 @@
     <section>
       <div class="content-box">
         <h2 class="txt-center">Say Hello</h2>
-        <p class="txt-center">Feel free to reach out to me for any questions, concerns, or comments. I'm also open to full-time opportunities as well as freelance work. If you'd like to report a bug with my website, please check out its <a href="https://github.com/MattMcAdams/website" target="_blank">GitHub page</a> for more.</p>
+        <p class="txt-center">Feel free to reach out to me for any questions, concerns, or comments. I'm also open to full-time opportunities as well as freelance work. If you'd like to report a bug with my website, please check out its <a href="https://github.com/MattMcAdams/website" target="_blank" rel="noopener">GitHub page</a> for more.</p>
       </div>
 
       <div class="content-box-wide">

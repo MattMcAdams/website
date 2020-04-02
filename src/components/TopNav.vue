@@ -30,7 +30,7 @@
     <li><a href="/">Home</a></li>
     <li><a href="/portfolio">Work</a></li>
     <!-- <li><a href="/thoughts">Thoughts</a></li> -->
-    <li><a href="https://github.com/MattMcAdams/website" class="icon-github" style="text-decoration: none;" target="_blank"></a></li>
+    <li><a href="https://github.com/MattMcAdams/website" class="icon-github" style="text-decoration: none;" target="_blank" rel="noopener"></a></li>
     <li><ToggleTheme /></li>
   </ul>
 </nav>
