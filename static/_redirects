@@ -5,6 +5,9 @@
 /stratus                https://github.com/MattMcAdams/stratus
 /chipboard              https://github.com/MattMcAdams/chipboard
 
+# Redirects for font downloads
+/attika                 https://drive.google.com/open?id=1Lujs5c_xCwoaP6_suoxiv3DcDrqh1SgZ
+
 # Redirects for social media
 /github                 https://github.com/MattMcAdams/
 /github/stratus         https://github.com/MattMcAdams/stratus

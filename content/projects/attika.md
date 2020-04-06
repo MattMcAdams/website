@@ -1,6 +1,6 @@
 ---
 title: Attika Variable
-date: 2020-04-04
+date: 2020-04-06
 published: true
 tags: ['typography', 'design']
 cover_image: /images/projects/attika/attika-thumbnail-a.jpg
