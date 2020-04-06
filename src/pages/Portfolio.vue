@@ -21,7 +21,7 @@
       </div>
       <div>
       <h2 class="txt-h4" style="margin-top: 0;">Quick Info</h2>
-      <p>Bachelor of Fine Arts<br>6 Years of Experience<br>2 Awards / Exhibitions</p>
+      <p>Bachelor of Fine Arts<br>6 Years of Experience<br>3 Awards / Exhibitions</p>
       </div>
       <div>
       <h2 class="txt-h4" style="margin-top: 0;">Contact</h2>
