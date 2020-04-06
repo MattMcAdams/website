@@ -51,6 +51,8 @@ Attika is an exploration of typographical design through technological advanceme
 
 ![](/images/projects/attika/attika-exhibition.jpg)
 
+Attika is part of the 2020 BFA Exhibition at the University of Alabama at Birmingham, which you can find [hosted online](https://www.uab.edu/cas/art/at-work/bfa2020) at UAB's department of art and art history website.
+
 The typeface includes uppercase and lowercase letters A-Z, punctuation, and special characters. Attika is available for free for personal and commercial use, and can be downloaded below.
 
 <a class="button" href="https://drive.google.com/open?id=1Lujs5c_xCwoaP6_suoxiv3DcDrqh1SgZ" target="_blank" rel="noopener">Download</a>
