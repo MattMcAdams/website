@@ -1,13 +1,3 @@
-<style lang="scss">
-.post__content {
-  img {
-    width: calc(100% + (var(--space) * 4));
-    margin-left: calc(var(--space) * -2);
-    max-width: none;
-  }
-}
-</style>
-
 <template>
 <Layout>
   <article class="content-box" style="padding-top: var(--space-fluid); padding-bottom: var(--space-fluid);">
