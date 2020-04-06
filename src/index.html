@@ -17,11 +17,15 @@
           window.__onThemeChange(newTheme);
         }
 
+        // See if the user has a preferred theme they have set before
         var preferredTheme;
         try {
           preferredTheme = localStorage.getItem('theme');
         } catch (err) { }
 
+        // Take a theme as an argument
+        // Set the theme to the new theme
+        // Try to write the new theme to the local storage
         window.__setPreferredTheme = function(newTheme) {
           setTheme(newTheme);
           try {
@@ -29,6 +33,9 @@
           } catch (err) {}
         }
 
+        // Try to detect the user's system theme from the browser
+        // If the system prefered theme matches light or dark, send that
+        // to the theme setting logic
         var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
         darkQuery.addListener(function(e) {
           window.__setPreferredTheme(e.matches ? 'dark' : 'light')

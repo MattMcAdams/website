@@ -58,6 +58,6 @@ If you need to use unorthodox methods to fix a bug or implement a feature, it ca
 ## Closing thoughts
 I know a lot of developers like to keep the code free of comment clutter, but when used responsibly, these types of tags can be really helpful.
 
-[Comment Anchors](https://) will highlight the entire comment line as well as provide a list of anchors established. The plugin is also extremely customizable, so you can add or remove anchors to fit your style.
+[Comment Anchors]() will highlight the entire comment line as well as provide a list of anchors established. The plugin is also extremely customizable, so you can add or remove anchors to fit your style.
 
-Download my personal configuration [here](h)
+Download my personal configuration [here]()

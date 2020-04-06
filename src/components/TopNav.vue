@@ -1,4 +1,4 @@
-<style>
+<style lang="scss">
 .top-navigation li {
   display: inline-block;
   padding: var(--space);
@@ -17,6 +17,9 @@
 }
 .top-navigation a {
   color: var(--color-gray-600) !important;
+  &:hover, &:focus {
+    color: var(--color-gray-800) !important;
+  }
 }
 </style>
 
@@ -27,7 +30,7 @@
     <li><a href="/">Home</a></li>
     <li><a href="/portfolio">Work</a></li>
     <!-- <li><a href="/thoughts">Thoughts</a></li> -->
-    <li><a href="/github">GitHub</a></li>
+    <li><a href="https://github.com/MattMcAdams/website" class="icon-github" style="text-decoration: none;" target="_blank" rel="noopener"></a></li>
     <li><ToggleTheme /></li>
   </ul>
 </nav>
