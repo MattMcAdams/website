@@ -52,6 +52,7 @@ query {
         date (format: "D. MMMM YYYY")
         description
         cover_image
+        thumbnail
         path
       }
     }
