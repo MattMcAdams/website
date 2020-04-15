@@ -8,7 +8,7 @@ tags: ['typography', 'design']
 description: "Attika is an exploration of typographical design through technological advancements introduced in OpenType Variable Fonts."
 
 thumbnail: /cdn/projects/attika/640/attika-thumbnail-a.jpg
-cover_image: /cdn/projects/attika/1280/attika-thumbnail-a.jpg
+cover_image: /cdn/projects/attika/960/attika-thumbnail-a.jpg
 
 colors: ['#09edc2', '#474faf', '#e5e6e7']
 tools: ['Glyphs', 'Illustrator']
@@ -23,7 +23,7 @@ Attika is an exploration of typographical design through technological advanceme
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/1280/attika-title.jpg)
+![](/cdn/projects/attika/960/attika-title.jpg)
 
 <hr class="spacer">
 
@@ -40,11 +40,11 @@ Attika is an exploration of typographical design through technological advanceme
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/1280/attika-if.jpg)
+![](/cdn/projects/attika/960/attika-if.jpg)
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/1280/attika-characters.jpg)
+![](/cdn/projects/attika/960/attika-characters.jpg)
 
 <hr class="spacer">
 
@@ -52,15 +52,15 @@ Attika is an exploration of typographical design through technological advanceme
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/1280/attika-book-cover.jpg)
+![](/cdn/projects/attika/960/attika-book-cover.jpg)
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/1280/attika-book-spread.jpg)
+![](/cdn/projects/attika/960/attika-book-spread.jpg)
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/1280/attika-exhibition.jpg)
+![](/cdn/projects/attika/960/attika-exhibition.jpg)
 
 <hr class="spacer">
 
