@@ -14,20 +14,22 @@
    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
 />
   <div class="sidebar-left content-box-wide" style="padding-top: var(--space-fluid); padding-bottom: var(--space-fluid);">
+
     <aside class="grid-portrait">
       <div style="padding-bottom: var(--space-fluid-half);">
-      <h1 class="txt-h2" style="margin: 0;">Matthew<br>McAdams</h1>
-      <p>// Portfolio</p>
+        <h1 class="txt-h2" style="margin: 0;">Matthew<br>McAdams</h1>
+        <p>// Portfolio</p>
       </div>
       <div>
-      <h2 class="txt-h4" style="margin-top: 0;">Quick Info</h2>
-      <p>Bachelor of Fine Arts<br>6 Years of Experience<br>3 Awards / Exhibitions</p>
+        <h2 class="txt-h4" style="margin-top: 0;">Quick Info</h2>
+        <p>Bachelor of Fine Arts<br>6 Years of Experience<br>3 Awards / Exhibitions</p>
       </div>
       <div>
-      <h2 class="txt-h4" style="margin-top: 0;">Contact</h2>
-      <p>mattmcadams@outlook.com<br><a href="/cdn/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
+        <h2 class="txt-h4" style="margin-top: 0;">Contact</h2>
+        <p>mattmcadams@outlook.com<br><a href="/cdn/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
       </div>
     </aside>
+
     <div style="min-width: 0;">
       <section>
         <GitCalendar/>
