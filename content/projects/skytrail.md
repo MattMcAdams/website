@@ -2,15 +2,25 @@
 title: SkyTrail
 date: 2019-10-10
 published: true
-tags: ['illustration', 'design', 'brand identity']
-cover_image: https://assets.mattmcadams.com/SkyTrail_thumb.jpg
 canonical_url: false
+
+tags: ['illustration', 'design', 'branding']
 description: "This branding project is a work of design fiction exploring the brand identity of a proposed public works project. The Birmingham SkyTrail is an inexpensive, environmentally-friendly form of transportation that will serve the communities in and around Birmingham by connecting people to parks, medicine, jobs, education and more in the downtown area."
+
+thumbnail: /cdn/projects/skytrail/640/SkyTrail_thumb.jpg
+cover_image: /cdn/projects/skytrail/1280/SkyTrail_thumb.jpg
+
+colors: ['#00b4ae', '#244b5c', '#d6d8da', '#343537', '#f24f59', '#f4871f']
+tools: ['Illustrator']
+
+cta: null
 ---
 
 This branding project is a work of design fiction exploring the brand identity of a proposed public works project. The Birmingham SkyTrail is an inexpensive, environmentally-friendly form of transportation that will serve the communities in and around Birmingham by connecting people to parks, medicine, jobs, education and more in the downtown area.
 
-![](https://assets.mattmcadams.com/SkyTrail_logo.jpg)
+<hr class="spacer">
+
+![](/cdn/projects/skytrail/1280/SkyTrail_logo.jpg)
 
 The circular form creates a humanistic feel while the extended corner anchors the mark and implies reliability. The interior of the mark references transit lines and the hilly landscape of Birmingham.
 
@@ -22,42 +32,33 @@ The circular form creates a humanistic feel while the extended corner anchors th
 
 Ideation and process sketches
 -->
-<hr class="spacer">
-
-![](https://assets.mattmcadams.com/SkyTrail_sketch.jpg)
-
-Gondola concept illustration
 
 <hr class="spacer">
 
-![](https://assets.mattmcadams.com/SkyTrail_cards.gif)
-
-Postcards
+![](/cdn/projects/skytrail/1280/SkyTrail_sketch.jpg)
 
 <hr class="spacer">
 
-![](https://assets.mattmcadams.com/SkyTrail_merch.jpg)
-
-Merchandise
+![](/cdn/projects/skytrail/SkyTrail_cards.gif)
 
 <hr class="spacer">
 
-::: div img-grid
-![](https://assets.mattmcadams.com/SkyTrail_building-1.jpg)
-![](https://assets.mattmcadams.com/SkyTrail_building-2.jpg)
-![](https://assets.mattmcadams.com/SkyTrail_building-3.jpg)
+![](/cdn/projects/skytrail/1280/SkyTrail_merch.jpg)
+
+<hr class="spacer">
+
+::: div grid
+![](/cdn/projects/skytrail/960/SkyTrail_building-1.jpg)
+
+![](/cdn/projects/skytrail/960/SkyTrail_building-2.jpg)
 :::
 
-Murals, signage, and station art
+![](/cdn/projects/skytrail/1280/SkyTrail_building-3.jpg)
 
 <hr class="spacer">
 
-![](https://assets.mattmcadams.com/SkyTrail_swipe.gif)
-
-Swipe cards
+![](/cdn/projects/skytrail/SkyTrail_swipe.gif)
 
 <hr class="spacer">
 
-![](https://assets.mattmcadams.com/SkyTrail_people.jpg)
-
-Illustrations
+![](/cdn/projects/skytrail/1280/SkyTrail_people.jpg)

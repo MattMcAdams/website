@@ -1,7 +1,7 @@
 ---
 title: 16th Street Baptist Church
 date: 2019-04-07
-published: true
+published: false
 tags: ['brand identity', 'design']
 cover_image: https://assets.mattmcadams.com/SSBC_thumb.jpg
 canonical_url: false

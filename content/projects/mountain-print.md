@@ -1,7 +1,7 @@
 ---
 title: Mountain Print
 date: 2018-09-15
-published: true
+published: false
 tags: ['illustration', 'silkscreen']
 cover_image: https://assets.mattmcadams.com/Mountain_detail1.jpg
 canonical_url: false

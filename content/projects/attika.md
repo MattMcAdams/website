@@ -2,57 +2,70 @@
 title: Attika Variable
 date: 2020-04-06
 published: true
-tags: ['typography', 'design']
-cover_image: /images/projects/attika/attika-thumbnail-a.jpg
 canonical_url: false
+
+tags: ['typography', 'design']
 description: "Attika is an exploration of typographical design through technological advancements introduced in OpenType Variable Fonts."
+
+thumbnail: /cdn/projects/attika/640/attika-thumbnail-a.jpg
+cover_image: /cdn/projects/attika/1280/attika-thumbnail-a.jpg
+
+colors: ['#09edc2', '#474faf', '#e5e6e7']
+tools: ['Glyphs', 'Illustrator']
+
+cta: {
+  link: "/attika",
+  text: "Download",
+}
 ---
-
-![](/images/projects/attika/attika-title.jpg)
-
-<hr class="spacer">
 
 Attika is an exploration of typographical design through technological advancements introduced in OpenType Variable Fonts. The typeface is a bold and versatile humanistic sans-serif typeface suitable for headlines and display text. It is roughly inspired by it’s namesake, a region of Greece home of Athens, a haven of philosophy and democracy in the ancient world.
 
 <hr class="spacer">
 
-::: div grid
-![](/images/projects/attika/attika-pangram.jpg)
+![](/cdn/projects/attika/1280/attika-title.jpg)
 
-![](/images/projects/attika/attika-athens.jpg)
+<hr class="spacer">
+
+::: div grid
+![](/cdn/projects/attika/960/attika-pangram.jpg)
+
+![](/cdn/projects/attika/960/attika-athens.jpg)
 :::
 ::: div grid
-![](/images/projects/attika/attika-repetition.jpg)
+![](/cdn/projects/attika/960/attika-repetition.jpg)
 
-![](/images/projects/attika/attika-variable.jpg)
+![](/cdn/projects/attika/960/attika-variable.jpg)
 :::
 
 <hr class="spacer">
 
-![](/images/projects/attika/attika-if.jpg)
+![](/cdn/projects/attika/1280/attika-if.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/attika/attika-characters.jpg)
+![](/cdn/projects/attika/1280/attika-characters.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/attika/attika.gif)
+![](/cdn/projects/attika/attika.gif)
 
 <hr class="spacer">
 
-![](/images/projects/attika/attika-book-cover.jpg)
+![](/cdn/projects/attika/1280/attika-book-cover.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/attika/attika-book-spread.jpg)
+![](/cdn/projects/attika/1280/attika-book-spread.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/attika/attika-exhibition.jpg)
+![](/cdn/projects/attika/1280/attika-exhibition.jpg)
+
+<hr class="spacer">
 
 Attika is part of the 2020 BFA Exhibition at the University of Alabama at Birmingham, which you can find [hosted online](https://www.uab.edu/cas/art/at-work/bfa2020) at UAB's department of art and art history website.
 
 The typeface includes uppercase and lowercase letters A-Z, punctuation, and special characters. Attika is available for free for personal and commercial use, and can be downloaded below.
 
-<a class="button" href="https://drive.google.com/open?id=1Lujs5c_xCwoaP6_suoxiv3DcDrqh1SgZ" target="_blank" rel="noopener">Download</a>
+<a class="button" href="/attika" target="_blank" rel="noopener">Download</a>

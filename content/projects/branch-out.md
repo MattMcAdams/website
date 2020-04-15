@@ -2,68 +2,58 @@
 title: Branch Out
 date: 2018-09-20
 published: true
-tags: ['brand identity', 'design']
-cover_image: /images/projects/branch-out/BBG-logo.jpg
 canonical_url: false
+
+tags: ['design', 'branding']
 description: "“Branch Out” reflects The Birmingham Botanical Gardens’ mission to promote public knowledge and appreciation of plants, gardens and the environment through monthly volunteering opportunites."
+
+thumbnail: /cdn/projects/branch-out/640/BBG-logo.jpg
+cover_image: /cdn/projects/branch-out/1280/BBG-logo.jpg
+
+colors: ['#a4b962', '#da6882', '#deb576', '#979296', '#5e565b']
+tools: ['Illustrator', 'InDesign', 'Photoshop']
+
+cta: null
 ---
 
 Branching out speaks to anything that takes you in a new direction. Birmingham Botanical Gardens’ new program “Branch Out” wants to create an opportunity for anyone with a curiosity of plants to do just that. Whether you are already a seasoned gardener, have a basic understanding of plants, or are just interested in giving back to your community, “Branch Out” allows you to do something new.
 
-![](/images/projects/branch-out/BBG-mood.jpg)
+<hr class="spacer">
 
-Inspiration from the Gardens
+![](/cdn/projects/branch-out/1280/BBG-mood.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/branch-out/BBG-logo.jpg)
-
-Campaign logo
+![](/cdn/projects/branch-out/1280/BBG-logo.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/branch-out/BBG-icon.jpg)
-
-Campaign mark
+![](/cdn/projects/branch-out/1280/BBG-icon.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/branch-out/BBG-lockup.jpg)
-
-Logo type and mark lockup
+![](/cdn/projects/branch-out/1280/BBG-lockup.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/branch-out/BBG-color.jpg)
-
-Color palette
+![](/cdn/projects/branch-out/1280/BBG-color.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/branch-out/BBG-type.jpg)
-
-Type palette
+![](/cdn/projects/branch-out/1280/BBG-type.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/branch-out/BBG-social.jpg)
-
-Campaign on social media
+![](/cdn/projects/branch-out/1280/BBG-social.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/branch-out/BBG-buttons.jpg)
-
-Merchandise - Buttons
+![](/cdn/projects/branch-out/1280/BBG-buttons.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/branch-out/BBG-bags.jpg)
-
-Merchandise - Bags
+![](/cdn/projects/branch-out/1280/BBG-bags.jpg)
 
 <hr class="spacer">
 
-![](/images/projects/branch-out/BBG-brochure.jpg)
-
-Brochure about the campaign with event dates
+![](/cdn/projects/branch-out/1280/BBG-brochure.jpg)

@@ -1,7 +1,7 @@
 ---
 title: Abstract Print
 date: 2018-07-21
-published: true
+published: false
 tags: ['illustration']
 cover_image: https://assets.mattmcadams.com/Abstract_detail1.jpg
 canonical_url: false
