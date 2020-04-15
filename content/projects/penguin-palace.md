@@ -2,42 +2,45 @@
 title: Penguin Palace
 date: 2017-10-28
 published: true
-tags: ['brand identity', 'packaging', 'design']
-cover_image: https://assets.mattmcadams.com/Penguin_Palace_mark.jpg
 canonical_url: false
+series: false
+
+tags: ['branding', 'packaging', 'design']
 description: "This retro design is a fresh and playful brand exploration for a fictional ice cream shop in Birmingham Alabama. The design is all about playing with the edges of the material and serving delightful moments through the design."
+
+thumbnail: /cdn/projects/penguin-palace/640/Penguin_Palace_mark.jpg
+cover_image: /cdn/projects/penguin-palace/1280/Penguin_Palace_mark.jpg
+
+colors: ['#ff5072', '#00ade8', '#453a34', '#66554b']
+tools: ['Illustrator']
+
+cta: null
 ---
 
 This retro design is a fresh and playful brand exploration for a fictional ice cream shop in Birmingham Alabama. The design is all about playing with the edges of the material and serving delightful moments through the design.
 
-![](https://assets.mattmcadams.com/Penguin_Palace-logo.jpg)
+<hr class="spacer">
+
+![](/cdn/projects/penguin-palace/1280/Penguin_Palace-logo.jpg)
 
 The logo brings together a penguin motif and scoops of ice cream in a unique mark combined with playful, aquatically inspired type.
 
 <hr class="spacer">
 
-![](https://assets.mattmcadams.com/Penguin_Palace-colors.jpg)
-
-Color palette
+![](/cdn/projects/penguin-palace/1280/Penguin_Palace-colors.jpg)
 
 <hr class="spacer">
 
-![](https://assets.mattmcadams.com/Penguin_Palace-cards.jpg)
-
-Business cards & letter head
+![](/cdn/projects/penguin-palace/1280/Penguin_Palace-cards.jpg)
 
 <hr class="spacer">
 
-![](https://assets.mattmcadams.com/Penguin_Palace-merch.jpg)
-
-Tote bag and t-shirt
+![](/cdn/projects/penguin-palace/1280/Penguin_Palace-merch.jpg)
 
 <hr class="spacer">
 
-![](https://assets.mattmcadams.com/Penguin_Palace-letter-square.jpg)
-
-Three views of opening the letterhead
+![](/cdn/projects/penguin-palace/1280/Penguin_Palace-letter-square.jpg)
 
 <hr class="spacer">
 
-![](https://assets.mattmcadams.com/Penguin_Palace-mockup.jpg)
+![](/cdn/projects/penguin-palace/1280/Penguin_Palace-mockup.jpg)

@@ -31,9 +31,9 @@
   <div class="card">
     <g-image
       :alt="project.title"
-      v-if="project.cover_image"
+      v-if="project.thumbnail"
       style="width: 100%;"
-      :src="project.cover_image"
+      :src="project.thumbnail"
     />
     <g-link
       class="card__link p-cover"
