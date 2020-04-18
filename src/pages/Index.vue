@@ -114,7 +114,7 @@
         <div>
           <h2>Art &amp; Logic</h2>
           <p>Working on meaningful projects and being able to create something beautiful and bring it to life with code is my favorite aspect of my work as a creative.</p>
-          <p class="txt-small">Learning is how I stay inspired and is what gives me the motivation to push forward. The world of art and the world of technology are constantly changing, and I believe we’re coming to a place where creatives are able to work in multiple contexts and work more fluidly across traditional job descriptions. Personally, I enjoy switching contexts between design, illustration, and development.</p>
+          <p class="txt-small">Learning is how I stay inspired and is what gives me the motivation to push forward. The worlds of art and technology are constantly changing, and I love learning and being able to work in multiple contexts, more fluidly across traditional job descriptions.</p>
         </div>
       </div>
       <div class="grid content-box-wide" style="grid-column-gap: calc(var(--space) * 4); margin-top: calc(var(--space) * 2);">
