@@ -39,9 +39,12 @@
 </style>
 
 <template>
+<div>
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
   <div id="git-calendar">
     <p style="text-align: center;">Loading GitHub Contribution Data</p>
   </div>
+</div>
 </template>
 
 <script>

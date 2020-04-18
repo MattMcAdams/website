@@ -9,7 +9,7 @@ tags: ['web', 'design']
 description: "2018 was a great year for the University of Alabama at Birmingham’s Department of Information Technology and we wanted to create a website to showcase the team’s efforts and achievements throughout the year."
 
 thumbnail: /cdn/projects/annual-report-2018/640/ITAR2018-cards.jpg
-cover_image: /cdn/projects/annual-report-2018/1280/ITAR2018-cards.jpg
+cover_image: /cdn/projects/annual-report-2018/960/ITAR2018-cards.jpg
 
 colors: ['#295135', '#1f6b52', '#80bc00', '#ffd400']
 tools: ['XD', 'HTML', 'CSS', 'JavaScript', 'Joomla']
@@ -26,7 +26,7 @@ cta: {
 
 <hr class="spacer">
 
-![](/cdn/projects/annual-report-2018/1280/ITAR2018-cards.jpg)
+![](/cdn/projects/annual-report-2018/960/ITAR2018-cards.jpg)
 
 Section colors controlled by CSS variables allowed faster prototyping, more reusable code, and less repetitive CSS
 
@@ -37,12 +37,12 @@ Section colors controlled by CSS variables allowed faster prototyping, more reus
 
 <hr class="spacer">
 
-![](/cdn/projects/annual-report-2018/1280/ITAR2018-devices-square.jpg)
+![](/cdn/projects/annual-report-2018/960/ITAR2018-devices-square.jpg)
 
 Designed and developed to adjust to device screen size
 
 <hr class="spacer">
 
-![](/cdn/projects/annual-report-2018/1280/ITAR2018-long.jpg)
+![](/cdn/projects/annual-report-2018/960/ITAR2018-long.jpg)
 
 Check out the site live at [uab.edu/it/annualreport/2018](https://uab.edu/it/annualreport/2018), or check out the repo [on GitHub](https://github.com/UAB-IT/AnnualReport2018)

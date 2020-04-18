@@ -9,10 +9,6 @@
 
 <template>
 <layout>
-  <link
-   rel="stylesheet"
-   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
   <div class="sidebar-left content-box-wide" style="padding-top: var(--space-fluid); padding-bottom: var(--space-fluid);">
 
     <aside class="grid-portrait">
