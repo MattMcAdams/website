@@ -33,7 +33,7 @@ Inspired by humanistic sans-serif and slab serif typefaces, Rebar is a unique an
 
 ![](/cdn/projects/rebar/960/Rebar_anatomy-alt.jpg)
 
-Rebar is more than a typeface, it explores the anatomy of typography and looks at type as from and texture.
+Rebar is more than a typeface, it explores the anatomy of typography and looks at type as form and texture.
 
 <hr class="spacer">
 
