@@ -22,7 +22,7 @@ This branding project is a work of design fiction exploring the brand identity o
 
 ![](/cdn/projects/skytrail/960/SkyTrail_logo.jpg)
 
-The circular form creates a humanistic feel while the extended corner anchors the mark and implies reliability. The interior of the mark references transit lines and the hilly landscape of Birmingham.
+The circular form creates a humanistic feel while the extended corner anchors the mark and implies reliability. The interior of the mark references transit lines and the rolling landscape of Birmingham.
 
 <!--
 <hr class="spacer">
