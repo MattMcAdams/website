@@ -39,6 +39,7 @@
       class="card__link p-cover"
       :to="project.path"
       v-html="project.title"
+      :aria-label="project.title"
     ></g-link>
   </div>
 </template>
