@@ -152,13 +152,13 @@
           >
             <input type="hidden" name="form-name" value="contact" />
             <label for="name" class="label" >Name</label>
-            <input type="text" name="name" v-model="formData.name" />
+            <input id="name" type="text" name="name" v-model="formData.name" />
 
             <label for="email">Email</label>
-            <input type="email" name="email" v-model="formData.email" />
+            <input id="email" type="email" name="email" v-model="formData.email" />
 
             <label for="message">Message</label>
-            <textarea name="message" v-model="formData.message"></textarea>
+            <textarea id="message" name="message" v-model="formData.message"></textarea>
 
             <p class="txt-right" style="margin-bottom: 0;"><button type="submit">Submit</button></p>
           </form>
