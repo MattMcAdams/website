@@ -52,7 +52,7 @@ aside {
 
           <div class="tags">
             <g-link class="ui-tag" v-for="tag in $page.post.tags" :key="tag.id" :to="tag.path">
-              <span>#</span>{{ tag }}
+              <span>#</span>{{ tag.title }}
             </g-link>
           </div>
 
@@ -104,7 +104,11 @@ query Project ($id: ID!) {
     description
     content
     cover_image
-    tags
+    tags {
+      id
+      title
+      path
+    }
     colors
     tools
     cta {link, text}
