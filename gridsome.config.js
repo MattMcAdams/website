@@ -17,7 +17,13 @@ module.exports = {
         typeName: 'Project',
         baseDir: './content/projects',
         pathPrefix: '/portfolio',
-        path: '*.md'
+        path: '*.md',
+        refs: {
+          tags: {
+            typeName: 'ProjectTag',
+            create: true
+          }
+        }
       }
     },
 
@@ -40,11 +46,11 @@ module.exports = {
   //   }
   ],
 
-  // templates: {
-  //   //Post: '/blog/:title',
-  //   Tag: '/tag/:id',
-  //   //Project: '/portfolio/:title'
-  // },
+  templates: {
+    //Post: '/blog/:title',
+    ProjectTag: '/portfolio/tag/:id',
+    //Project: '/portfolio/:title'
+  },
 
   transformers: {
     //Add markdown support to all file-system sources

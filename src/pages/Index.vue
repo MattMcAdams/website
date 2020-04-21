@@ -95,7 +95,7 @@
         <div>
           <h2>Nice to meet you</h2>
           <p>I’m a front end developer with a background in graphic design currently living in the Birmingham area. Let’s make something cool together.</p>
-          <p class="txt-small">In the spring of 2020, I got my bachelor of fine arts from the University of Alabama at Birmingham while researching UX design, code semantics, and design systems. My award winning work is bold, precise, and modern, focusing on the division of space and the use of strong color. When I’m not pecking at code or pushing pixels, I enjoy exploring fantasy worlds through books and video games.</p>
+          <p class="txt-small">In the spring of 2020, I got my bachelor of fine arts from the <a href="https://www.uab.edu" target="_blank" rel="noopener">University of Alabama at Birmingham</a> while researching UX design, code semantics, and design systems. My award winning work is bold, precise, and modern, focusing on the division of space and the use of strong color. When I’m not pecking at code or pushing pixels, I enjoy exploring fantasy worlds through books and video games.</p>
           <p><a class="button" href="/cdn/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
         </div>
         <div>
@@ -114,13 +114,13 @@
         <div>
           <h2>Art &amp; Logic</h2>
           <p>Working on meaningful projects and being able to create something beautiful and bring it to life with code is my favorite aspect of my work as a creative.</p>
-          <p class="txt-small">Learning is how I stay inspired and is what gives me the motivation to push forward. The world of art and the world of technology are constantly changing, and I believe we’re coming to a place where creatives are able to work in multiple contexts and work more fluidly across traditional job descriptions. Personally, I enjoy switching contexts between design, illustration, and development.</p>
+          <p class="txt-small">Learning is how I stay inspired and is what gives me the motivation to push forward. The worlds of art and technology are constantly changing, and I love learning and being able to work in multiple contexts, more fluidly across traditional job descriptions.</p>
         </div>
       </div>
       <div class="grid content-box-wide" style="grid-column-gap: calc(var(--space) * 4); margin-top: calc(var(--space) * 2);">
         <div>
           <h3 class="txt-h4">Thoughtful design</h3>
-          <p>I’m interested in doing the research and creating a design that is not only visually compelling, but is meaningful as well.</p>
+          <p>I’m interested in doing research and creating a design that is not only visually compelling, but is meaningful.</p>
         </div>
         <div>
           <h3 class="txt-h4">Quality code</h3>
@@ -152,13 +152,13 @@
           >
             <input type="hidden" name="form-name" value="contact" />
             <label for="name" class="label" >Name</label>
-            <input type="text" name="name" v-model="formData.name" />
+            <input id="name" type="text" name="name" v-model="formData.name" />
 
             <label for="email">Email</label>
-            <input type="email" name="email" v-model="formData.email" />
+            <input id="email" type="email" name="email" v-model="formData.email" />
 
             <label for="message">Message</label>
-            <textarea name="message" v-model="formData.message"></textarea>
+            <textarea id="message" name="message" v-model="formData.message"></textarea>
 
             <p class="txt-right" style="margin-bottom: 0;"><button type="submit">Submit</button></p>
           </form>
