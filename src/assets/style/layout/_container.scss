@@ -1,0 +1,30 @@
+/** -----------------------------------------------------------------
+  * SECTION CONTAINER
+  * TODO: Add overflow container
+  * TODO: Test containers
+  * TODO: Add full container
+------------------------------------------------------------------ */
+
+.container {
+  max-width: $content-width;
+  margin: 0 auto;
+  @include px(2);
+}
+
+.container-wide {
+  max-width: calc(#{$content-width} * 1.5);
+  margin: 0 auto;
+  @include px(2);
+}
+
+.container-wide .container {
+  @include px(0);
+}
+
+.container .container-wide {
+  margin-left: -25%;
+  margin-right: -25%;
+  @include px(0);
+}
+
+/* END !SECTION CONTAINER */

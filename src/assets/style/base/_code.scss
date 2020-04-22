@@ -1,8 +1,35 @@
 /** -----------------------------------------------------------------
- * SECTION PrismJS
- * https://prismjs.com/
- * GHColors theme by Avi Aryan (http://aviaryan.in)
- * Inspired by Github syntax coloring
+  * SECTION CODE
+------------------------------------------------------------------ */
+
+pre {
+  @include txt-small;
+  @include mb(1);
+}
+
+code {
+  @include txt-color(gray, 800);
+  @include bg-color(gray, 200);
+  @include txt-small;
+  @include bdr-hairline;
+  @include bdr-color(gray, 200);
+  @include rounded-small;
+  padding: 0.1em;
+}
+
+pre code {
+  display: block;
+  @include pa(1);
+  @include txt-small;
+  @include rounded;
+}
+
+/* END !SECTION CODE */
+/** -----------------------------------------------------------------
+  * SECTION PrismJS
+  * https://prismjs.com/
+  * GHColors theme by Avi Aryan (http://aviaryan.in)
+  * Inspired by Github syntax coloring
 ------------------------------------------------------------------ */
 
 code[class*="language-"],
@@ -14,14 +41,7 @@ pre[class*="language-"] {
   word-spacing: normal;
   word-break: normal;
   line-height: 1.2em;
-
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
   tab-size: 4;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
   hyphens: none;
 }
 
@@ -30,16 +50,6 @@ pre[class*="language-"] {
 pre[class*="language-"] {
   overflow: auto;
 }
-
-// pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-// code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-//   background: #b3d4fc;
-// }
-
-// pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-// code[class*="language-"]::selection, code[class*="language-"] ::selection {
-//   background: #b3d4fc;
-// }
 
 /* Inline code */
 

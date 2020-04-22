@@ -26,16 +26,12 @@
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.0",
     "github-calendar": "^2.0.0",
-    "gridsome": "^0.7.13",
+    "gridsome": "^0.7.14",
     "remark-containers": "^1.1.2",
     "simple-parallax-js": "^5.4.0"
   },
   "devDependencies": {
-    "prettier": "^1.19.1",
     "sass": "^1.26.3",
-    "sass-loader": "^8.0.2",
-    "stylelint": "^13.3.2",
-    "stylelint-config-prettier": "^8.0.1",
-    "stylelint-config-standard": "^20.0.0"
+    "sass-loader": "^8.0.2"
   }
 }

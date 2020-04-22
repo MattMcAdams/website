@@ -1,0 +1,132 @@
+// -----------------------------------------------------------------
+// VARIABLES
+//------------------------------------------------------------------
+
+$font-body: 'Lato', sans-serif, 'mcadams-website';
+$font-head: 'Roboto Slab', serif, 'mcadams-website';
+$font-mono: monospace, 'mcadams-website';
+$font-icon: 'mcadams-website';
+
+$config-min-size: 18;
+$config-max-size: 20;
+$config-min-ratio: 1.2;
+$config-max-ratio: 1.25;
+$config-fluid-max-width: 1000;
+$config-fluid-min-width: 320;
+
+// -----------------------------------------------------------------
+// FUNCTIONS
+//------------------------------------------------------------------
+
+@function pow($number, $exponent) {
+  $value: 1;
+  @if $exponent > 0 { @for $i from 1 through $exponent { $value: $value * $number; } }
+  @return $value;
+}
+
+// -----------------------------------------------------------------
+// CORE TYPOGRAPHY LOGIC
+//------------------------------------------------------------------
+
+@mixin fluid(
+  $step: 0,
+  $min-size: $config-min-size,
+  $max-size: $config-max-size,
+  $min-ratio: $config-min-ratio,
+  $max-ratio: $config-max-ratio)
+  {
+
+  $_min-size: null;
+  $_max-size: null;
+  @if ($step < 0) {
+    $_step: $step * -1;
+    $_min-size: ($min-size / pow($min-ratio, $_step)) / 16;
+    $_max-size: ($max-size / pow($max-ratio, $_step)) / 16;
+  } @else if ($step > 0) {
+    $_min-size: ($min-size * pow($min-ratio, $step)) / 16;
+    $_max-size: ($max-size * pow($max-ratio, $step)) / 16;
+  } @else {
+    $_min-size: ($min-size) / 16;
+    $_max-size: ($max-size) / 16;
+  }
+  $_difference: $_max-size - $_min-size;
+  --fluid-#{$step}: calc(#{$_min-size * 1rem} + (#{$_difference} * var(--fluid-bp)));
+}
+
+@mixin fluid-init($fluid-max-width: $config-fluid-max-width, $fluid-min-width: $config-fluid-min-width) {
+  :root {
+    --fluid-screen: 100vw;
+    --fluid-bp: calc((var(--fluid-screen) - #{($fluid-min-width / 16) * 1rem}) / #{($fluid-max-width / 16) - ($fluid-min-width / 16)});
+  }
+
+  @media screen and (min-width: #{$fluid-max-width * 1px}) {
+    :root { --fluid-screen: #{$fluid-max-width * 1px}; }
+  }
+}
+
+/** -----------------------------------------------------------------
+  * FONT SIZE VARIABLES
+------------------------------------------------------------------ */
+
+:root {
+  @include fluid-init;
+
+  @include fluid(-2); // --fluid--2
+  @include fluid(-1); // --fluid--1
+  @include fluid(0);  // --fluid-0
+  @include fluid(1);  // --fluid-1
+  @include fluid(2);  // --fluid-2
+  @include fluid(3);  // --fluid-3
+  @include fluid(4);  // --fluid-4
+}
+
+// -----------------------------------------------------------------
+// FONT SIZE MIXINS
+//------------------------------------------------------------------
+
+@mixin txt-xsmall($important: null) { font-size: var(--fluid--2) $important; }
+@mixin txt-small($important: null) { font-size: var(--fluid--1) $important; }
+@mixin txt-normal($important: null) { font-size: var(--fluid-0) $important; }
+@mixin txt-medium($important: null) { font-size: var(--fluid-1) $important; }
+@mixin txt-large($important: null) { font-size: var(--fluid-2) $important; }
+@mixin txt-xlarge($important: null) { font-size: var(--fluid-3) $important; }
+@mixin txt-huge($important: null) { font-size: var(--fluid-4) $important; }
+
+/** -----------------------------------------------------------------
+  * FONT SIZE
+------------------------------------------------------------------ */
+
+.txt-xsmall { @include txt-xsmall(!important); }
+.txt-small { @include txt-small(!important); }
+.txt-normal { @include txt-normal(!important); }
+.txt-medium { @include txt-medium(!important); }
+.txt-large { @include txt-large(!important); }
+.txt-xlarge { @include txt-xlarge(!important); }
+.txt-huge { @include txt-huge(!important); }
+
+/** -----------------------------------------------------------------
+  * Alignment
+------------------------------------------------------------------ */
+
+.txt-left { text-align: left !important; }
+.txt-right { text-align: right !important; }
+.txt-center { text-align: center !important; }
+.rtl { direction: rtl; }
+
+// -----------------------------------------------------------------
+// FONT MIXINS
+//------------------------------------------------------------------
+
+@mixin font-body($important: null) { font-family: $font-body $important; }
+@mixin font-head($important: null) { font-family: $font-head $important; }
+@mixin font-mono($important: null) { font-family: $font-mono $important; }
+@mixin font-icon($important: null) { font-family: $font-icon $important; }
+
+/** -----------------------------------------------------------------
+  * FONTS
+------------------------------------------------------------------ */
+
+.font-body { @include font-body(!important); }
+.font-head { @include font-head(!important); }
+.font-mono { @include font-mono(!important); }
+.font-icon { @include font-icon(!important); }

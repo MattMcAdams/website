@@ -73,6 +73,7 @@
       <img src="/cdn/assets/hero/lines-right-dark.png" alt="" class="parallax-background dark-theme-only right-lines">
 
       <img src="/cdn/assets/hero/planet.png" alt="" class="parallax-midground planet">
+
       <img src="/cdn/assets/hero/left-cloud.png" alt="" class="parallax-foreground left-cloud light-theme-only">
       <img src="/cdn/assets/hero/left-cloud-dark.png" alt="" class="parallax-foreground left-cloud dark-theme-only">
 

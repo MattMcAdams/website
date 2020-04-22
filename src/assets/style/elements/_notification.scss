@@ -1,0 +1,11 @@
+// TODO: Add notification component
+.notification {
+  --theme-color: var(--color-blue-500);
+  --theme-background: var(--color-blue-100);
+  --theme-text: var(--color-blue-900);
+  @include bdr-hairline;
+  @include rounded;
+  border-color: var(--theme-color);
+  background-color: var(--theme-background);
+  color: var(--theme-text);
+}

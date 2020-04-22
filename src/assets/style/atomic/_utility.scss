@@ -1,0 +1,59 @@
+/** -----------------------------------------------------------------
+  * Z-INDEX
+------------------------------------------------------------------ */
+
+@mixin z-0($important: null) { z-index: 0 $important; }
+@mixin z-10($important: null) { z-index: 10 $important; }
+@mixin z-20($important: null) { z-index: 20 $important; }
+@mixin z-30($important: null) { z-index: 30 $important; }
+@mixin z-40($important: null) { z-index: 40 $important; }
+@mixin z-50($important: null) { z-index: 50 $important; }
+@mixin z-auto($important: null) { z-index: auto $important; }
+
+.z-0 { @include z-0(!important); }
+.z-10 { @include z-10(!important); }
+.z-20 { @include z-20(!important); }
+.z-30 { @include z-30(!important); }
+.z-40 { @include z-40(!important); }
+.z-50 { @include z-50(!important); }
+.z-auto {@include z-auto(!important); }
+
+/** -----------------------------------------------------------------
+  * POSITION
+------------------------------------------------------------------ */
+
+@mixin pos-cover($important: null) {
+  position: absolute $important;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.pos-static { position: static; }
+.pos-relative { position: relative; }
+.pos-sticky { position: sticky; }
+.pos-fixed { position: fixed; }
+.pos-absolute { position: absolute; }
+.pos-cover { @include pos-cover; }
+
+/** -----------------------------------------------------------------
+  * CLEARFIX
+------------------------------------------------------------------ */
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+/** -----------------------------------------------------------------
+  * DISPLAY
+------------------------------------------------------------------ */
+
+.block { display: block; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }

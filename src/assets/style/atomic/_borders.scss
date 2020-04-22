@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------
+// VARIABLES
+//------------------------------------------------------------------
+
+$rounded: 10px;
+$rounded-small: 5px;
+$rounded-large: 25px;
+$rounded-xlarge: 50px;
+$rounded-full: 9999px;
+
+$bdr-width: 1px;
+$bdr-hairline: 1px;
+$bdr-medium: 3px;
+$bdr-thick: 5px;
+
+// -----------------------------------------------------------------
+// MIXINS
+//------------------------------------------------------------------
+
+@mixin rounded($important: null) { border-radius: $rounded $important; }
+@mixin rounded-small($important: null) { border-radius: $rounded-small $important; }
+@mixin rounded-large($important: null) { border-radius: $rounded-large $important; }
+@mixin rounded-xlarge($important: null) { border-radius: $rounded-xlarge $important; }
+@mixin rounded-full($important: null) { border-radius: $rounded-full $important; }
+
+@mixin bdr-hairline($important: null) { border: 1px solid currentColor $important; }
+@mixin bdr-thin($important: null) { border: 2px solid currentColor $important; }
+@mixin bdr-medium($important: null) { border: 3px solid currentColor $important; }
+@mixin bdr-thick($important: null) { border: 5px solid currentColor $important; }
+@mixin bdr-bold($important: null) { border: 10px solid currentColor $important; }
+
+/** -----------------------------------------------------------------
+  * BORDERS
+------------------------------------------------------------------ */
+
+.rounded { @include rounded(!important); }
+.rounded-small { @include rounded-small(!important); }
+.rounded-large { @include rounded-large(!important); }
+.rounded-xlarge { @include rounded-zlarge(!important); }
+.rounded-full { @include rounded-full(!important); }
+
+.bdr-hairline { @include bdr-hairline(!important); }
+.bdr-thin { @include bdr-thin(!important); }
+.bdr-medium { @include bdr-medium(!important); }
+.bdr-thick { @include bdr-thick(!important); }
+.bdr-bold { @include bdr-thick(!important); }

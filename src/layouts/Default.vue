@@ -1,7 +1,4 @@
 <style>
-
-</style>
-<style>
 #top-header {
   position: absolute;
   z-index: 1000;
