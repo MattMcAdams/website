@@ -23,6 +23,7 @@ pre code {
   @include pa(1);
   @include txt-small;
   @include rounded;
+  overflow: auto;
 }
 
 /* END !SECTION CODE */
