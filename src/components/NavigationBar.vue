@@ -27,10 +27,10 @@
 <template>
 <nav>
   <ul class="top-navigation">
-    <li><a href="/">Home</a></li>
-    <li><a href="/portfolio">Work</a></li>
+    <li><g-link to="/">Home</g-link></li>
+    <li><g-link to="/portfolio">Work</g-link></li>
     <!-- <li><a href="/thoughts">Thoughts</a></li> -->
-    <li><a href="https://github.com/MattMcAdams/website" class="icon-github" style="text-decoration: none;" target="_blank" rel="noopener" aria-label="Github"></a></li>
+    <li><g-link to="https://github.com/MattMcAdams/website" class="icon-github" style="text-decoration: none;" target="_blank" rel="noopener" aria-label="Github"></g-link></li>
     <li><ToggleTheme /></li>
   </ul>
 </nav>
