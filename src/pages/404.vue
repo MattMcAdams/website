@@ -1,11 +1,11 @@
 <template>
 <layout>
   <div class="grid-landscape container-wide">
-    <div>
-      <img src="/cdn/assets/640/404-dark.png" alt="" v-if="this.$store.state.darkTheme" style="max-width: 500px">
-      <img src="/cdn/assets/640/404.png" alt="" style="max-width: 500px" v-else>
+    <div class="mb-1-fluid">
+      <img src="/cdn/assets/640/404-dark.png" alt="" v-if="this.$store.state.darkTheme" style="max-width: 500px; margin: auto; width: 100%;">
+      <img src="/cdn/assets/640/404.png" alt="" style="max-width: 500px; margin: auto; width: 100%;" v-else>
     </div>
-    <div style="align-self: end;">
+    <div style="align-self: center;">
       <h1>Page not found</h1>
       <p>Looks like the page or resource you were looking for wasn’t found at this location. This can happen if there was a mistake in the URL, if the content has moved, or if the content no longer exists.</p>
       <p>If you believe this to be a mistake, please contact me or submit a bug report on <a href="https://github.com/MattMcAdams/website/issues" target="_blank" rel="noopener">GitHub</a>.</p>
