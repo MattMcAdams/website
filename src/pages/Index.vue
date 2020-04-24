@@ -63,22 +63,22 @@
   <main class="main">
     <div style="background-image: linear-gradient(var(--color-gray-200), var(--color-gray-100));">
     <section id="hero" class="parallax-container">
-      <img src="/cdn/assets/hero/lines-top.png" alt="" class="parallax-background light-theme-only top-lines">
-      <img src="/cdn/assets/hero/lines-top-dark.png" alt="" class="parallax-background dark-theme-only top-lines">
+      <img src="/cdn/assets/hero/lines-top-dark.png" alt="" class="parallax-background top-lines" v-if="this.$store.state.darkTheme">
+      <img src="/cdn/assets/hero/lines-top.png" alt="" class="parallax-background top-lines" v-else>
 
-      <img src="/cdn/assets/hero/lines-bottom.png" alt="" class="parallax-background light-theme-only bottom-lines">
-      <img src="/cdn/assets/hero/lines-bottom-dark.png" alt="" class="parallax-background dark-theme-only bottom-lines">
+      <img src="/cdn/assets/hero/lines-bottom-dark.png" alt="" class="parallax-background bottom-lines" v-if="this.$store.state.darkTheme">
+      <img src="/cdn/assets/hero/lines-bottom.png" alt="" class="parallax-background bottom-lines" v-else>
 
-      <img src="/cdn/assets/hero/lines-right.png" alt="" class="parallax-background light-theme-only right-lines">
-      <img src="/cdn/assets/hero/lines-right-dark.png" alt="" class="parallax-background dark-theme-only right-lines">
+      <img src="/cdn/assets/hero/lines-right-dark.png" alt="" class="parallax-background right-lines" v-if="this.$store.state.darkTheme">
+      <img src="/cdn/assets/hero/lines-right.png" alt="" class="parallax-background right-lines" v-else>
 
       <img src="/cdn/assets/hero/planet.png" alt="" class="parallax-midground planet">
 
-      <img src="/cdn/assets/hero/left-cloud.png" alt="" class="parallax-foreground left-cloud light-theme-only">
-      <img src="/cdn/assets/hero/left-cloud-dark.png" alt="" class="parallax-foreground left-cloud dark-theme-only">
+      <img src="/cdn/assets/hero/left-cloud-dark.png" alt="" class="parallax-foreground left-cloud" v-if="this.$store.state.darkTheme">
+      <img src="/cdn/assets/hero/left-cloud.png" alt="" class="parallax-foreground left-cloud" v-else>
 
-      <img src="/cdn/assets/hero/right-cloud.png" alt="" class="parallax-foreground right-cloud light-theme-only">
-      <img src="/cdn/assets/hero/right-cloud-dark.png" alt="" class="parallax-foreground right-cloud dark-theme-only">
+      <img src="/cdn/assets/hero/right-cloud-dark.png" alt="" class="parallax-foreground right-cloud" v-if="this.$store.state.darkTheme">
+      <img src="/cdn/assets/hero/right-cloud.png" alt="" class="parallax-foreground right-cloud" v-else>
 
       <div class="content-box" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center;">
         <div style="width: 100%; margin-bottom: 10vw;">
@@ -92,7 +92,7 @@
     </div>
 
     <section id="about" class="my-4">
-      <div class="grid content-box-wide" style="--grid-gap: calc(var(--fluid-4) * 2); align-items: center; margin: var(--space-fluid) auto;">
+      <div class="grid container-wide" style="--grid-gap: calc(var(--fluid-4) * 2); align-items: center; margin: var(--space-fluid) auto;">
         <div>
           <h2>Nice to meet you</h2>
           <p>I’m a front end developer with a background in graphic design currently living in the Birmingham area. Let’s make something cool together.</p>
@@ -100,17 +100,17 @@
           <p><a class="button" href="/cdn/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
         </div>
         <div>
-          <img src="/cdn/assets/640/website-portrait.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." class="light-theme-only" style="max-width: 500px; margin: auto; width: 100%;">
-          <img src="/cdn/assets/640/website-portrait-dark.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." class="dark-theme-only">
+          <img src="/cdn/assets/640/website-portrait-dark.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." v-if="this.$store.state.darkTheme" style="max-width: 500px">
+          <img src="/cdn/assets/640/website-portrait.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." style="max-width: 500px" v-else>
         </div>
       </div>
     </section>
 
-    <section class="bg-gray-200" style="margin: var(--space-fluid) 0; padding: var(--space-fluid) 0;">
-      <div class="grid-landscape content-box-wide" style="--grid-gap: calc(var(--space) * 4);">
-        <div style="max-width: 500px; margin: 0 auto calc(var(--space) * 2) auto;">
-          <img src="/cdn/assets/640/art-logic.png" alt="Illustration of a sketchbook and desktop computer displaying code" class="light-theme-only">
-          <img src="/cdn/assets/640/art-logic-dark.png" alt="Illustration of a sketchbook and desktop computer displaying code" class="dark-theme-only">
+    <section class="bg-gray-200 my-2-fluid py-2-fluid">
+      <div class="grid-landscape container-wide" style="--grid-gap: calc(var(--space) * 4);">
+        <div style="max-width: 500px; margin: auto;" class="mb-2">
+          <img src="/cdn/assets/640/art-logic-dark.png" alt="Illustration of a sketchbook and desktop computer displaying code" v-if="this.$store.state.darkTheme">
+          <img src="/cdn/assets/640/art-logic.png" alt="Illustration of a sketchbook and desktop computer displaying code" v-else>
         </div>
         <div>
           <h2>Art &amp; Logic</h2>
@@ -118,7 +118,7 @@
           <p class="txt-small">Learning is how I stay inspired and is what gives me the motivation to push forward. The worlds of art and technology are constantly changing, and I love learning and being able to work in multiple contexts, more fluidly across traditional job descriptions.</p>
         </div>
       </div>
-      <div class="grid content-box-wide" style="grid-column-gap: calc(var(--space) * 4); margin-top: calc(var(--space) * 2);">
+      <div class="grid container-wide mt-2" style="grid-column-gap: calc(var(--space) * 4);">
         <div>
           <h3 class="txt-h4">Thoughtful design</h3>
           <p>I’m interested in doing research and creating a design that is not only visually compelling, but is meaningful.</p>
@@ -135,12 +135,12 @@
     </section>
 
     <section>
-      <div class="content-box">
+      <div class="container">
         <h2 class="txt-center">Say Hello</h2>
         <p class="txt-center">Feel free to reach out to me for any questions, concerns, or comments. I'm also open to full-time opportunities as well as freelance work. If you'd like to report a bug with my website, please check out its <a href="https://github.com/MattMcAdams/website" target="_blank" rel="noopener">GitHub page</a> for more.</p>
       </div>
 
-      <div class="content-box-wide">
+      <div class="container-wide">
         <div class="grid-landscape" style="--grid-gap: calc(var(--space) * 4);">
           <form
             class="bg-gray-100 rounded-large contact-form"
@@ -164,16 +164,16 @@
             <p class="txt-right" style="margin-bottom: 0;"><button type="submit">Submit</button></p>
           </form>
           <div style="align-self: end;">
-            <img src="/cdn/assets/640/city.png" alt="" style="margin: auto; margin-bottom: 0; max-width: 500px; width: 100%;" class="light-theme-only">
-            <img src="/cdn/assets/640/city-dark.png" alt="" style="margin-bottom: 0;" class="dark-theme-only">
+            <img src="/cdn/assets/640/city-dark.png" alt="" style="margin-bottom: 0;"  v-if="this.$store.state.darkTheme">
+            <img src="/cdn/assets/640/city.png" alt="" style="margin: auto; margin-bottom: 0; max-width: 500px; width: 100%;" v-else>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-gray-200" style="padding: calc(var(--space) * 2) 0;">
-    <div class="content-box-wide grid-landscape">
+  <footer class="bg-gray-200 py-2">
+    <div class="container-wide grid-landscape">
       <div></div>
       <FooterInfo/>
     </div>
@@ -183,8 +183,9 @@
 
 
 <script>
-import FooterInfo from '~/components/FooterInfo.vue'
-import TopNav from '~/components/TopNav.vue'
+import respImg from '~/components/Image.vue'
+import FooterInfo from '~/components/Footer.vue'
+import TopNav from '~/components/NavigationBar.vue'
 
 export default {
   metaInfo: {
@@ -198,7 +199,8 @@ export default {
   },
   components: {
     FooterInfo,
-    TopNav
+    TopNav,
+    respImg
   },
   data() {
     return { formData: {} }
