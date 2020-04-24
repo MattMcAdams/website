@@ -15,6 +15,7 @@ code {
   @include bdr-color(gray, 200);
   @include rounded-small;
   padding: 0.1em;
+  @include font-mono;
 }
 
 pre code {
