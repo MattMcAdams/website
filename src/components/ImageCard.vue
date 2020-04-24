@@ -1,9 +1,6 @@
 <style lang="scss">
-.card {
-  display: block;
+.image-card {
   transition: transform 0.2s;
-  position: relative;
-  border-radius: var(--radius);
   overflow: hidden;
 
   &:hover {
@@ -17,35 +14,31 @@
     z-index: 0;
   }
 }
-
-.p-cover {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
 </style>
 
 <template>
-  <div class="card">
-    <g-image
-      :alt="project.title"
-      v-if="project.thumbnail"
+  <div class="rounded image-card pos-relative" v-if="this.thumbnail">
+    <img
+      :alt="this.alt"
       style="width: 100%;"
-      :src="project.thumbnail"
+      :src="this.thumbnail"
     />
     <g-link
-      class="card__link p-cover"
-      :to="project.path"
-      v-html="project.title"
-      :aria-label="project.title"
+      class="pos-cover image-card__link"
+      :to="this.path"
+      v-html="this.title"
+      :aria-label="this.title"
     ></g-link>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['project']
+  props: {
+    title: String,
+    path: String,
+    thumbnail: String,
+    alt: String
+  }
 }
 </script>
