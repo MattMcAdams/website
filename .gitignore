@@ -9,3 +9,6 @@ dist
 static/temp
 static/cdn/*
 !static/cdn/.gitkeep
+
+# Local Netlify folder
+.netlify
