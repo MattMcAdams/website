@@ -34,7 +34,7 @@ blockquote {
   --theme-color: var(--color-blue);
   border-color: var(--theme-color);
 
-  @include border-thick;
+  @include bdr-thick;
   @include pl(1);
   @include txt-color(gray, 900);
 }

@@ -67,10 +67,9 @@ $config-fluid-min-width: 320;
 /** -----------------------------------------------------------------
   * FONT SIZE VARIABLES
 ------------------------------------------------------------------ */
+@include fluid-init;
 
 :root {
-  @include fluid-init;
-
   @include fluid(-2); // --fluid--2
   @include fluid(-1); // --fluid--1
   @include fluid(0);  // --fluid-0

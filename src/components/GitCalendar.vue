@@ -1,7 +1,7 @@
 <style lang="scss">
 .js-calendar-graph,
 .contrib-footer {
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
 }
 .js-calendar-graph {

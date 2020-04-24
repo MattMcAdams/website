@@ -1,3 +1,4 @@
+@import 'atomic/globals';
 @import 'atomic/type';
 @import 'atomic/space';
 @import 'atomic/color';
@@ -5,7 +6,7 @@
 @import 'atomic/utility';
 @import 'atomic/state';
 
-@import 'core/reset';
+@import 'base/reset';
 
 @import 'base/typography';
 @import 'base/elements';

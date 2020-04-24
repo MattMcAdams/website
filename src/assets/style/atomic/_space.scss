@@ -17,7 +17,7 @@
   @if $fluid { $space: var(--space-fluid); }
 
   @if $multiplier == 0 { @return 0; }
-  @if $multiploer == 1 { @return $space; }
+  @if $multiplier == 1 { @return $space; }
   @else { @return calc(#{$space} * #{$multiplier}); }
 }
 
@@ -82,7 +82,7 @@
 ------------------------------------------------------------------ */
 
 @for $i from 0 through 6 {
-  .m-#{$i} { @include m($i, false, !important); }
+  .ma-#{$i} { @include ma($i, false, !important); }
   .mx-#{$i} { @include mx($i, false, !important); }
   .my-#{$i} { @include my($i, false, !important); }
   .mt-#{$i} { @include mt($i, false, !important); }
@@ -92,7 +92,7 @@
 }
 
 @for $i from 0 through 6 {
-  .m-#{$i}-fluid { margin: space($i, $fluid: true); }
+  .ma-#{$i}-fluid { margin: space($i, $fluid: true); }
   .mx-#{$i}-fluid { margin-left: space($i, $fluid: true); margin-right: space($i, $fluid: true) }
   .my-#{$i}-fluid { margin-top: space($i, $fluid: true); margin-bottom: space($i, $fluid: true); }
   .mt-#{$i}-fluid { margin-top: space($i, $fluid: true); }
@@ -106,7 +106,7 @@
 ------------------------------------------------------------------ */
 
 @for $i from 0 through 6 {
-  .p-#{$i} { padding: space($i); }
+  .pa-#{$i} { padding: space($i); }
   .px-#{$i} { padding-left: space($i); padding-right: space($i) }
   .py-#{$i} { padding-top: space($i); padding-bottom: space($i); }
   .pt-#{$i} { padding-top: space($i); }
@@ -116,7 +116,7 @@
 }
 
 @for $i from 0 through 6 {
-  .p-#{$i}-fluid { padding: space($i, $fluid: true); }
+  .pa-#{$i}-fluid { padding: space($i, $fluid: true); }
   .px-#{$i}-fluid { padding-left: space($i, $fluid: true); padding-right: space($i, $fluid: true) }
   .py-#{$i}-fluid { padding-top: space($i, $fluid: true); padding-bottom: space($i, $fluid: true); }
   .pt-#{$i}-fluid { padding-top: space($i, $fluid: true); }

@@ -36,7 +36,7 @@ $bdr-thick: 5px;
 .rounded { @include rounded(!important); }
 .rounded-small { @include rounded-small(!important); }
 .rounded-large { @include rounded-large(!important); }
-.rounded-xlarge { @include rounded-zlarge(!important); }
+.rounded-xlarge { @include rounded-xlarge(!important); }
 .rounded-full { @include rounded-full(!important); }
 
 .bdr-hairline { @include bdr-hairline(!important); }
