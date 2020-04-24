@@ -100,8 +100,8 @@
           <p><a class="button" href="/cdn/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
         </div>
         <div>
-          <img src="/cdn/assets/640/website-portrait-dark.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." v-if="this.$store.state.darkTheme" style="max-width: 500px">
-          <img src="/cdn/assets/640/website-portrait.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." style="max-width: 500px" v-else>
+          <img src="/cdn/assets/640/website-portrait-dark.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." v-if="this.$store.state.darkTheme" style="max-width: 500px width: 100%;">
+          <img src="/cdn/assets/640/website-portrait.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." style="max-width: 500px width: 100%;" v-else>
         </div>
       </div>
     </section>
@@ -137,7 +137,7 @@
     <section>
       <div class="container">
         <h2 class="txt-center">Say Hello</h2>
-        <p class="txt-center">Feel free to reach out to me for any questions, concerns, or comments. I'm also open to full-time opportunities as well as freelance work. If you'd like to report a bug with my website, please check out its <a href="https://github.com/MattMcAdams/website" target="_blank" rel="noopener">GitHub page</a> for more.</p>
+        <p class="txt-center">Feel free to reach out to me for any questions, concerns, or comments. I'm also open to full-time opportunities as well as freelance work.</p>
       </div>
 
       <div class="container-wide">
