@@ -18,6 +18,20 @@
     grid-template-areas: "sidebar content"
   }
 }
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+}
+#content {
+  max-width: 100%;
+  flex: 1 0 auto;
+  align-self: center;
+}
+#footer {
+  flex-shrink: 0;
+}
 </style>
 
 
@@ -28,7 +42,7 @@
     <NavigationBar/>
   </header>
 
-  <div class="main-column py-2-fluid" v-bind:class="{ 'has-sidebar': sidebar, 'container-wide': sidebar }">
+  <div id="content" class="main-column py-2-fluid" v-bind:class="{ 'has-sidebar': sidebar, 'container-wide': sidebar }">
     <template v-if="sidebar">
       <div class="sidebar"><slot name="sidebar"/></div>
       <main class="main" style="min-width: 0;"><slot/></main>
@@ -36,7 +50,7 @@
     <main class="main" v-else><slot/></main>
   </div>
 
-  <footer class="bg-gray-200 py-2">
+  <footer id="footer" class="bg-gray-200 py-2">
     <div class="container-wide">
       <FooterInfo/>
     </div>
