@@ -17,11 +17,11 @@
   @include px(2);
 }
 
-.container-wide .container {
+.container-wide > .container {
   @include px(0);
 }
 
-.container .container-wide {
+.container > .container-wide {
   margin-left: -25%;
   margin-right: -25%;
   @include px(0);
