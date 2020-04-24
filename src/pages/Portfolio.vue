@@ -1,42 +1,37 @@
-<style lang="scss">
-@media (orientation: landscape) {
-  .sidebar-left {
-    display: grid;
-    grid-template-columns: 350px 1fr;
-  }
-}
-</style>
-
 <template>
-<layout>
-  <div class="sidebar-left content-box-wide" style="padding-top: var(--space-fluid); padding-bottom: var(--space-fluid);">
-
+<layout :sidebar="true">
+  <template v-slot:sidebar>
     <aside class="grid-portrait">
-      <div style="padding-bottom: var(--space-fluid-half);">
-        <h1 class="txt-h2" style="margin: 0;">Matthew<br>McAdams</h1>
+      <div class="pb-1-fluid">
+        <h1 class="txt-h2 ma-0">Matthew<br>McAdams</h1>
         <p>// Portfolio</p>
       </div>
       <div>
-        <h2 class="txt-h4" style="margin-top: 0;">Quick Info</h2>
+        <h2 class="txt-h4 mt-0">Quick Info</h2>
         <p>Bachelor of Fine Arts<br>6 Years of Experience<br>3 Awards / Exhibitions</p>
       </div>
       <div>
-        <h2 class="txt-h4" style="margin-top: 0;">Contact</h2>
+        <h2 class="txt-h4 mt-0">Contact</h2>
         <p>mattmcadams@outlook.com<br><a href="/cdn/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
       </div>
     </aside>
+  </template>
 
-    <div style="min-width: 0;">
-      <section>
-        <GitCalendar/>
-      </section>
-      <section style="margin-top: var(--space-fluid-half);">
-        <div class="grid">
-          <ProjectCard v-for="edge in $page.projects.edges" :key="edge.node.id" :project="edge.node"/>
-        </div>
-      </section>
+  <section>
+    <GitCalendar/>
+  </section>
+  <section class="mt-1-fluid">
+    <div class="grid">
+      <ImageCard v-for="edge in $page.projects.edges"
+      :key="edge.node.id"
+      :title="edge.node.title"
+      :path="edge.node.path"
+      :thumbnail="edge.node.thumbnail"
+      :alt="edge.node.title"
+      />
     </div>
-  </div>
+  </section>
+
 </layout>
 </template>
 
@@ -59,7 +54,7 @@ query {
 </page-query>
 
 <script>
-import ProjectCard from '~/components/PortfolioCard.vue'
+import ImageCard from '~/components/ImageCard.vue'
 import GitCalendar from '~/components/GitCalendar.vue'
 
 export default {
@@ -67,7 +62,7 @@ export default {
     title: 'Portfolio'
   },
   components: {
-    ProjectCard,
+    ImageCard,
     GitCalendar
   }
 }
