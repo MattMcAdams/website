@@ -36,6 +36,9 @@
   color: var(--color-gray-800) !important;
   font-size: var(--fluid-2);
 }
+.contrib-column {
+  display: none !important;
+}
 </style>
 
 <template>
