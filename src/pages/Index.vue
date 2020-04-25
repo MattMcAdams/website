@@ -63,23 +63,46 @@
   <main class="main">
     <div style="background-image: linear-gradient(var(--color-gray-200), var(--color-gray-100));">
     <section id="hero" class="parallax-container">
-      <img src="/images/assets/lines-top-dark.png?nf_resize=fit&w=640" alt="" class="parallax-background top-lines" v-if="this.$store.state.darkTheme">
-      <img src="/images/assets/lines-top.png?nf_resize=fit&w=640" alt="" class="parallax-background top-lines" v-else>
-
-      <img src="/images/assets/lines-bottom-dark.png?nf_resize=fit&w=640" alt="" class="parallax-background bottom-lines" v-if="this.$store.state.darkTheme">
-      <img src="/images/assets/lines-bottom.png?nf_resize=fit&w=640" alt="" class="parallax-background bottom-lines" v-else>
-
-      <img src="/images/assets/lines-right-dark.png?nf_resize=fit&w=640" alt="" class="parallax-background right-lines" v-if="this.$store.state.darkTheme">
-      <img src="/images/assets/lines-right.png?nf_resize=fit&w=640" alt="" class="parallax-background right-lines" v-else>
-
-      <img src="/images/assets/planet.png?nf_resize=fit&w=640" alt="" class="parallax-midground planet">
-
-      <img src="/images/assets/left-cloud-dark.png?nf_resize=fit&w=640" alt="" class="parallax-foreground left-cloud" v-if="this.$store.state.darkTheme">
-      <img src="/images/assets/left-cloud.png?nf_resize=fit&w=640" alt="" class="parallax-foreground left-cloud" v-else>
-
-      <img src="/images/assets/right-cloud-dark.png?nf_resize=fit&w=640" alt="" class="parallax-foreground right-cloud" v-if="this.$store.state.darkTheme">
-      <img src="/images/assets/right-cloud.png?nf_resize=fit&w=640" alt="" class="parallax-foreground right-cloud" v-else>
-
+      <img
+        :src="this.$store.state.darkTheme ?
+          '/images/assets/lines-top-dark.png?nf_resize=fit&w=640'
+          : '/images/assets/lines-top.png?nf_resize=fit&w=640'"
+        alt=""
+        class="parallax-background top-lines"
+      >
+      <img
+        :src="this.$store.state.darkTheme ?
+          '/images/assets/lines-bottom-dark.png?nf_resize=fit&w=640'
+          : '/images/assets/lines-bottom.png?nf_resize=fit&w=640'"
+        alt=""
+        class="parallax-background bottom-lines"
+      >
+      <img
+        :src="this.$store.state.darkTheme ?
+          '/images/assets/lines-right-dark.png?nf_resize=fit&w=640'
+          : '/images/assets/lines-right.png?nf_resize=fit&w=640'"
+        alt=""
+        class="parallax-background right-lines"
+      >
+      <img
+        src="/images/assets/planet.png?nf_resize=fit&w=640"
+        alt=""
+        class="parallax-midground planet"
+      >
+      <img
+        :src="this.$store.state.darkTheme ?
+          '/images/assets/left-cloud-dark.png?nf_resize=fit&w=640'
+          : '/images/assets/left-cloud.png?nf_resize=fit&w=640'"
+        alt=""
+        class="parallax-foreground left-cloud"
+      >
+      <img
+        :src="this.$store.state.darkTheme ?
+          '/images/assets/right-cloud-dark.png?nf_resize=fit&w=640'
+          : '/images/assets/right-cloud.png?nf_resize=fit&w=640'"
+        alt=""
+        class="parallax-foreground right-cloud"
+      >
       <div class="content-box" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center;">
         <div style="width: 100%; margin-bottom: 10vw;">
           <h1 style="text-align: center;">Matthew McAdams</h1>
@@ -100,8 +123,13 @@
           <p><a class="button" href="/images/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
         </div>
         <div>
-          <img src="/images/assets/website-portrait-dark.png?nf_resize=fit&w=640" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." v-if="this.$store.state.darkTheme" style="max-width: 500px width: 100%;">
-          <img src="/images/assets/website-portrait.png?nf_resize=fit&w=640" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." style="max-width: 500px width: 100%;" v-else>
+          <img
+            :src="this.$store.state.darkTheme ?
+              '/images/assets/website-portrait-dark.png?nf_resize=fit&w=640'
+              : '/images/assets/website-portrait.png?nf_resize=fit&w=500'"
+            style="max-width: 500px width: 100%;"
+            alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer."
+          >
         </div>
       </div>
     </section>
@@ -109,8 +137,12 @@
     <section class="bg-gray-200 my-2-fluid py-2-fluid">
       <div class="grid-landscape container-wide" style="--grid-gap: calc(var(--space) * 4);">
         <div style="max-width: 500px; margin: auto;" class="mb-2">
-          <img src="/images/assets/art-logic-dark.png?nf_resize=fit&w=640" alt="Illustration of a sketchbook and desktop computer displaying code" v-if="this.$store.state.darkTheme">
-          <img src="/images/assets/art-logic.png?nf_resize=fit&w=640" alt="Illustration of a sketchbook and desktop computer displaying code" v-else>
+          <img
+            :src="this.$store.state.darkTheme ?
+              '/images/assets/art-logic-dark.png?nf_resize=fit&w=640'
+              : '/images/assets/art-logic.png?nf_resize=fit&w=640'"
+            alt="Illustration of a sketchbook and desktop computer displaying code"
+          >
         </div>
         <div>
           <h2>Art &amp; Logic</h2>
@@ -164,8 +196,13 @@
             <p class="txt-right" style="margin-bottom: 0;"><button type="submit">Submit</button></p>
           </form>
           <div style="align-self: end;">
-            <img src="/images/assets/city-dark.png?nf_resize=fit&w=640" alt="" style="margin-bottom: 0;"  v-if="this.$store.state.darkTheme">
-            <img src="/images/assets/city.png?nf_resize=fit&w=640" alt="" style="margin: auto; margin-bottom: 0; max-width: 500px; width: 100%;" v-else>
+            <img
+              :src="this.$store.state.darkTheme ?
+                '/images/assets/city-dark.png?nf_resize=fit&w=640'
+                : '/images/assets/city.png?nf_resize=fit&w=640'"
+              alt=""
+              style="margin-bottom: 0;"
+            >
           </div>
         </div>
       </div>
