@@ -66,19 +66,19 @@
       <img src="/images/assets/lines-top-dark.png" alt="" class="parallax-background top-lines" v-if="this.$store.state.darkTheme">
       <img src="/images/assets/lines-top.png" alt="" class="parallax-background top-lines" v-else>
 
-      <img src="/cdn/assets/hero/lines-bottom-dark.png" alt="" class="parallax-background bottom-lines" v-if="this.$store.state.darkTheme">
-      <img src="/cdn/assets/hero/lines-bottom.png" alt="" class="parallax-background bottom-lines" v-else>
+      <img src="/images/assets/lines-bottom-dark.png" alt="" class="parallax-background bottom-lines" v-if="this.$store.state.darkTheme">
+      <img src="/images/assets/lines-bottom.png" alt="" class="parallax-background bottom-lines" v-else>
 
-      <img src="/cdn/assets/hero/lines-right-dark.png" alt="" class="parallax-background right-lines" v-if="this.$store.state.darkTheme">
-      <img src="/cdn/assets/hero/lines-right.png" alt="" class="parallax-background right-lines" v-else>
+      <img src="/images/assets/lines-right-dark.png" alt="" class="parallax-background right-lines" v-if="this.$store.state.darkTheme">
+      <img src="/images/assets/lines-right.png" alt="" class="parallax-background right-lines" v-else>
 
-      <img src="/cdn/assets/hero/planet.png" alt="" class="parallax-midground planet">
+      <img src="/images/assets/planet.png" alt="" class="parallax-midground planet">
 
-      <img src="/cdn/assets/hero/left-cloud-dark.png" alt="" class="parallax-foreground left-cloud" v-if="this.$store.state.darkTheme">
-      <img src="/cdn/assets/hero/left-cloud.png" alt="" class="parallax-foreground left-cloud" v-else>
+      <img src="/images/assets/left-cloud-dark.png" alt="" class="parallax-foreground left-cloud" v-if="this.$store.state.darkTheme">
+      <img src="/images/assets/left-cloud.png" alt="" class="parallax-foreground left-cloud" v-else>
 
-      <img src="/cdn/assets/hero/right-cloud-dark.png" alt="" class="parallax-foreground right-cloud" v-if="this.$store.state.darkTheme">
-      <img src="/cdn/assets/hero/right-cloud.png" alt="" class="parallax-foreground right-cloud" v-else>
+      <img src="/images/assets/right-cloud-dark.png" alt="" class="parallax-foreground right-cloud" v-if="this.$store.state.darkTheme">
+      <img src="/images/assets/right-cloud.png" alt="" class="parallax-foreground right-cloud" v-else>
 
       <div class="content-box" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center;">
         <div style="width: 100%; margin-bottom: 10vw;">
@@ -97,11 +97,11 @@
           <h2>Nice to meet you</h2>
           <p>I’m a front end developer with a background in graphic design currently living in the Birmingham area. Let’s make something cool together.</p>
           <p class="txt-small">In the spring of 2020, I got my bachelor of fine arts from the <a href="https://www.uab.edu" target="_blank" rel="noopener">University of Alabama at Birmingham</a> while researching UX design, code semantics, and design systems. My award winning work is bold, precise, and modern, focusing on the division of space and the use of strong color. When I’m not pecking at code or pushing pixels, I enjoy exploring fantasy worlds through books and video games.</p>
-          <p><a class="button" href="/cdn/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
+          <p><a class="button" href="/images/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
         </div>
         <div>
-          <img src="/cdn/assets/640/website-portrait-dark.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." v-if="this.$store.state.darkTheme" style="max-width: 500px width: 100%;">
-          <img src="/cdn/assets/640/website-portrait.png" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." style="max-width: 500px width: 100%;" v-else>
+          <img src="/images/assets/website-portrait-dark.png?nf_resize=fit&w=640" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." v-if="this.$store.state.darkTheme" style="max-width: 500px width: 100%;">
+          <img src="/images/assets/website-portrait.png?nf_resize=fit&w=640" alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer." style="max-width: 500px width: 100%;" v-else>
         </div>
       </div>
     </section>
@@ -109,8 +109,8 @@
     <section class="bg-gray-200 my-2-fluid py-2-fluid">
       <div class="grid-landscape container-wide" style="--grid-gap: calc(var(--space) * 4);">
         <div style="max-width: 500px; margin: auto;" class="mb-2">
-          <img src="/cdn/assets/640/art-logic-dark.png" alt="Illustration of a sketchbook and desktop computer displaying code" v-if="this.$store.state.darkTheme">
-          <img src="/cdn/assets/640/art-logic.png" alt="Illustration of a sketchbook and desktop computer displaying code" v-else>
+          <img src="/images/assets/art-logic-dark.png?nf_resize=fit&w=640" alt="Illustration of a sketchbook and desktop computer displaying code" v-if="this.$store.state.darkTheme">
+          <img src="/images/assets/art-logic.png?nf_resize=fit&w=640" alt="Illustration of a sketchbook and desktop computer displaying code" v-else>
         </div>
         <div>
           <h2>Art &amp; Logic</h2>
@@ -164,8 +164,8 @@
             <p class="txt-right" style="margin-bottom: 0;"><button type="submit">Submit</button></p>
           </form>
           <div style="align-self: end;">
-            <img src="/cdn/assets/640/city-dark.png" alt="" style="margin-bottom: 0;"  v-if="this.$store.state.darkTheme">
-            <img src="/cdn/assets/640/city.png" alt="" style="margin: auto; margin-bottom: 0; max-width: 500px; width: 100%;" v-else>
+            <img src="/images/assets/city-dark.png?nf_resize=fit&w=640" alt="" style="margin-bottom: 0;"  v-if="this.$store.state.darkTheme">
+            <img src="/images/assets/city.png?nf_resize=fit&w=640" alt="" style="margin: auto; margin-bottom: 0; max-width: 500px; width: 100%;" v-else>
           </div>
         </div>
       </div>
