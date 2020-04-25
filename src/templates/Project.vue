@@ -6,7 +6,9 @@
         <strong>{{ $page.post.title }}</strong>
         <br><small>Posted {{ $page.post.date }}.</small>
       </p>
-      <Tags v-if="$page.post.tags" :tags="$page.post.tags"/>
+      <div class="mb-1">
+        <Tags v-if="$page.post.tags" :tags="$page.post.tags"/>
+      </div>
       <Swatches v-if="$page.post.colors" :colors="$page.post.colors"/>
       <p v-if="$page.post.cta" class="mt-1-fluid">
         <a :href="$page.post.cta.link" target="_blank" rel="noopener" class="button button--full">
