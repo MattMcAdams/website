@@ -1,6 +1,6 @@
 <style lang="scss">
 .navbar-wrapper {
-  border-bottom: 2px solid var(--color-gray-100);
+  // border-bottom: 2px solid var(--color-gray-100);
   background-color: var(--color-gray-200);
   position: fixed;
   top: 0px;
@@ -15,6 +15,8 @@
   font-size: var(--fluid-0);
   text-decoration: none;
   align-self: center;
+  font-family: monospace;
+  text-transform: lowercase;
 }
 
 .navbar_brand {
@@ -65,14 +67,15 @@ button.navbar_item:hover {
 <div class="navbar-wrapper">
 <nav class="navbar container-wide" role="navigation" aria-label="primary navigation">
   <div class="navbar_brand">
-    <a class="navbar_item navbar_logo" href="/">mattmcadams</a>
+    <g-link class="navbar_item navbar_logo" to="/">mattmcadams</g-link>
     <a role="button" class="navbar-burger icon-unfold navbar_item" aria-label="menu" aria-expanded="false" @click="toggleMenu"></a>
   </div>
 
   <div class="navbar_menu" v-bind:class="{ 'is-active': isActive }">
     <div class="navbar_start">
-      <g-link to="/" class="navbar_item">Home</g-link>
-      <g-link to="/portfolio" class="navbar_item">Work</g-link>
+      <!--<g-link to="/" class="navbar_item">Home</g-link>-->
+      <g-link to="/work" class="navbar_item">Work</g-link>
+      <g-link to="/thoughts" class="navbar_item">Thoughts</g-link>
     </div>
     <div class="navbar_end">
       <g-link to="https://github.com/MattMcAdams/website" class="icon-github navbar_item" style="text-decoration: none;" target="_blank" rel="noopener" aria-label="Github"></g-link>
