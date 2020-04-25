@@ -31,12 +31,15 @@ a:not([class]) {
 ------------------------------------------------------------------ */
 
 blockquote {
-  --theme-color: var(--color-blue);
-  border-color: var(--theme-color);
-
-  @include bdr-thick;
+  --theme-color: var(--color-blue-500);
+  border-left: 10px solid var(--theme-color);
   @include pl(1);
   @include txt-color(gray, 900);
+  // @include rounded;
+  // @include bg-color(blue, 100);
+  // p:first-child {
+  //   @include txt-medium;
+  // }
 }
 
 /* END !SECTION BLOCKQUOTE */
