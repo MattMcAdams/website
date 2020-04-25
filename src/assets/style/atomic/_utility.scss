@@ -10,6 +10,7 @@
 @mixin z-50($important: null) { z-index: 50 $important; }
 @mixin z-auto($important: null) { z-index: auto $important; }
 
+.z-0, .z-10, .z-20, .z-30, .z-50, .z-auto { position: relative; }
 .z-0 { @include z-0(!important); }
 .z-10 { @include z-10(!important); }
 .z-20 { @include z-20(!important); }
