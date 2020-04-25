@@ -21,7 +21,7 @@
     <h1 style="text-align: center">
       # {{ $page.tag.title }}
     </h1>
-    <p style="text-align: center"><a href="/portfolio">Clear Filters</a></p>
+    <p style="text-align: center"><a href="/work">Clear Filters</a></p>
   </section>
   <section class="mt-1-fluid">
     <div class="grid">
