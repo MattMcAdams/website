@@ -63,22 +63,22 @@
   <main class="main">
     <div style="background-image: linear-gradient(var(--color-gray-200), var(--color-gray-100));">
     <section id="hero" class="parallax-container">
-      <img src="/images/assets/lines-top-dark.png" alt="" class="parallax-background top-lines" v-if="this.$store.state.darkTheme">
-      <img src="/images/assets/lines-top.png" alt="" class="parallax-background top-lines" v-else>
+      <img src="/images/assets/lines-top-dark.png?nf_resize=fit&w=640" alt="" class="parallax-background top-lines" v-if="this.$store.state.darkTheme">
+      <img src="/images/assets/lines-top.png?nf_resize=fit&w=640" alt="" class="parallax-background top-lines" v-else>
 
-      <img src="/images/assets/lines-bottom-dark.png" alt="" class="parallax-background bottom-lines" v-if="this.$store.state.darkTheme">
-      <img src="/images/assets/lines-bottom.png" alt="" class="parallax-background bottom-lines" v-else>
+      <img src="/images/assets/lines-bottom-dark.png?nf_resize=fit&w=640" alt="" class="parallax-background bottom-lines" v-if="this.$store.state.darkTheme">
+      <img src="/images/assets/lines-bottom.png?nf_resize=fit&w=640" alt="" class="parallax-background bottom-lines" v-else>
 
-      <img src="/images/assets/lines-right-dark.png" alt="" class="parallax-background right-lines" v-if="this.$store.state.darkTheme">
-      <img src="/images/assets/lines-right.png" alt="" class="parallax-background right-lines" v-else>
+      <img src="/images/assets/lines-right-dark.png?nf_resize=fit&w=640" alt="" class="parallax-background right-lines" v-if="this.$store.state.darkTheme">
+      <img src="/images/assets/lines-right.png?nf_resize=fit&w=640" alt="" class="parallax-background right-lines" v-else>
 
-      <img src="/images/assets/planet.png" alt="" class="parallax-midground planet">
+      <img src="/images/assets/planet.png?nf_resize=fit&w=640" alt="" class="parallax-midground planet">
 
-      <img src="/images/assets/left-cloud-dark.png" alt="" class="parallax-foreground left-cloud" v-if="this.$store.state.darkTheme">
-      <img src="/images/assets/left-cloud.png" alt="" class="parallax-foreground left-cloud" v-else>
+      <img src="/images/assets/left-cloud-dark.png?nf_resize=fit&w=640" alt="" class="parallax-foreground left-cloud" v-if="this.$store.state.darkTheme">
+      <img src="/images/assets/left-cloud.png?nf_resize=fit&w=640" alt="" class="parallax-foreground left-cloud" v-else>
 
-      <img src="/images/assets/right-cloud-dark.png" alt="" class="parallax-foreground right-cloud" v-if="this.$store.state.darkTheme">
-      <img src="/images/assets/right-cloud.png" alt="" class="parallax-foreground right-cloud" v-else>
+      <img src="/images/assets/right-cloud-dark.png?nf_resize=fit&w=640" alt="" class="parallax-foreground right-cloud" v-if="this.$store.state.darkTheme">
+      <img src="/images/assets/right-cloud.png?nf_resize=fit&w=640" alt="" class="parallax-foreground right-cloud" v-else>
 
       <div class="content-box" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center;">
         <div style="width: 100%; margin-bottom: 10vw;">
