@@ -63,8 +63,8 @@
   <main class="main">
     <div style="background-image: linear-gradient(var(--color-gray-200), var(--color-gray-100));">
     <section id="hero" class="parallax-container">
-      <img src="/cdn/assets/hero/lines-top-dark.png" alt="" class="parallax-background top-lines" v-if="this.$store.state.darkTheme">
-      <img src="/cdn/assets/hero/lines-top.png" alt="" class="parallax-background top-lines" v-else>
+      <img src="/images/assets/lines-top-dark.png" alt="" class="parallax-background top-lines" v-if="this.$store.state.darkTheme">
+      <img src="/images/assets/lines-top.png" alt="" class="parallax-background top-lines" v-else>
 
       <img src="/cdn/assets/hero/lines-bottom-dark.png" alt="" class="parallax-background bottom-lines" v-if="this.$store.state.darkTheme">
       <img src="/cdn/assets/hero/lines-bottom.png" alt="" class="parallax-background bottom-lines" v-else>
