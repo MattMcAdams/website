@@ -83,8 +83,12 @@
 
 @for $i from 0 through 6 {
   .ma-#{$i} { @include ma($i, false, !important); }
+}
+@for $i from 0 through 6 {
   .mx-#{$i} { @include mx($i, false, !important); }
   .my-#{$i} { @include my($i, false, !important); }
+}
+@for $i from 0 through 6 {
   .mt-#{$i} { @include mt($i, false, !important); }
   .mr-#{$i} { @include mr($i, false, !important); }
   .mb-#{$i} { @include mb($i, false, !important); }
@@ -92,35 +96,46 @@
 }
 
 @for $i from 0 through 6 {
-  .ma-#{$i}-fluid { margin: space($i, $fluid: true); }
-  .mx-#{$i}-fluid { margin-left: space($i, $fluid: true); margin-right: space($i, $fluid: true) }
-  .my-#{$i}-fluid { margin-top: space($i, $fluid: true); margin-bottom: space($i, $fluid: true); }
-  .mt-#{$i}-fluid { margin-top: space($i, $fluid: true); }
-  .mr-#{$i}-fluid { margin-right: space($i, $fluid: true); }
-  .mb-#{$i}-fluid { margin-bottom: space($i, $fluid: true); }
-  .ml-#{$i}-fluid { margin-left: space($i, $fluid: true); }
+  .ma-#{$i}-fluid { @include ma($i, true, !important); }
+}
+@for $i from 0 through 6 {
+  .mx-#{$i}-fluid { @include mx($i, true, !important); }
+  .my-#{$i}-fluid { @include my($i, true, !important); }
+}
+@for $i from 0 through 6 {
+  .mt-#{$i}-fluid { @include mt($i, true, !important); }
+  .mr-#{$i}-fluid { @include mr($i, true, !important); }
+  .mb-#{$i}-fluid { @include mb($i, true, !important); }
+  .ml-#{$i}-fluid { @include ml($i, true, !important); }
 }
 
 /** -----------------------------------------------------------------
   * PADDING
 ------------------------------------------------------------------ */
-
 @for $i from 0 through 6 {
-  .pa-#{$i} { padding: space($i); }
-  .px-#{$i} { padding-left: space($i); padding-right: space($i) }
-  .py-#{$i} { padding-top: space($i); padding-bottom: space($i); }
-  .pt-#{$i} { padding-top: space($i); }
-  .pr-#{$i} { padding-right: space($i); }
-  .pb-#{$i} { padding-bottom: space($i); }
-  .pl-#{$i} { padding-left: space($i); }
+  .pa-#{$i} { @include pa($i, false, !important); }
+}
+@for $i from 0 through 6 {
+  .px-#{$i} { @include px($i, false, !important); }
+  .py-#{$i} { @include py($i, false, !important); }
+}
+@for $i from 0 through 6 {
+  .pt-#{$i} { @include pt($i, false, !important); }
+  .pr-#{$i} { @include pr($i, false, !important); }
+  .pb-#{$i} { @include pb($i, false, !important); }
+  .pl-#{$i} { @include pl($i, false, !important); }
 }
 
 @for $i from 0 through 6 {
-  .pa-#{$i}-fluid { padding: space($i, $fluid: true); }
-  .px-#{$i}-fluid { padding-left: space($i, $fluid: true); padding-right: space($i, $fluid: true) }
-  .py-#{$i}-fluid { padding-top: space($i, $fluid: true); padding-bottom: space($i, $fluid: true); }
-  .pt-#{$i}-fluid { padding-top: space($i, $fluid: true); }
-  .pr-#{$i}-fluid { padding-right: space($i, $fluid: true); }
-  .pb-#{$i}-fluid { padding-bottom: space($i, $fluid: true); }
-  .pl-#{$i}-fluid { padding-left: space($i, $fluid: true); }
+  .pa-#{$i}-fluid { @include pa($i, true, !important); }
+}
+@for $i from 0 through 6 {
+  .px-#{$i}-fluid { @include px($i, true, !important); }
+  .py-#{$i}-fluid { @include py($i, true, !important); }
+}
+@for $i from 0 through 6 {
+  .pt-#{$i}-fluid { @include pt($i, true, !important); }
+  .pr-#{$i}-fluid { @include pr($i, true, !important); }
+  .pb-#{$i}-fluid { @include pb($i, true, !important); }
+  .pl-#{$i}-fluid { @include pl($i, true, !important); }
 }
