@@ -25,7 +25,7 @@
   max-width: 100vw;
 }
 #content {
-  max-width: 100%;
+  width: 100%;
   flex: 1 0 auto;
   align-self: center;
 }
