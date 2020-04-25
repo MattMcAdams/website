@@ -22,7 +22,7 @@
 </style>
 
 <template>
-  <div class="tags mb-1">
+  <div class="tags">
     <g-link class="ui-tag txt-small rounded-small"
       v-for="tag in this.tags" :key="tag.id" :to="tag.path">
       <span>#</span>{{ tag.title }}
