@@ -5,7 +5,7 @@
 <Layout>
   <div class="container">
     <h1>Articles</h1>
-    <p>A collection of my adventures through the worlds of art and technology. Expect a glympse into my decision making, cool things I've learned, and ideas as they relate to design and the web.</p>
+    <p>A collection of my adventures through the worlds of art and technology. Expect a glimpse into my decision making, cool things I've learned, and ideas as they relate to design and the web.</p>
   </div>
   <div class="container mt-2-fluid">
     <postItem v-for="edge in $page.posts.edges"
