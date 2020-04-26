@@ -19,19 +19,20 @@ input, textarea {
   margin-bottom: var(--space);
   display: block;
   width: 100%;
-  padding: calc(var(--space) / 2);
-  border-radius: var(--radius);
-  border: 2px solid var(--color-gray-600);
-  font-size: var(--fluid-0);
-  font-family: var(--font-mono);
-  color: var(--color-gray-800);
+  @include pa(0.5);
+  @include rounded;
+  @include bdr-thin;
+  @include bdr-color(gray, 600);
+  @include txt-normal;
+  @include font-mono;
+  @include txt-color(gray, 800);
 
   &:active, &:focus {
-    border-color: var(--color-blue-500);
+    @include bdr-color(blue, 500);
   }
 
-  &.invalid { border-color: var(--color-red-500); }
-  &.valid { border-color: var(--color-green-500); }
+  &.is-invalid { border-color: var(--color-red-500); }
+  &.is-valid { border-color: var(--color-green-500); }
 }
 
 textarea {
