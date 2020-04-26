@@ -1,0 +1,55 @@
+/** -----------------------------------------------------------------
+  * SECTION BUTTONS
+  * TODO: Test themes
+------------------------------------------------------------------ */
+
+.button,
+button {
+  --theme-color: var(--color-gray-800);
+  --theme-color-hover: var(--color-blue);
+  border-color: var(--theme-color);
+  color: var(--theme-color);
+
+  @include bdr-thin;
+  @include rounded;
+  @include py(0.5);
+  @include px(1);
+  @include txt-small;
+
+  display: inline-block;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+
+  &:hover, &:focus {
+    --theme-color: var(--theme-color-hover);
+    color: var(--theme-color);
+    text-decoration: none;
+  }
+}
+
+.button--solid {
+  --theme-contrast-color: white;
+
+  color: var(--theme-contrast-color);
+  background-color: var(--theme-color);
+
+  &:hover, &:focus {
+    color: var(--theme-contrast-color);
+  }
+}
+
+.button--primary {
+  --theme-color: var(--color-blue);
+  --theme-color-hover: var(--color-blue-600);
+  --theme-contrast-color: white;
+}
+
+.button--full {
+  display: block;
+  text-align: center;
+}
+
+/* END !SECTION BUTTONS */

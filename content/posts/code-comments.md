@@ -5,6 +5,7 @@ published: true
 tags: ['code']
 series: false
 cover_image: https://assets.mattmcadams.com/code-comments.jpg
+thumbnail: https://assets.mattmcadams.com/code-comments.jpg
 canonical_url: false
 description: "One of the really cool plugins I found for VS Code is this tool called Comment Anchors. It’s a way of adding more visible, meaningful comments to your code. I’m a really big fan of writing documentation in the code itself, so its nice to have a way to highlight the most important notes."
 ---

@@ -1,0 +1,17 @@
+/** -----------------------------------------------------------------
+  * SECTION GRID
+------------------------------------------------------------------ */
+
+@mixin basic-grid {
+  --grid-gap: var(--space);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: var(--grid-gap);
+}
+
+.grid { @include basic-grid; }
+@media ( orientation: portrait ) { .grid-portrait { @include basic-grid; } }
+@media ( orientation: landscape ) { .grid-landscape { @include basic-grid; } }
+
+/* END !SECTION GRID */

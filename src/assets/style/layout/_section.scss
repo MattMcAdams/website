@@ -1,0 +1,9 @@
+/** -----------------------------------------------------------------
+  * SECTION SECT
+  * TODO: Add background cover
+------------------------------------------------------------------ */
+
+.section { @include my(2); }
+.section-pad { @include py(2); }
+
+/* END !SECTION SECT */

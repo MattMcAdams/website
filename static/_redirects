@@ -21,6 +21,10 @@
 /kofi                   https://ko-fi.com/F2F77H9M
 /behance                https://www.behance.net/mattmcadams
 
+# Redirects old portfolio page to new
+/portfolio              /work
+/portfolio/*            /work/:splat
+
 # Redirect default Netlify subdomain to primary domain
 https://mattmcadams.netlify.com/* https://www.mattmcadams.com/:splat 301!
 

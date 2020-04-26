@@ -1,0 +1,5 @@
+// TODO: Add basic box style
+.box {
+  @include pa(1);
+  @include rounded;
+}

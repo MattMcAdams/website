@@ -16,7 +16,7 @@ module.exports = {
       options: {
         typeName: 'Project',
         baseDir: './content/projects',
-        pathPrefix: '/portfolio',
+        pathPrefix: '/work',
         path: '*.md',
         refs: {
           tags: {
@@ -27,29 +27,28 @@ module.exports = {
       }
     },
 
-  //   {
-  //     // Create posts from markdown files
-  //     use: '@gridsome/source-filesystem',
-  //     options: {
-  //       typeName: 'Post',
-  //       baseDir: './content/posts',
-  //       pathPrefix: '/blog',
-  //       path: '*.md',
-  //       refs: {
-  //         // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
-  //         tags: {
-  //           typeName: 'Tag',
-  //           create: true
-  //         }
-  //       }
-  //     }
-  //   }
+    {
+      // Create posts from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Post',
+        baseDir: './content/posts',
+        pathPrefix: '/thoughts',
+        path: '*.md',
+        refs: {
+          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+          tags: {
+            typeName: 'PostTag',
+            create: true
+          }
+        }
+      }
+    }
   ],
 
   templates: {
-    //Post: '/blog/:title',
-    ProjectTag: '/portfolio/tag/:id',
-    //Project: '/portfolio/:title'
+    PostTag: '/thoughts/tag/:title',
+    ProjectTag: '/work/tag/:id'
   },
 
   transformers: {

@@ -1,0 +1,11 @@
+.level {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: calc(var(--space) / -2);
+}
+.level_item {
+  align-self: center;
+  display: block;
+  padding: calc(var(--space) / 2);
+}

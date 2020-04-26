@@ -1,0 +1,141 @@
+// -----------------------------------------------------------------
+// VARIABLES
+// NOTE: Requires fluid typography
+//------------------------------------------------------------------
+
+:root {
+  --space: var(--fluid-0, 1.5rem);
+  --space-fluid: calc((var(--fluid-0, 1rem) * 1.5) + (4 * var(--fluid-bp, 0)));
+}
+
+// -----------------------------------------------------------------
+// FUNCTIONS
+//------------------------------------------------------------------
+
+@function space($multiplier, $fluid: false) {
+  $space: var(--space);
+  @if $fluid { $space: var(--space-fluid); }
+
+  @if $multiplier == 0 { @return 0; }
+  @if $multiplier == 1 { @return $space; }
+  @else { @return calc(#{$space} * #{$multiplier}); }
+}
+
+// -----------------------------------------------------------------
+// MARGIN MIXINS
+//------------------------------------------------------------------
+
+@mixin ma($multiplier, $fluid: false, $important: null) {
+  margin: space($multiplier, $fluid) $important;
+}
+@mixin mx($multiplier, $fluid: false, $important: null) {
+  margin-right: space($multiplier, $fluid) $important;
+  margin-left: space($multiplier, $fluid) $important;
+}
+@mixin my($multiplier, $fluid: false, $important: null) {
+  margin-top: space($multiplier, $fluid) $important;
+  margin-bottom: space($multiplier, $fluid) $important;
+}
+@mixin mt($multiplier, $fluid: false, $important: null) {
+  margin-top: space($multiplier, $fluid) $important;
+}
+@mixin mr($multiplier, $fluid: false, $important: null) {
+  margin-right: space($multiplier, $fluid) $important;
+}
+@mixin mb($multiplier, $fluid: false, $important: null) {
+  margin-bottom: space($multiplier, $fluid) $important;
+}
+@mixin ml($multiplier, $fluid: false, $important: null) {
+  margin-left: space($multiplier, $fluid) $important;
+}
+
+// -----------------------------------------------------------------
+// PADDING MIXINS
+//------------------------------------------------------------------
+
+@mixin pa($multiplier, $fluid: false, $important: null) {
+  padding: space($multiplier, $fluid) $important;
+}
+@mixin px($multiplier, $fluid: false, $important: null) {
+  padding-right: space($multiplier, $fluid) $important;
+  padding-left: space($multiplier, $fluid) $important;
+}
+@mixin py($multiplier, $fluid: false, $important: null) {
+  padding-top: space($multiplier, $fluid) $important;
+  padding-bottom: space($multiplier, $fluid) $important;
+}
+@mixin pt($multiplier, $fluid: false, $important: null) {
+  padding-top: space($multiplier, $fluid) $important;
+}
+@mixin pr($multiplier, $fluid: false, $important: null) {
+  padding-right: space($multiplier, $fluid) $important;
+}
+@mixin pb($multiplier, $fluid: false, $important: null) {
+  padding-bottom: space($multiplier, $fluid) $important;
+}
+@mixin pl($multiplier, $fluid: false, $important: null) {
+  padding-left: space($multiplier, $fluid) $important;
+}
+
+/** -----------------------------------------------------------------
+  * MARGIN
+------------------------------------------------------------------ */
+
+@for $i from 0 through 6 {
+  .ma-#{$i} { @include ma($i, false, !important); }
+}
+@for $i from 0 through 6 {
+  .mx-#{$i} { @include mx($i, false, !important); }
+  .my-#{$i} { @include my($i, false, !important); }
+}
+@for $i from 0 through 6 {
+  .mt-#{$i} { @include mt($i, false, !important); }
+  .mr-#{$i} { @include mr($i, false, !important); }
+  .mb-#{$i} { @include mb($i, false, !important); }
+  .ml-#{$i} { @include ml($i, false, !important); }
+}
+
+@for $i from 0 through 6 {
+  .ma-#{$i}-fluid { @include ma($i, true, !important); }
+}
+@for $i from 0 through 6 {
+  .mx-#{$i}-fluid { @include mx($i, true, !important); }
+  .my-#{$i}-fluid { @include my($i, true, !important); }
+}
+@for $i from 0 through 6 {
+  .mt-#{$i}-fluid { @include mt($i, true, !important); }
+  .mr-#{$i}-fluid { @include mr($i, true, !important); }
+  .mb-#{$i}-fluid { @include mb($i, true, !important); }
+  .ml-#{$i}-fluid { @include ml($i, true, !important); }
+}
+
+/** -----------------------------------------------------------------
+  * PADDING
+------------------------------------------------------------------ */
+@for $i from 0 through 6 {
+  .pa-#{$i} { @include pa($i, false, !important); }
+}
+@for $i from 0 through 6 {
+  .px-#{$i} { @include px($i, false, !important); }
+  .py-#{$i} { @include py($i, false, !important); }
+}
+@for $i from 0 through 6 {
+  .pt-#{$i} { @include pt($i, false, !important); }
+  .pr-#{$i} { @include pr($i, false, !important); }
+  .pb-#{$i} { @include pb($i, false, !important); }
+  .pl-#{$i} { @include pl($i, false, !important); }
+}
+
+@for $i from 0 through 6 {
+  .pa-#{$i}-fluid { @include pa($i, true, !important); }
+}
+@for $i from 0 through 6 {
+  .px-#{$i}-fluid { @include px($i, true, !important); }
+  .py-#{$i}-fluid { @include py($i, true, !important); }
+}
+@for $i from 0 through 6 {
+  .pt-#{$i}-fluid { @include pt($i, true, !important); }
+  .pr-#{$i}-fluid { @include pr($i, true, !important); }
+  .pb-#{$i}-fluid { @include pb($i, true, !important); }
+  .pl-#{$i}-fluid { @include pl($i, true, !important); }
+}
