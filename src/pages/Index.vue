@@ -65,41 +65,41 @@
     <section id="hero" class="parallax-container">
       <img
         :src="this.$store.state.darkTheme ?
-          '/images/assets/lines-top-dark.png?nf_resize=fit&w=640'
-          : '/images/assets/lines-top.png?nf_resize=fit&w=640'"
+          '/images/assets/lines-top-dark.svg'
+          : '/images/assets/lines-top.svg'"
         alt=""
         class="parallax-background top-lines"
       >
       <img
         :src="this.$store.state.darkTheme ?
-          '/images/assets/lines-bottom-dark.png?nf_resize=fit&w=640'
-          : '/images/assets/lines-bottom.png?nf_resize=fit&w=640'"
+          '/images/assets/lines-bottom-dark.svg'
+          : '/images/assets/lines-bottom.svg'"
         alt=""
         class="parallax-background bottom-lines"
       >
       <img
         :src="this.$store.state.darkTheme ?
-          '/images/assets/lines-right-dark.png?nf_resize=fit&w=640'
-          : '/images/assets/lines-right.png?nf_resize=fit&w=640'"
+          '/images/assets/lines-right-dark.svg'
+          : '/images/assets/lines-right.svg'"
         alt=""
         class="parallax-background right-lines"
       >
       <img
-        src="/images/assets/planet.png?nf_resize=fit&w=640"
+        src="/images/assets/planet.svg"
         alt=""
         class="parallax-midground planet"
       >
       <img
         :src="this.$store.state.darkTheme ?
-          '/images/assets/left-cloud-dark.png?nf_resize=fit&w=640'
-          : '/images/assets/left-cloud.png?nf_resize=fit&w=640'"
+          '/images/assets/left-cloud-dark.svg'
+          : '/images/assets/left-cloud.svg'"
         alt=""
         class="parallax-foreground left-cloud"
       >
       <img
         :src="this.$store.state.darkTheme ?
-          '/images/assets/right-cloud-dark.png?nf_resize=fit&w=640'
-          : '/images/assets/right-cloud.png?nf_resize=fit&w=640'"
+          '/images/assets/right-cloud-dark.svg'
+          : '/images/assets/right-cloud.svg'"
         alt=""
         class="parallax-foreground right-cloud"
       >
@@ -122,14 +122,13 @@
           <p class="txt-small">In the spring of 2020, I got my bachelor of fine arts from the <a href="https://www.uab.edu" target="_blank" rel="noopener">University of Alabama at Birmingham</a> while researching UX design, code semantics, and design systems. My award winning work is bold, precise, and modern, focusing on the division of space and the use of strong color. When I’m not pecking at code or pushing pixels, I enjoy exploring fantasy worlds through books and video games.</p>
           <p><a class="button" href="/images/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
         </div>
-        <div>
+        <div style="position: relative;">
           <img
-            :src="this.$store.state.darkTheme ?
-              '/images/assets/website-portrait-dark.png?nf_resize=fit&w=640'
-              : '/images/assets/website-portrait.png?nf_resize=fit&w=500'"
-            style="max-width: 500px width: 100%;"
+            src="/images/assets/portrait.png"
+            style="max-width: 500px; width: 100%; margin: auto; position: absolute; bottom: 0px; left: 0;"
             alt="Matthew McAdams, a young adult with dark brown hair and tidy beard. He is dressed in light gray pants, a blue button down, and a dark gray blazer."
           >
+          <img :src="this.$store.state.darkTheme ? '/images/assets/portrait-extras-dark.svg':'/images/assets/portrait-extras.svg'" alt="" style="max-width: 500px; width: 100%; margin: auto;">
         </div>
       </div>
     </section>
@@ -139,8 +138,8 @@
         <div style="max-width: 500px; margin: auto;" class="mb-2">
           <img
             :src="this.$store.state.darkTheme ?
-              '/images/assets/art-logic-dark.png?nf_resize=fit&w=640'
-              : '/images/assets/art-logic.png?nf_resize=fit&w=640'"
+              '/images/assets/art-logic-dark.svg'
+              : '/images/assets/art-logic.svg'"
             alt="Illustration of a sketchbook and desktop computer displaying code"
           >
         </div>
@@ -198,8 +197,8 @@
           <div style="align-self: end;">
             <img
               :src="this.$store.state.darkTheme ?
-                '/images/assets/city-dark.png?nf_resize=fit&w=640'
-                : '/images/assets/city.png?nf_resize=fit&w=640'"
+                '/images/assets/city-dark.svg'
+                : '/images/assets/city.svg'"
               alt=""
               style="margin-bottom: 0;"
             >

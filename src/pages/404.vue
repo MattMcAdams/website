@@ -2,8 +2,7 @@
 <layout>
   <div class="grid-landscape container-wide">
     <div class="mb-1-fluid">
-      <img src="/images/assets/404-dark.png?nf_resize=fit&w=500" alt="" v-if="this.$store.state.darkTheme" style="max-width: 500px; margin: auto; width: 100%;">
-      <img src="/images/assets/404.png?nf_resize=fit&w=500" alt="" style="max-width: 500px; margin: auto; width: 100%;" v-else>
+      <img :src="this.$store.state.darkTheme ? '/images/assets/404-dark.svg':'/images/assets/404.svg'" alt="" style="max-width: 500px; margin: auto; width: 100%;">
     </div>
     <div style="align-self: center;">
       <h1>Page not found</h1>
