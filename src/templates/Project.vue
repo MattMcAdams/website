@@ -55,7 +55,7 @@ query Project ($id: ID!) {
   post: project (id: $id) {
     title
     path
-    date (format: "D. MMMM YYYY")
+    date (format: "D MMMM YYYY")
     description
     content
     cover_image

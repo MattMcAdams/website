@@ -103,7 +103,7 @@
         alt=""
         class="parallax-foreground right-cloud"
       >
-      <div class="content-box" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center;">
+      <div class="container" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center;">
         <div style="width: 100%; margin-bottom: 10vw;">
           <h1 style="text-align: center;">Matthew McAdams</h1>
           <p style="text-align: center;">Designer, web developer, and creative problem solver.</p>

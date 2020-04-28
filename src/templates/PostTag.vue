@@ -30,7 +30,7 @@ query PostTag ($id: ID!) {
             title
             published
             path
-            date (format: "D. MMMM YYYY")
+            date (format: "D MMMM YYYY")
             description
             content
             thumbnail
