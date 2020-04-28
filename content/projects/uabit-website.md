@@ -15,12 +15,12 @@ colors: ['#295135', '#1f6b52', '#80bc00']
 tools: ['XD', 'HTML', 'CSS', 'JavaScript', 'Joomla']
 
 cta: {
-  link: https://github.com/UAB-IT/website-design,
+  link: https://github.com/UAB-IT/linear,
   text: GitHub Repo
 }
 ---
 
-In my third year as UAB IT's web developer, I had the great opportunity to the design and structure of the IT website. As we began a deeper dive into the website's architecture than we ever had, we found years of technical debt, patchwork solutions, and poor organization.
+In my third year as UAB IT's web developer, I had the great opportunity to make sweeping changees to the design and structure of the IT website. As we began a deeper dive into the website's architecture than we ever had, we found years of technical debt, patchwork solutions, and poor organization.
 
 ## Reorganization
 
