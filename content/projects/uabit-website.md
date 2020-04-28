@@ -6,7 +6,7 @@ canonical_url: false
 series: false
 
 tags: ['web', 'design']
-description: "In my third year as UAB IT's web developer I had the great opportunity to make sweeping changes to how the IT website was structured and designed."
+description: "In my third year as UAB IT's web developer, I had the great opportunity to the design and structure of the IT website."
 
 thumbnail: /images/projects/uabit-website/thumbnail.jpg
 cover_image: /images/projects/uabit-website/web-pages.jpg
@@ -20,7 +20,7 @@ cta: {
 }
 ---
 
-In my third year as UAB IT's web developer I had the great opportunity to make sweeping changes to how the IT website was structured and designed. As we began a deeper dive into the website's architecture than we ever had, we found years of technical debt, bandaid solutions, and poor organization.
+In my third year as UAB IT's web developer, I had the great opportunity to the design and structure of the IT website. As we began a deeper dive into the website's architecture than we ever had, we found years of technical debt, patchwork solutions, and poor organization.
 
 ## Reorganization
 
@@ -32,15 +32,15 @@ To tackle this problem, I began with a site map. The site map is a great tool to
 
 ## Dealing with technical debt
 
-One of the most difficult problems was with the website's media folder. All images and documents were stored in the root media folder which totaled 2.32GB. Aside from disk space, this made a huge impact on the image picker in the wysiwyg editor which would cause it to freeze for over a minute each time it was opened.
+One of the most difficult problems was the website's media folder. All images and documents were stored in the root media folder which totaled 2.32GB. Aside from disk space, this made a huge impact on the image picker in the WYSIWYG editor which would cause it to freeze for over a minute each time it was opened.
 
-<!-- Another sizable problem was poor HTML structure caused by lack of training for our editors, and a rather unintellegent wysiwyg editor. Many pages were rittled with MS Word markup and inline styles that were the root of the inconsistency in the website's design. -->
+<!-- Another sizable problem was poor HTML structure caused by lack of training for our editors, and a rather unintellegent WYSIWYG editor. Many pages were rittled with MS Word markup and inline styles that were the root of the inconsistency in the website's design. -->
 
-In the end, we decided that it would be easier to rebuild the website from the ground up, following new standards for development to ensure consistency in the future. After rebuilding the website, we had a clear folder structure and had reduced the media disk usage down to 77.2MB - a huge win for performance.
+In the end, we decided that it would be easier to rebuild the website from the ground up - following new standards for development - to ensure consistency in the future. After rebuilding the website, we had a clear folder structure, and had reduced the media disk usage down to 77.2MB - a huge win for performance.
 
 ## User focused design
 
-Aftwe we solved the website's technical problems, I turned my attention to the design aspect. After several months of UX research, I presented several new mockups and the beginning of a design system for the website going forward. The new design was focused on intentional use of white space, thoughtful use of color, and clear typographical hierarchy.
+After we solved the website's technical problems, I turned my attention to the aspect of design. After several months of UX research, I presented several new mockups and the beginning of a design system for the website going forward. The new design was focused on intentional use of white space, thoughtful use of color, and clear typographical hierarchy.
 
 ![Mockups of web pages](/images/projects/uabit-website/web-pages.jpg)
 
@@ -54,7 +54,7 @@ Aftwe we solved the website's technical problems, I turned my attention to the d
 
 ## Maintainability
 
-To ensure the structure and design of the website was maintainable going forward, my team and I created a comprehensive design system and documentation website that outlined core design philosophy, UI components, content strategy, organization, and naming conventions.
+To ensure the maintainability of the structure and design of the website, my team and I created a comprehensive design system and documentation website that outlined core design philosophy, UI components, content strategy, organization, and naming conventions.
 
 ![Image of UI Kit](/images/projects/uabit-website/ui-kit.jpg)
 
@@ -72,4 +72,4 @@ However, since we used SCSS for the project, we shortened the unnecessary, speci
 
 ## Outcomes
 
-After a year of research, development, and countless revisions, the new website launched with overwhelmingly positive feedback. Our website audits also saw massive improvements to UX, accessibility, and performance. Because of the new design system and clearly structured backend, it became much easier to design and launch a new webpage, cutting development time in half.
+After a year of research, development, and countless revisions, the new website launched with overwhelmingly positive feedback. Our website audits also saw massive improvements to UX, accessibility, and performance. Due to the new design system and clearly structured backend, it became much easier to design and launch a new webpage, cutting development time in half.
