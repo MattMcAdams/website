@@ -15,7 +15,7 @@ colors: ['#295135', '#1f6b52', '#80bc00']
 tools: ['XD', 'HTML', 'CSS', 'JavaScript', 'Joomla']
 
 cta: {
-  link: https://github.com/UAB-IT/website-design,
+  link: https://github.com/UAB-IT/linear,
   text: GitHub Repo
 }
 ---
