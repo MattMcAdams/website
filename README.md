@@ -4,24 +4,16 @@ Welcome to the repo for my personal website! I'm not really sure what to say her
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/69ea7e24-27c8-410f-89d0-6a597c117be3/deploy-status)](https://app.netlify.com/sites/mattmcadams/deploys)
 
-## Roadmap
-
-I have always used my website as a testbed for things I'm interested in or learning. That being said, anything is subject to change at any time. A few things I'm interested in:
-
-1. Implementing somee kind of CMS (Looking at Netlify CMS)
-2. Better image organization/handling
-3. Maybe look into Gatsby/React?
-
 ## Tools & workflow
 
-This website is built with [Gridsome](https://gridsome.org/) and hosted on [Netlify](https://www.netlify.com/). Images are currently hosted in a Google Cloud bucket, but I'm looking into options.
+This website is built with [Gridsome](https://gridsome.org/) and hosted on [Netlify](https://www.netlify.com/).
 
 ### Requirements
 
 1. Install [Node & NPM](https://nodejs.org/en/download/)
-2. Install the [Google Cloud SDK](https://cloud.google.com/sdk)
-3. (Optional) Install [VS Code](https://code.visualstudio.com/) and my [Extensions]()
-4. (Optional) Install the [Netlify CLI](https://docs.netlify.com/cli/get-started/)
+2. Install [git LFS](https://git-lfs.github.com/)
+3. Install [Netlify CLI](https://docs.netlify.com/cli/get-started/)
+4. Install [Netlify Large Media](https://docs.netlify.com/large-media/setup/)
 5. Install [node-gyp](https://github.com/nodejs/node-gyp)
 
 Clone this repo, (Optional) Switch to the Dev branch for major work
@@ -31,23 +23,26 @@ git clone https://github.com/MattMcAdams/website.git
 git checkout dev
 ```
 
-Install dependancies & sync images
+Install dependancies
 
 ```txt
 npm install
-gsutil rsync -r gs://mattmcadams.com/ static/images
 ```
 
-Remember to sync-up images if any changes has been made to them before pushing changes to remote
+### Working with Netlify Large Media
+
+If you have trouble pushing a commit using large media, reinstall Netlify Large Media like so:
 
 ```txt
-gsutil rsync -r static/images gs://mattmcadams.com/
+netlify lm:install
+netlify lm:setup
 ```
 
-### Technology & Links
+This will usually solve any lfs errors you get during the push.
+
+## Technology & Links
 
 * [Vue.js](https://vuejs.org/)
-* [rsync](https://cloud.google.com/storage/docs/gsutil/commands/rsync)
 * [Sass](https://sass-lang.com/)
 * [Remark containers](https://github.com/Nevenall/remark-containers)
 * [Tiny helpers](https://tiny-helpers.dev/)
