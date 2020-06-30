@@ -15,10 +15,10 @@
 }
 .contrib-legend {
   li[style*="#ebedf0"] { background-color: var(--color-gray-200) !important; }
-  li[style*="#c6e48b"] { background-color: var(--color-blue-200) !important; }
-  li[style*="#7bc96f"] { background-color: var(--color-blue-400) !important; }
-  li[style*="#239a3b"] { background-color: var(--color-blue-600) !important; }
-  li[style*="#196127"] { background-color: var(--color-blue-800) !important; }
+  li[style*="#9be9a8"] { background-color: var(--color-blue-200) !important; }
+  li[style*="#40c463"] { background-color: var(--color-blue-400) !important; }
+  li[style*="#30a14e"] { background-color: var(--color-blue-600) !important; }
+  li[style*="#216e39"] { background-color: var(--color-blue-800) !important; }
 }
 .calendar-graph text.wday,
 .calendar-graph text.month {
