@@ -60,6 +60,9 @@ ul:not([class]), ol:not([class]) {
   li, ol, ul { @include mb(0.5); }
 }
 
+dt { font-weight: bold; }
+dd { @include pl(1); }
+
 /* END !SECTION LISTS */
 /** -----------------------------------------------------------------
   * SECTION MEDIA
