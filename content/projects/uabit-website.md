@@ -72,4 +72,4 @@ However, since we used SCSS for the project, we shortened the unnecessary, speci
 
 ## Outcomes
 
-After a year of research, development, and countless revisions, the new website launched with overwhelmingly positive feedback. Our website audits also saw massive improvements to UX, accessibility, and performance. Due to the new design system and clearly structured backend, it became much easier to design and launch a new webpage, cutting development time in half.
+After a year of research, development, and countless revisions, the new website is being reviewed with overwhelmingly positive feedback. Our website audits on the dev site are also seeing massive improvements to UX, accessibility, and performance. Due to the new design system and clearly structured backend, it has become much easier to design and launch a new webpage, cutting development time in half.
