@@ -47,7 +47,6 @@ query Post ($id: ID!) {
     date (format: "D MMMM YYYY")
     description
     content
-    cover_image
     tags {
       id
       title

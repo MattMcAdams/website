@@ -10,7 +10,6 @@
       :key="edge.node.id"
       :title="edge.node.title"
       :path="edge.node.path"
-      :thumbnail="edge.node.thumbnail"
       :date="edge.node.date"
       :description="edge.node.description"
       :tags="edge.node.tags"
@@ -33,7 +32,6 @@ query PostTag ($id: ID!) {
             date (format: "D MMMM YYYY")
             description
             content
-            thumbnail
           }
         }
       }
