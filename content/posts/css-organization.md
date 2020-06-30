@@ -2,7 +2,7 @@
 title: CSS Organization
 date: 2019-12-06
 published: true
-tags: ['code', 'css']
+tags: ['css', 'process']
 series: false
 cover_image:
 thumbnail:
