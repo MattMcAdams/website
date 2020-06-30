@@ -2,10 +2,10 @@
 title: Code Comment Anchors
 date: 2019-11-02
 published: true
-tags: ['code']
+tags: ['code', 'process']
 series: false
-cover_image: https://assets.mattmcadams.com/code-comments.jpg
-thumbnail: https://assets.mattmcadams.com/code-comments.jpg
+cover_image:
+thumbnail:
 canonical_url: false
 description: "One of the really cool plugins I found for VS Code is this tool called Comment Anchors. It’s a way of adding more visible, meaningful comments to your code. I’m a really big fan of writing documentation in the code itself, so its nice to have a way to highlight the most important notes."
 ---
@@ -59,6 +59,6 @@ If you need to use unorthodox methods to fix a bug or implement a feature, it ca
 ## Closing thoughts
 I know a lot of developers like to keep the code free of comment clutter, but when used responsibly, these types of tags can be really helpful.
 
-[Comment Anchors]() will highlight the entire comment line as well as provide a list of anchors established. The plugin is also extremely customizable, so you can add or remove anchors to fit your style.
+[Comment Anchors](https://marketplace.visualstudio.com/items?itemName=ExodiusStudios.comment-anchors) will highlight the entire comment line as well as provide a list of anchors established. The plugin is also extremely customizable, so you can add or remove anchors to fit your style.
 
-Download my personal configuration [here]()
+[Download my personal configuration](https://gist.github.com/MattMcAdams/7cfbf8b560bba93e6c1f52341a7540ce).
