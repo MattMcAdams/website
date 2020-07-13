@@ -3,10 +3,7 @@ title: Vertical Rhythm
 date: 2020-07-13
 published: true
 tags: ['typography', 'design', 'css']
-series: false
-cover_image:
-thumbnail:
-canonical_url: false
+series: "Typography"
 description: "Vertical rhythm is a concept in typography that aims to keep vertical spaces between elements consistent with each other. This creates repeatable patterns that readers subconsciously understand and use to read faster and more accurately."
 ---
 

@@ -3,10 +3,7 @@ title: Graduating Amid a Crisis
 date: 2020-05-07
 published: false
 tags: ['personal']
-series: false
-cover_image:
-thumbnail:
-canonical_url: false
+series:
 description: "The graduation ceremony, at least for me, is about putting the book end on a chapter of life, having a moment to celebrate that achievement, but most importantly to saying goodbye to our peers and professors who had become our friends, supporters, mentors and colleagues."
 ---
 

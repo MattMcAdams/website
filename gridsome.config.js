@@ -40,6 +40,10 @@ module.exports = {
           tags: {
             typeName: 'PostTag',
             create: true
+          },
+          series: {
+            typeName: 'PostSeries',
+            create: true
           }
         }
       }
