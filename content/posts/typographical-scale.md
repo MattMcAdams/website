@@ -93,7 +93,3 @@ h3    { $ms_1; }
 h2    { $ms_2; }
 h1    { $ms_3; }
 ```
-
-## Further reading
-
-This is only the tip of the iceberg of web typography. I'll be making several other articles on vertical rhythm, a few approaches to responsive type, and fully fluid typography on the web.
