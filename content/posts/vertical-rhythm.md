@@ -7,6 +7,8 @@ series: "Typography"
 description: "Vertical rhythm is a concept in typography that aims to keep vertical spaces between elements consistent with each other. This creates repeatable patterns that readers subconsciously understand and use to read faster and more accurately."
 ---
 
+![left: example of good vertical rhythm, right: example of poor vertical rhythm](/images/posts/vertical-rhythm.png)
+
 Vertical rhythm is a concept in typography that aims to keep vertical spaces between elements consistent with each other. This creates repeatable patterns that readers subconsciously understand and use to read faster and more accurately.
 
 As a disclaimer, this is going to be an opinionated and complicated article.
@@ -37,6 +39,8 @@ The baseline grid is perhaps the pinnacle of vertical rhythm and many have tried
 What is a baseline grid? The baseline is the invisible line that all typographical characters sit on. A baseline grid is a system that use's the leading of a page's body copy to align all elements to the baselines of the text. This ensures that in two columns, the lines of text look like they sit on the same invisible line.
 
 So what's the problem? The web doesn't care about baselines. It takes a much looser approach to typography, using `line-height` an invisible bounding box the text sits in.
+
+![Example of baseline alignment vs line hight alignment. Notice that text using line height is positioned in the middle of the bounding box.](/images/posts/baseline-line-height.png)
 
 This article is not going to go into replicating the baseline grid. If you're really interested in this approach, I'd recommend taking a look at the [8pt grid system](https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632). It's probably the closest thing to the baseline grid on the web.
 

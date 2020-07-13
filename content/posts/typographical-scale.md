@@ -30,6 +30,8 @@ I bring this up in a series about typography because typography and its measurem
 
 Typographic measuring systems began with the letterpress, which required all characters and spaces to sit tightly packed line after line on a physical press. What resulted from this was the classical type scale: 18pt, 24pt, 36pt, 48pt, 64pt, 72pt, and 96pt. These numbers were chosen because of their mathematical relationship. 18 = two lines of 9; 24 = two lines of 12; 48 = two lines of 24; 72 = two lines of 36 or six lines of 12.
 
+![Diagram of the mathematical relationships of font sizes in the classical type scale](/images/posts/classical-scale.png)
+
 This typographical scale served for hundreds of years and is now considered the default in many word processing software. Now in the age of computer graphics and websites, we more often need to specify a *relative* size for each step in the scale to ensure the composition responds to responsive and reactive environments.
 
 ## The base unit
@@ -43,6 +45,8 @@ A trick I've seen many times to simplify typographical math on the web is to res
 The classical typographical scale uses multiples of 3 and a designer has selected a few values from that set to create a range of font sizes that work harmoniously together. Now that there are no physical constraints to selecting font sizes, what keeps designers from selecting completely arbitrary values? Well, sometimes they do, but creating a set scale is a more reliable way to create font sizes that share a rhythm.
 
 One way to create a typographical scale is to use a ratio. Sometimes called "modular scales" these scales can have an infinite number of steps and can react to changes in the base unit.
+
+![Preview of the first three font sizes in a modular scale with a ratio of 1.5](/images/posts/modular-scale.png)
 
 The first step is to choose a ratio, for this example I'll be using 1.5 and a base unit of 10px. Multiply each step by the ratio to get the value of the next.
 
