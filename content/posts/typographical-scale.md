@@ -17,8 +17,6 @@ I bring this up in a series about typography because typography and its measurem
 ## Terminology
 
 <dl>
-	<!--<dt>Baseline</dt>
-	<dd>The invisible shared line on which capital letters sit. Curved or pointed letters, such as o and v, often fall slightly below the baseline to adjust to optically for their diminished points of contact with the line.</dd>-->
 	<dt>Body</dt>
 	<dd>The related paragraphs of text is a typographic composition. "Body" typically refers to the primary copy and supported by headlines, captions, quotations, etc.</dd>
 	<dt>Composition</dt>
@@ -27,14 +25,6 @@ I bring this up in a series about typography because typography and its measurem
 	<dd>The maximum height of all characters in a font including all ascenders and descenders.</dd>
 	<dt>Hierarchy</dt>
 	<dd>An organization of elements in a composition that assigns greater importance to some elements than others.</dd>
-	<!--<dt>Leading</dt>
-	<td>The distance from baseline to baseline in a paragraph of text.</td>
-	<dt>Letter spacing</dt>
-	<td>The uniform alteration of the space between letters of a word. Similar to Tracking, the overall adjustment to the spaces between letters in all words in a block of text.</td>
-	<dt>Line height</dt>
-	<td>The height of the invisible bounding box containing a line of text.<td>
-	<dt>Line length</dt>
-	<dd>The length of a line of body copy, containing an average number of characters and spaces in the selected typeface and font size.</dd>-->
 	<dt>Rhythm</dt>
 	<dd>An ordered recurrent alteration of elements in a visual sequence.</dd>
 </dl>
