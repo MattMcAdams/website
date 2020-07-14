@@ -4,7 +4,8 @@
 }
 .footer-info small,
 .footer-info small a {
-  color: var(--color-gray-500) !important;
+  color: var(--color-gray-700) !important;
+  font-weight: normal;
 }
 </style>
 
@@ -12,7 +13,7 @@
 <template>
 <div class="footer-info">
   <p style="margin-bottom: 0;">Also find me on:</p>
-  <p style="margin-bottom: 0;" class="txt-gray-500"><small>
+  <p style="margin-bottom: 0;"><small>
     <a href="https://twitter.com/mattmakesart" target="_blank" rel="noopener">Twitter</a> &#183;
     <a href="https://www.instagram.com/mattmcadams/" target="_blank" rel="noopener">Instagram</a> &#183;
     <a href="https://www.linkedin.com/in/mcadamsmatthew/" target="_blank" rel="noopener">LinkedIn</a> &#183;

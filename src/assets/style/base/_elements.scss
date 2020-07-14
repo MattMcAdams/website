@@ -3,8 +3,9 @@
 ------------------------------------------------------------------ */
 
 a:not([class]) {
-  @include txt-color(blue);
+  @include txt-color(blue, 500);
   text-decoration: none;
+  font-weight: bold;
 
   &:hover, &:focus {
     @include txt-color(blue, 800);

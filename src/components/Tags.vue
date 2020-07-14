@@ -19,6 +19,9 @@
     /*box-shadow: 0 0 0 2px var(--color-blue-500);*/
   }
 }
+body[data-theme="dark"] .ui-tag {
+  background-color: var(--color-gray-300);
+}
 </style>
 
 <template>

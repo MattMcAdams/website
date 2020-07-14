@@ -21,7 +21,7 @@
 
     <div class="post-item_header">
         <h1 class="txt-medium mb-0">{{this.title}}</h1>
-      <p class="txt-small txt-gray">Posted on: {{this.date}}</p>
+      <p class="txt-small txt-gray-700">Posted on: {{this.date}}</p>
     </div>
 
     <div class="post-item_description">
