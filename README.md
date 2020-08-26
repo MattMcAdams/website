@@ -1,6 +1,6 @@
 # mattmcadams.com
 
-Welcome to the repo for my personal website! I'm not really sure what to say here since its just my website, but feel free to poke around.
+Welcome to the repo for my personal website! I'm not really sure what to say here since its just my website, but feel free to poke around. This readme exists more for my own sanity.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/69ea7e24-27c8-410f-89d0-6a597c117be3/deploy-status)](https://app.netlify.com/sites/mattmcadams/deploys)
 
@@ -52,9 +52,9 @@ This will usually solve any lfs errors you get during the push.
 
 ## Contribute
 
-If you see a spelling mistake, notice a bug, want to give feedback, or have any ideas / solutions to some of those problems; feel free to open an issue here on GitHub or reach out to me at mattmcadams@outlook.com
+If you see a spelling mistake, notice a bug, want to give feedback, or have any ideas; feel free to open an issue here on GitHub or reach out to me at mattmcadams@outlook.com
 
-All code in this project is licensed under the Mozilla Public License 2.0 exclusive to any intellectual property in the form of blog post content, visual design, or any other material that may be considered "website content". If you have any questions please fell free to reach out to me at mattmcadams@outlook.com
+All code in this project is licensed under the Mozilla Public License 2.0 exclusive to any intellectual property in the form of blog post content, visual design, or any other material that may be considered "website content". I would like to keep this website open source so others can get inspiration and learn, but I do not support or endorse making a fork of this code to create a copy of my design. If you have any questions or want me to design you a website of your own, please feel free to reach out to me at mattmcadams@outlook.com
 
 ## Browser Support
 
