@@ -67,13 +67,12 @@ button.navbar_item:hover {
 <div class="navbar-wrapper">
 <nav class="navbar container-wide" role="navigation" aria-label="primary navigation">
   <div class="navbar_brand">
-    <g-link class="navbar_item navbar_logo" to="/">mattmcadams</g-link>
     <a role="button" class="navbar-burger icon-unfold navbar_item" aria-label="menu" aria-expanded="false" @click="toggleMenu"></a>
   </div>
 
   <div class="navbar_menu" v-bind:class="{ 'is-active': isActive }">
     <div class="navbar_start">
-      <!--<g-link to="/" class="navbar_item">Home</g-link>-->
+      <g-link to="/" class="navbar_item">Home</g-link>
       <g-link to="/work" class="navbar_item">Work</g-link>
       <g-link to="/thoughts" class="navbar_item">Thoughts</g-link>
     </div>
