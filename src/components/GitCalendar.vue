@@ -11,7 +11,7 @@
 }
 .graph-before-activity-overview {
   overflow: scroll;
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 .contrib-legend {
   li[style*="#ebedf0"] { background-color: var(--color-gray-200) !important; }
