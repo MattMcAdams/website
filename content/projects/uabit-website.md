@@ -62,14 +62,6 @@ To ensure the maintainability of the structure and design of the website, my tea
 
 ![Image of documentation site](/images/projects/uabit-website/docs.jpg)
 
-<!--### Specificity woes
-
-One last challenge we had to deal with was overriding CSS owned by central university relations, a different team in a different building. This was not without it's challenges, especially since the central CSS has specificity issues of its own. This meant that our CSS file had somewhat obsurd selectors to get over that specificity.
-
-However, since we used SCSS for the project, we shortened the unnecessary, specificity only, parts of our selectors to a single SCSS variable. This means that in the future, we can easily improve the specificity of our own CSS as issues were improved on university relations's side.
-
-![Image of selector specificity](/images/projects/uabit-website/specificity.jpg)-->
-
 ## Outcomes
 
-After a year of research, development, and countless revisions, the new website is being reviewed with overwhelmingly positive feedback. Our website audits on the dev site are also seeing massive improvements to UX, accessibility, and performance. Due to the new design system and clearly structured backend, it has become much easier to design and launch a new webpage, cutting development time in half.
+After a year of research, development, and countless revisions, the new website launched with overwhelmingly positive feedback. Our website audits are also seeing massive improvements to UX, accessibility, and performance. Due to the new design system and clearly structured backend, it has become much easier to design and launch a new webpage, cutting development time in half.
