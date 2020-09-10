@@ -29,10 +29,12 @@
 .lang-bar .pos-absolute:first-child {
   border-right: none;
 }
-.lang-bar_CSS { background-color: var(--brand-blue); }
-.lang-bar_Vue { background-color: var(--brand-dusk); }
-.lang-bar_JavaScript { background-color: var(--color-yellow-500); }
-.lang-bar_HTML { background-color: var(--color-red-500); }
+.lang-bar_CSS { background-color: #5687b3; }
+.lang-bar_SCSS { background-color: #5687b3; }
+.lang-bar_Vue { background-color: #3f556f; }
+.lang-bar_JavaScript { background-color: #ecc94b; }
+.lang-bar_HTML { background-color: #f56565; }
+.lang-bar_PHP { background-color: #9F7AEA; }
 </style>
 
 <template>
