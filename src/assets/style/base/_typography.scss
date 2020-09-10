@@ -7,7 +7,7 @@ body {
   @include font-body;
   @include bg-color(gray, 100);
   @include txt-normal;
-  @include txt-color(gray, 800);
+  @include txt-color(gray, 900);
   line-height: 1.6;
 }
 

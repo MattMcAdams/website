@@ -129,3 +129,5 @@ $config-fluid-min-width: 320;
 .font-head { @include font-head(!important); }
 .font-mono { @include font-mono(!important); }
 .font-icon { @include font-icon(!important); }
+
+.txt-bold { font-weight: bold; }

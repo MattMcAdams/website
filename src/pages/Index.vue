@@ -168,7 +168,7 @@
     <section>
       <div class="container">
         <h2 class="txt-center">Say Hello</h2>
-        <p class="txt-center">Feel free to reach out to me for any questions, concerns, or comments. I'm also open to full-time opportunities as well as freelance work.</p>
+        <p class="txt-center">Feel free to reach out to me for any questions, concerns, or comments. I'm also open to freelance work.</p>
       </div>
 
       <div class="container-wide">

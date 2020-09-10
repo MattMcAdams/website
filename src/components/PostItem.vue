@@ -19,15 +19,9 @@
 <template>
   <article class="post-item bg-gray-200 rounded pa-1 mb-1">
 
-    <!-- <div class="post-item_thumbnail mt-1" v-if="this.thumbnail" hidden>
-      <g-link :to="this.path">
-        <img :alt="this.title" style="width: 100%;" :src="this.thumbnail"/>
-      </g-link>
-    </div> -->
-
     <div class="post-item_header">
         <h1 class="txt-medium mb-0">{{this.title}}</h1>
-      <p class="txt-small txt-gray">Posted on: {{this.date}}</p>
+      <p class="txt-small txt-gray-700">Posted on: {{this.date}}</p>
     </div>
 
     <div class="post-item_description">
@@ -54,7 +48,6 @@ export default {
   props: {
     title: String,
     path: String,
-    thumbnail: String,
     date: String,
     description: String,
     tags: Array

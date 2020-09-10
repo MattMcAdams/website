@@ -14,4 +14,7 @@
 @media ( orientation: portrait ) { .grid-portrait { @include basic-grid; } }
 @media ( orientation: landscape ) { .grid-landscape { @include basic-grid; } }
 
+.has-sidebar .grid--max-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 /* END !SECTION GRID */

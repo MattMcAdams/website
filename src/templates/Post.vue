@@ -6,6 +6,7 @@
 
 <template>
 <Layout>
+  <!-- Conditional sidebar  :sidebar="$page.post.series ? true : false" -->
   <div class="container post">
     <header class="mb-1-fluid txt-center post_header">
       <h1> {{ $page.post.title }} </h1>
@@ -43,11 +44,14 @@ export default {
 query Post ($id: ID!) {
   post: post (id: $id) {
     title
+    series {
+      id
+      title
+    }
     path
     date (format: "D MMMM YYYY")
     description
     content
-    cover_image
     tags {
       id
       title

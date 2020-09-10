@@ -40,6 +40,10 @@ module.exports = {
           tags: {
             typeName: 'PostTag',
             create: true
+          },
+          series: {
+            typeName: 'PostSeries',
+            create: true
           }
         }
       }
@@ -56,6 +60,7 @@ module.exports = {
     remark: {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      autolinkHeadings: false,
       plugins: [
         '@gridsome/remark-prismjs',
         ['remark-containers', { default: true }]

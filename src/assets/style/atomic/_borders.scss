@@ -23,11 +23,11 @@ $bdr-thick: 5px;
 @mixin rounded-xlarge($important: null) { border-radius: $rounded-xlarge $important; }
 @mixin rounded-full($important: null) { border-radius: $rounded-full $important; }
 
-@mixin bdr-hairline($important: null) { border: 1px solid currentColor $important; }
-@mixin bdr-thin($important: null) { border: 2px solid currentColor $important; }
-@mixin bdr-medium($important: null) { border: 3px solid currentColor $important; }
-@mixin bdr-thick($important: null) { border: 5px solid currentColor $important; }
-@mixin bdr-bold($important: null) { border: 10px solid currentColor $important; }
+@mixin bdr-hairline($important: null) { border-width: 1px $important; border-style: solid; }
+@mixin bdr-thin($important: null) { border-width: 2px $important; border-style: solid; }
+@mixin bdr-medium($important: null) { border-width: 3px $important; border-style: solid; }
+@mixin bdr-thick($important: null) { border-width: 5px $important; border-style: solid; }
+@mixin bdr-bold($important: null) { border-width: 10px $important; border-style: solid; }
 
 /** -----------------------------------------------------------------
   * BORDERS

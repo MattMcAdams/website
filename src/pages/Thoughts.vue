@@ -12,7 +12,6 @@
       :key="edge.node.id"
       :title="edge.node.title"
       :path="edge.node.path"
-      :thumbnail="edge.node.thumbnail"
       :date="edge.node.date"
       :description="edge.node.description"
       :tags="edge.node.tags"
@@ -30,7 +29,6 @@ query {
         title
         date (format: "D MMMM YYYY")
         description
-        thumbnail
         path
         tags {
           id

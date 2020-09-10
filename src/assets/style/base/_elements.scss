@@ -3,8 +3,9 @@
 ------------------------------------------------------------------ */
 
 a:not([class]) {
-  @include txt-color(blue);
+  @include txt-color(blue, 500);
   text-decoration: none;
+  font-weight: bold;
 
   &:hover, &:focus {
     @include txt-color(blue, 800);
@@ -30,16 +31,32 @@ a:not([class]) {
   * SECTION BLOCKQUOTE
 ------------------------------------------------------------------ */
 
-blockquote {
+blockquote,
+.callout {
   --theme-color: var(--color-blue-500);
+  --theme-bg: var(--color-blue-100);
   border-left: 10px solid var(--theme-color);
+  background-color: var(--theme-bg);
+  @include pt(1);
   @include pl(1);
-  @include txt-color(gray, 900);
-  // @include rounded;
-  // @include bg-color(blue, 100);
-  // p:first-child {
-  //   @include txt-medium;
-  // }
+  @include mb(1);
+  @include pb(1);
+  @include rounded;
+  p:last-child {
+    @include mb(0);
+  }
+  &.theme-positive {
+    --theme-color: var(--color-green-500);
+    --theme-bg: var(--color-green-100);
+  }
+  &.theme-warning {
+    --theme-color: var(--color-red-500);
+    --theme-bg: var(--color-red-100);
+  }
+  &.theme-caution {
+    --theme-color: var(--color-yellow-500);
+    --theme-bg: var(--color-yellow-100);
+  }
 }
 
 /* END !SECTION BLOCKQUOTE */
@@ -59,6 +76,9 @@ ul:not([class]), ol:not([class]) {
 
   li, ol, ul { @include mb(0.5); }
 }
+
+dt { font-weight: bold; }
+dd { @include pl(1); }
 
 /* END !SECTION LISTS */
 /** -----------------------------------------------------------------
