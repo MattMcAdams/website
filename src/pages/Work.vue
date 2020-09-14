@@ -12,7 +12,7 @@
       </div>
       <div>
         <h2 class="txt-h4 mt-0">Contact</h2>
-        <p>mattmcadams@outlook.com<br><a href="/cdn/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
+        <p>mattmcadams@outlook.com<br><a href="https://docs.google.com/document/d/1sIaX9Ixp5kGMlreyRg9CX_aXSw123y4ekV6RQ4riaiE/edit?usp=sharing" target="_blank" rel="noopener">Curriculum Vitae</a></p>
       </div>
     </aside>
   </template>
