@@ -65,7 +65,7 @@ Attika is an exploration of typographical design through technological advanceme
 <hr class="spacer">
 
 <div class="video-wrapper">
-  <iframe src="/attika-pdf" style="width: 100%; height: 100%; overflow: hidden;" scrolling="no" allowtransparency="true"></iframe>
+  <iframe src="https://pdf.mattmcadams.com/attika/" style="width: 100%; height: 100%; overflow: hidden;" scrolling="no" allowtransparency="true"></iframe>
 </div>
 
 
