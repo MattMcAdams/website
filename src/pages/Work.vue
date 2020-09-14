@@ -26,9 +26,11 @@
         :path="'https://github.com/MattMcAdams/website'"
         :description="'My personal website, blog, and portfolio'"
         :languages="[
-          {'name':'HTML', 'percent':'34%', 'width':'100%'},
-          {'name':'Vue', 'percent':'17%', 'width':'66%'},
-          {'name':'SCSS', 'percent':'49%', 'width':'49%'}
+          {'name':'JavaScript', 'percent':'3%', 'width':'100%'},
+          {'name':'CSS', 'percent':'5%', 'width':'97%'},
+          {'name':'SCSS', 'percent':'22%', 'width':'92%'},
+          {'name':'Vue', 'percent':'25%', 'width':'70%'},
+          {'name':'HTML', 'percent':'45%', 'width':'45%'}
         ]"
       />
       <GitCard
