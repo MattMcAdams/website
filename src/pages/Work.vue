@@ -19,7 +19,7 @@
 
   <section>
     <h2 class="mt-0 txt-h3">Open Source</h2>
-    <GitCalendar/>
+    <!-- <GitCalendar/> -->
     <div class="grid mb-1">
       <GitCard
         :title="'mattmcadams.com'"
