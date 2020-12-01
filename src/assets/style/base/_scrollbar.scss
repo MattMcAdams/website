@@ -1,0 +1,26 @@
+/** -----------------------------------------------------------------
+  * SECTION SCROLLBAR
+------------------------------------------------------------------ */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-teal-200);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-teal-400);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-teal-500);
+}
+
+/* END !SECTION SCROLLBAR */
