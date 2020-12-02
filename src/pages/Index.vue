@@ -219,24 +219,19 @@
 
 
 <script>
-import respImg from '~/components/Image.vue'
 import FooterInfo from '~/components/Footer.vue'
 import TopNav from '~/components/NavigationBar.vue'
 
 export default {
   metaInfo: {
     title: 'Home',
-    meta: [
-      { name: 'description', content: 'Matt McAdams is an award winning web designer and developer working in Alabama.' }
-    ],
     bodyAttrs: {
       class: 'home-page'
     }
   },
   components: {
     FooterInfo,
-    TopNav,
-    respImg
+    TopNav
   },
   data() {
     return { formData: {} }
