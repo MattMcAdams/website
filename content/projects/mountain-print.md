@@ -2,10 +2,17 @@
 title: Mountain Print
 date: 2018-09-15
 published: false
+
 tags: ['illustration', 'silkscreen']
-cover_image: https://assets.mattmcadams.com/Mountain_detail1.jpg
-canonical_url: false
 description: "Mountain is a 2 color silk screen print inspired by floating islands and geometric design."
+
+thumbnail: https://assets.mattmcadams.com/Mountain_detail1.jpg
+cover_image: https://assets.mattmcadams.com/Mountain_detail1.jpg
+
+colors: ['#fff']
+tools: ['Illustrator']
+
+cta: null
 ---
 
 Mountain is a 2 color silk screen print inspired by floating islands and geometric design.

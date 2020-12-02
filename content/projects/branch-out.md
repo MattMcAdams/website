@@ -2,7 +2,6 @@
 title: Branch Out
 date: 2018-09-20
 published: false
-canonical_url: false
 
 tags: ['design', 'branding']
 description: "“Branch Out” reflects The Birmingham Botanical Gardens’ mission to promote public knowledge and appreciation of plants, gardens and the environment through monthly volunteering opportunites."

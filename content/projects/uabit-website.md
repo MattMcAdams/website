@@ -2,8 +2,6 @@
 title: UABIT Website
 date: 2020-05-01
 published: true
-canonical_url: false
-series: false
 
 tags: ['web', 'design']
 description: "In my third year as UAB IT's web developer, I had the great opportunity to the design and structure of the IT website."

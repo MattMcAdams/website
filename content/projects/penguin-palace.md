@@ -2,8 +2,6 @@
 title: Penguin Palace
 date: 2017-10-28
 published: true
-canonical_url: false
-series: false
 
 tags: ['branding', 'packaging', 'design']
 description: "This retro design is a fresh and playful brand exploration for a fictional ice cream shop in Birmingham Alabama. The design is all about playing with the edges of the material and serving delightful moments through the design."

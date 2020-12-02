@@ -2,9 +2,13 @@
 title: CSS Organization
 date: 2019-12-06
 published: true
+series: false
+
 tags: ['css', 'process']
-series:
 description: "While researching best practices of CSS organization this past year for a huge UI project at work, I ran across several ideas and strategies to solve this problem. My goal here is to digest these ideas and formulate a more comprehensive approach to organizing CSS."
+
+thumbnail: null
+cover_image: null
 ---
 
 While researching best practices of CSS organization this past year for a huge UI project at work, I ran across several ideas and strategies to solve this problem. My goal here is to digest these ideas and formulate a more comprehensive approach to organizing CSS.

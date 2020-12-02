@@ -2,7 +2,6 @@
 title: SkyTrail
 date: 2019-10-10
 published: true
-canonical_url: false
 
 tags: ['illustration', 'design', 'branding']
 description: "This branding project is a work of design fiction exploring the brand identity of a proposed public works project. The Birmingham SkyTrail is an inexpensive, environmentally-friendly form of transportation that will serve the communities in and around Birmingham by connecting people to parks, medicine, jobs, education and more in the downtown area."

@@ -2,10 +2,17 @@
 title: 16th Street Baptist Church
 date: 2019-04-07
 published: false
+
 tags: ['brand identity', 'design']
-cover_image: https://assets.mattmcadams.com/SSBC_thumb.jpg
-canonical_url: false
 description: "This collaborative project between UAB’s Bloom Studio and Birmingham’s 16th Street Baptist Church was an exploration in the church’s past, present, and future brand. In addition to crafting a campaign message and refreshed logo, we also looked at how the brand would play out in merchandise and advertisements. The final deliverable was a strong message, consistent brand, and a host of design assets each with an art control number."
+
+thumbnail: https://assets.mattmcadams.com/SSBC_thumb.jpg
+cover_image: https://assets.mattmcadams.com/SSBC_thumb.jpg
+
+colors: ['#fff', '#fff', '#fff']
+tools: ['Illustrator']
+
+cta: null
 ---
 
 ![](https://assets.mattmcadams.com/SSBC_cover-wide.jpg)

@@ -2,8 +2,6 @@
 title: UABIT Annual Report
 date: 2018-12-15
 published: true
-canonical_url: false
-series: false
 
 tags: ['web', 'design']
 description: "2018 was a great year for the University of Alabama at Birmingham’s Department of Information Technology and we wanted to create a website to showcase the team’s efforts and achievements throughout the year."

@@ -2,7 +2,6 @@
 title: Attika Variable
 date: 2020-04-06
 published: true
-canonical_url: false
 
 tags: ['typography', 'design']
 description: "Attika is an exploration of typographical design through technological advancements introduced in OpenType Variable Fonts."
