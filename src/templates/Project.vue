@@ -41,8 +41,14 @@ export default {
       title: this.$page.post.title,
       meta: [
         {
+          key: 'description',
           name: 'description',
           content: this.$page.post.description
+        },
+        {
+          key: 'thumbnail',
+          name: 'og:image',
+          content: this.$page.post.cover_image
         }
       ]
     }
