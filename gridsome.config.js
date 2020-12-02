@@ -6,7 +6,6 @@
 
 module.exports = {
   siteName: 'Matt McAdams',
-  siteDescription: '',
 
   plugins: [
 

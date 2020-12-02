@@ -18,14 +18,19 @@
 <script>
 export default {
   mounted() {
-    let url = window.location.href
-    let errorMessage =  document.createTextNode("Error: 404\nFile not found at:\n"+url)
-    let code = document.createElement("code")
-    code.appendChild(errorMessage)
-    let pre = document.createElement("pre")
-    pre.appendChild(code)
-    let container = document.getElementById("404")
-    container.appendChild(pre)
+    function notFoundMessage(id) {
+      let url = window.location.href
+      let errorMessage =  document.createTextNode("Error: 404\nFile not found at:\n"+url)
+      let code = document.createElement("code")
+      code.appendChild(errorMessage)
+      let pre = document.createElement("pre")
+      pre.appendChild(code)
+      let container = document.getElementById(id)
+      container.appendChild(pre)
+    }
+
+    notFoundMessage("404")
+    plausible("404",{ props: { path: document.location.pathname } })
   }
 }
 </script>
