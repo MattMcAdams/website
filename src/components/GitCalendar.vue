@@ -1,3 +1,5 @@
+<!-- WARNING: DEPRECATED COMPONENT -->
+
 <style lang="scss">
 .js-calendar-graph,
 .contrib-footer {
@@ -51,6 +53,8 @@
 </template>
 
 <script>
+// NOTE this component requires "github-calendar": "^2.2.6" as a dependency
+// This package has been removed from this project and will need to be readded
 export default {
   mounted() {
     window.GitHubCalendar = require('github-calendar')
