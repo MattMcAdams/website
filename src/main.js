@@ -19,6 +19,14 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     href: 'https://fonts.googleapis.com/css?family=Lato%7CRoboto+Slab&display=swap'
   })
 
+  // Add Analytics
+  head.script.push({
+    src: 'https://plausible.io/js/plausible.js',
+    async: true,
+    defer: true,
+    'data-domain': 'mattmcadams.com'
+  })
+
   // Add global state management for dark mode
   Vue.use(Vuex)
   appOptions.store = new Vuex.Store({
