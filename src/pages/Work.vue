@@ -103,7 +103,6 @@ query {
 
 import GitCard from '~/components/GitCard.vue'
 import ImageCard from '~/components/ImageCard.vue'
-import GitCalendar from '~/components/GitCalendar.vue'
 
 export default {
   metaInfo: {
@@ -111,7 +110,6 @@ export default {
   },
   components: {
     ImageCard,
-    GitCalendar,
     GitCard
   }
 }
