@@ -18,7 +18,7 @@
 /instagram              https://www.instagram.com/mattmcadams/
 /twitter                https://twitter.com/mattmakesart
 /dribbble               https://dribbble.com/mattmcadams
-/kofi                   https://ko-fi.com/F2F77H9M
+/kofi                    https://ko-fi.com/F2F77H9M
 /behance                https://www.behance.net/mattmcadams
 
 # Redirects old portfolio page to new
@@ -30,3 +30,6 @@ https://mattmcadams.netlify.com/* https://www.mattmcadams.com/:splat 301!
 
 # Redirect image requests to my CDN
 /cdn/* https://storage.googleapis.com/mattmcadams.com/:splat 200!
+
+# Color Palette
+/color https://leonardocolor.io/theme.html?name=MattMcAdams&config=%7B%22baseScale%22%3A%22Gray%22%2C%22colorScales%22%3A%5B%7B%22name%22%3A%22Teal%22%2C%22colorKeys%22%3A%5B%22%23f2fdfb%22%2C%22%23c9fbf0%22%2C%22%2397f6e3%22%2C%22%235dead4%22%2C%22%232dd4bf%22%2C%22%2314b8a6%22%2C%22%230d9488%22%2C%22%230f766e%22%2C%22%23115e59%22%2C%22%23134e4a%22%2C%22%230f3e3a%22%5D%2C%22colorspace%22%3A%22RGB%22%2C%22ratios%22%3A%5B1.04%2C1.13%2C1.26%2C1.48%2C1.86%2C2.49%2C3.74%2C5.47%2C7.58%2C9.48%2C11.86%5D%7D%2C%7B%22name%22%3A%22Cyan%22%2C%22colorKeys%22%3A%5B%22%23ecfeff%22%2C%22%23cffafe%22%2C%22%23a5f3fc%22%2C%22%2367e8f9%22%2C%22%2322d3ee%22%2C%22%2306b6d4%22%2C%22%230891b2%22%2C%22%230e7490%22%2C%22%23155e75%22%2C%22%23164e63%22%2C%22%23124153%22%5D%2C%22colorspace%22%3A%22RGB%22%2C%22ratios%22%3A%5B1.04%2C1.12%2C1.25%2C1.45%2C1.81%2C2.43%2C3.68%2C5.36%2C7.27%2C9.11%2C11%5D%7D%2C%7B%22name%22%3A%22Gray%22%2C%22colorKeys%22%3A%5B%22%23f8fafc%22%2C%22%23f1f5f9%22%2C%22%23e2e8f0%22%2C%22%23cbd5e1%22%2C%22%2394a3b8%22%2C%22%2364748b%22%2C%22%23475569%22%2C%22%23334155%22%2C%22%231e293b%22%2C%22%230f172a%22%2C%22%230b111f%22%5D%2C%22colorspace%22%3A%22RGB%22%2C%22ratios%22%3A%5B1.05%2C1.1%2C1.23%2C1.48%2C2.56%2C4.76%2C7.58%2C10.35%2C14.63%2C17.85%2C18.85%5D%7D%2C%7B%22name%22%3A%22Red%22%2C%22colorKeys%22%3A%5B%22%23fef2f2%22%2C%22%23fee2e2%22%2C%22%23fecaca%22%2C%22%23fca5a5%22%2C%22%23f87171%22%2C%22%23ef4444%22%2C%22%23dc2626%22%2C%22%23b91c1c%22%2C%22%23991b1b%22%2C%22%237f1d1d%22%2C%22%236a1818%22%5D%2C%22colorspace%22%3A%22RGB%22%2C%22ratios%22%3A%5B1.09%2C1.22%2C1.45%2C1.9%2C2.77%2C3.76%2C4.83%2C6.47%2C8.31%2C10.02%2C11.95%5D%7D%2C%7B%22name%22%3A%22Yellow%22%2C%22colorKeys%22%3A%5B%22%23fefce8%22%2C%22%23fef9c3%22%2C%22%23fef08a%22%2C%22%23fde047%22%2C%22%23facc15%22%2C%22%23eab308%22%2C%22%23ca8a04%22%2C%22%23a16207%22%2C%22%23854d0e%22%2C%22%23713f12%22%2C%22%235f350f%22%5D%2C%22colorspace%22%3A%22RGB%22%2C%22ratios%22%3A%5B1.03%2C1.07%2C1.16%2C1.32%2C1.53%2C1.92%2C2.94%2C4.92%2C6.85%2C8.67%2C10.49%5D%7D%5D%2C%22brightness%22%3A%22100%22%2C%22contrast%22%3A%221%22%7D
