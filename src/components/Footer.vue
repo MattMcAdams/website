@@ -22,6 +22,6 @@
     <a href="https://github.com/MattMcAdams/" target="_blank" rel="noopener">GitHub</a> &#183;
     <a href="https://ko-fi.com/F2F77H9M" target="_blank" rel="noopener">KoFi</a>
   </small></p>
-  <p><small>Copyright © {{ new Date().getFullYear() }} Matthew McAdams</small></p>
+  <p><small>Copyright &copy; {{ new Date().getFullYear() }} Matthew McAdams | <a href="/privacy">Privacy Policy</a></small></p>
 </div>
 </template>
