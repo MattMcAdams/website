@@ -206,8 +206,8 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" v-model="formData.message"></textarea>
 
-            <div class="grid">
-              <div data-netlify-recaptcha="true"></div>
+            <div class="grid" style="grid-template-columns: 160px 1fr">
+              <div style="transform: scale(0.8); transform-origin: 0 0;"><div data-netlify-recaptcha="true"></div></div>
               <p class="txt-right" style="margin-bottom: 0;"><button type="submit">Submit</button></p>
             </div>
           </form>
