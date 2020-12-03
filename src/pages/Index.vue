@@ -51,6 +51,9 @@
     50% { transform: translate(0, 10px) rotate(180deg); }
     100% { transform: translate(0, 0px) rotate(180deg); }
   }
+  .hidden-field {
+    display: none;
+  }
 </style>
 
 
@@ -178,16 +181,27 @@
             style="z-index: 5;"
             method="POST"
             data-netlify="true"
+            netlify-honeypot="potbox"
             name="contact"
             v-on:submit.prevent="handleSubmit"
             action="/success/"
           >
             <input type="hidden" name="form-name" value="contact" />
-            <label for="name" class="label" >Name</label>
-            <input id="name" type="text" name="name" v-model="formData.name" />
+            <label class="hidden-field" aria-hidden="true">Don’t fill this out if you're human: <input  aria-hidden="true" name="potbox" type="text"/></label>
 
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" v-model="formData.email" />
+            <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: var(--space);">
+              <div>
+                <label for="name" class="label" >Name</label>
+                <input id="name" type="text" name="name" v-model="formData.name" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" v-model="formData.email" />
+              </div>
+            </div>
+
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" name="subject" v-model="formData.subject" />
 
             <label for="message">Message</label>
             <textarea id="message" name="message" v-model="formData.message"></textarea>
