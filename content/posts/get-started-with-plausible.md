@@ -37,6 +37,12 @@ Plausible also lets you [track which URLs are going to 404 pages](https://docs.p
 
 If you're using one of the cool new frameworks like Vue (Gridsome in my case), you may have to put the 404 page script in a module export or something. [Check out how I did it here](https://github.com/MattMcAdams/Website/blob/78b085df4cbb85e8393daf485bd16af8b38cdeea/src/pages/404.vue#L33).
 
+## Track outbound links
+
+You can also track what outbound links are being clicked on and what pages those links were found on. To do this, add a new "custom event" goal, like we did for 404 page tracking and use the exact goal name `Outbound Link: Click`.
+
+That's pretty much all there is to it. You can read more on [Plausible's blog](https://plausible.io/blog/track-outbound-link-clicks) where they talk about this feature and how it can be helpful.
+
 ## Using a custom subdomain
 
 I really really like this feature. Not because it's overly useful or necessary, but because it helps me keep things organized. The only true benefit I can think of for doing this is to ensure the analytics script doesn't accidentally get blocked by an ad blocker. You can skip this step if you want, otherwise head over to [Plausible Custom Domains](https://docs.plausible.io/custom-domain/) to follow along.
