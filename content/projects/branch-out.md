@@ -6,8 +6,8 @@ published: false
 tags: ['design', 'branding']
 description: "“Branch Out” reflects The Birmingham Botanical Gardens’ mission to promote public knowledge and appreciation of plants, gardens and the environment through monthly volunteering opportunites."
 
-thumbnail: /images/projects/branch-out/640/BBG-logo.jpg
-cover_image: /images/projects/branch-out/1280/BBG-logo.jpg
+thumbnail: https://www.mattmcadams.com/images/projects/branch-out/640/BBG-logo.jpg
+cover_image: https://www.mattmcadams.com/images/projects/branch-out/1280/BBG-logo.jpg
 
 colors: ['#a4b962', '#da6882', '#deb576', '#979296', '#5e565b']
 tools: ['Illustrator', 'InDesign', 'Photoshop']

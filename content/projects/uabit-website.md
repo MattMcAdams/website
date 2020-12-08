@@ -6,8 +6,8 @@ published: true
 tags: ['web', 'design']
 description: "In my third year as UAB IT's web developer, I had the great opportunity to the design and structure of the IT website."
 
-thumbnail: /images/projects/uabit-website/640/web-pages.jpg
-cover_image: /images/projects/uabit-website/1280/web-pages.jpg
+thumbnail: https://www.mattmcadams.com/images/projects/uabit-website/640/web-pages.jpg
+cover_image: https://www.mattmcadams.com/images/projects/uabit-website/1280/web-pages.jpg
 
 colors: ['#295135', '#1f6b52', '#80bc00']
 tools: ['XD', 'HTML', 'CSS', 'JavaScript', 'Joomla']

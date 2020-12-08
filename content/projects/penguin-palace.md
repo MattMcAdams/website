@@ -6,8 +6,8 @@ published: true
 tags: ['branding', 'packaging', 'design']
 description: "This retro design is a fresh and playful brand exploration for a fictional ice cream shop in Birmingham Alabama. The design is all about playing with the edges of the material and serving delightful moments through the design."
 
-thumbnail: /images/projects/penguin-palace/640/Penguin_Palace_mark.jpg
-cover_image: /images/projects/penguin-palace/1280/Penguin_Palace_mark.jpg
+thumbnail: https://www.mattmcadams.com/images/projects/penguin-palace/640/Penguin_Palace_mark.jpg
+cover_image: https://www.mattmcadams.com/images/projects/penguin-palace/1280/Penguin_Palace_mark.jpg
 
 colors: ['#ff5072', '#00ade8', '#453a34', '#66554b']
 tools: ['Illustrator']

@@ -6,7 +6,7 @@ published: true
 tags: ['typography', 'design']
 description: "Attika is an exploration of typographical design through technological advancements introduced in OpenType Variable Fonts."
 
-thumbnail: /images/projects/attika/640/attika-thumbnail-a.jpg
+thumbnail: https://www.mattmcadams.com/images/projects/attika/640/attika-thumbnail-a.jpg
 cover_image: /images/projects/attika/1280/attika-thumbnail-a.jpg
 
 colors: ['#09edc2', '#474faf', '#e5e6e7']

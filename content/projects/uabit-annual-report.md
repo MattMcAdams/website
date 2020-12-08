@@ -6,8 +6,8 @@ published: true
 tags: ['web', 'design']
 description: "2018 was a great year for the University of Alabama at Birmingham’s Department of Information Technology and we wanted to create a website to showcase the team’s efforts and achievements throughout the year."
 
-thumbnail: /images/projects/annual-report-2018/640/ITAR2018-cards.jpg
-cover_image: /images/projects/annual-report-2018/1280/ITAR2018-cards.jpg
+thumbnail: https://www.mattmcadams.com/images/projects/annual-report-2018/640/ITAR2018-cards.jpg
+cover_image: https://www.mattmcadams.com/images/projects/annual-report-2018/1280/ITAR2018-cards.jpg
 
 colors: ['#295135', '#1f6b52', '#80bc00', '#ffd400']
 tools: ['XD', 'HTML', 'CSS', 'JavaScript', 'Joomla']

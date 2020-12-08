@@ -7,8 +7,8 @@ series: false
 tags: ['analytics']
 description: "Plausible is a fantastic alternative to existing JS based analytics solutions. Inexpensive, lightning fast, and build around privacy."
 
-thumbnail: '/images/posts/plausible.png'
-cover_image: '/images/posts/plausible.png'
+thumbnail: https://www.mattmcadams.com/images/posts/plausible.png
+cover_image: https://www.mattmcadams.com/images/posts/plausible.png
 ---
 
 Website analytics are great tools to monitor your website's traffic, see what people are interested in on your site, and inform how you develop your site going forward. They can help you understand more about your audience.

@@ -6,8 +6,8 @@ published: true
 tags: ['typography', 'design']
 description: "Rebar is a hybrid serif / sans-serif typeface inspired by slab serif and humanistic sans serif typefaces. This is an exploration of type as form and texture as much as it is about making a typeface that is unique and interesting. Rebar was made in Illustrator with Fontself."
 
-thumbnail: /images/projects/rebar/640/Rebar_cover.jpg
-cover_image: /images/projects/rebar/1280/Rebar_cover.jpg
+thumbnail: https://www.mattmcadams.com/images/projects/rebar/640/Rebar_cover.jpg
+cover_image: https://www.mattmcadams.com/images/projects/rebar/1280/Rebar_cover.jpg
 
 colors: ['#e92459', '#2a2a49']
 tools: ['Glyphs', 'Illustrator']

@@ -6,8 +6,8 @@ published: false
 tags: ['illustration']
 description: "This illustration was born from one of the ideation sketched for another project. I brought it into a new file and played around with color and texture."
 
-thumbnail: /images/projects/abstract/640/abstract-thumbnail.jpg
-cover_image: /images/projects/abstract/1280/abstract-thumbnail.jpg
+thumbnail: https://www.mattmcadams.com/images/projects/abstract/640/abstract-thumbnail.jpg
+cover_image: https://www.mattmcadams.com/images/projects/abstract/1280/abstract-thumbnail.jpg
 
 colors: ['#fff', '#fff', '#fff']
 tools: ['Procreate']
