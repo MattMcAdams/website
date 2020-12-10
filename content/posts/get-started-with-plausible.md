@@ -71,4 +71,4 @@ WARNING: This will reset ALL collected data - not just your own, so I only recom
 
 ## Enjoy
 
-Congrats, you're all set up with a pretty powerful little analytics tool for less than $50/month and you don't have to worry about it impacting performance or causing privacy headaches.
+Congrats, you're all set up with a pretty powerful little analytics tool for less than $50/year and you don't have to worry about it impacting performance or causing privacy headaches.
