@@ -2,14 +2,12 @@
 title: UABIT Website
 date: 2020-05-01
 published: true
-canonical_url: false
-series: false
 
 tags: ['web', 'design']
 description: "In my third year as UAB IT's web developer, I had the great opportunity to the design and structure of the IT website."
 
-thumbnail: /images/projects/uabit-website/thumbnail.jpg
-cover_image: /images/projects/uabit-website/web-pages.jpg
+thumbnail: https://www.mattmcadams.com/images/projects/uabit-website/640/web-pages.jpg
+cover_image: https://www.mattmcadams.com/images/projects/uabit-website/1280/web-pages.jpg
 
 colors: ['#295135', '#1f6b52', '#80bc00']
 tools: ['XD', 'HTML', 'CSS', 'JavaScript', 'Joomla']
@@ -28,13 +26,11 @@ The primary problem with the website's user experience was the lack of navigatio
 
 To tackle this problem, I began with a site map. The site map is a great tool to show stakeholders the problem in a visual way, and show a marked improvement. After evaluating and taking inventory of each of the website's 120 pages, we began to reorganize and restructure content.
 
-![Before & after of site maps](/images/projects/uabit-website/sitemap.jpg)
+![Before & after of site maps](/images/projects/uabit-website/960/sitemap.jpg)
 
 ## Dealing with technical debt
 
 One of the most difficult problems was the website's media folder. All images and documents were stored in the root media folder which totaled 2.32GB. Aside from disk space, this made a huge impact on the image picker in the WYSIWYG editor which would cause it to freeze for over a minute each time it was opened.
-
-<!-- Another sizable problem was poor HTML structure caused by lack of training for our editors, and a rather unintellegent WYSIWYG editor. Many pages were rittled with MS Word markup and inline styles that were the root of the inconsistency in the website's design. -->
 
 In the end, we decided that it would be easier to rebuild the website from the ground up - following new standards for development - to ensure consistency in the future. After rebuilding the website, we had a clear folder structure, and had reduced the media disk usage down to 77.2MB - a huge win for performance.
 
@@ -42,25 +38,25 @@ In the end, we decided that it would be easier to rebuild the website from the g
 
 After we solved the website's technical problems, I turned my attention to the aspect of design. After several months of UX research, I presented several new mockups and the beginning of a design system for the website going forward. The new design was focused on intentional use of white space, thoughtful use of color, and clear typographical hierarchy.
 
-![Mockups of web pages](/images/projects/uabit-website/web-pages.jpg)
+![Mockups of web pages](/images/projects/uabit-website/960/web-pages.jpg)
 
 <br>
 
-![Image of Icons](/images/projects/uabit-website/icons.jpg)
+![Image of Icons](/images/projects/uabit-website/960/icons.jpg)
 
 <br>
 
-![Image of UI components](/images/projects/uabit-website/UI-mockup.jpg)
+![Image of UI components](/images/projects/uabit-website/960/UI-mockup.jpg)
 
 ## Maintainability
 
 To ensure the maintainability of the structure and design of the website, my team and I created a comprehensive design system and documentation website that outlined core design philosophy, UI components, content strategy, organization, and naming conventions.
 
-![Image of UI Kit](/images/projects/uabit-website/ui-kit.jpg)
+![Image of UI Kit](/images/projects/uabit-website/960/ui-kit.jpg)
 
 <br>
 
-![Image of documentation site](/images/projects/uabit-website/docs.jpg)
+![Image of documentation site](/images/projects/uabit-website/960/docs.jpg)
 
 ## Outcomes
 

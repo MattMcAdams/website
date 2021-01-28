@@ -12,23 +12,25 @@
       </div>
       <div>
         <h2 class="txt-h4 mt-0">Contact</h2>
-        <p>mattmcadams@outlook.com<br><a href="/cdn/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
+        <p>mattmcadams@outlook.com<br><a href="https://docs.google.com/document/d/1sIaX9Ixp5kGMlreyRg9CX_aXSw123y4ekV6RQ4riaiE/edit?usp=sharing" target="_blank" rel="noopener">Curriculum Vitae</a></p>
       </div>
     </aside>
   </template>
 
   <section>
     <h2 class="mt-0 txt-h3">Open Source</h2>
-    <GitCalendar/>
+    <!-- <GitCalendar/> -->
     <div class="grid mb-1">
       <GitCard
         :title="'mattmcadams.com'"
         :path="'https://github.com/MattMcAdams/website'"
         :description="'My personal website, blog, and portfolio'"
         :languages="[
-          {'name':'HTML', 'percent':'34%', 'width':'100%'},
-          {'name':'Vue', 'percent':'17%', 'width':'66%'},
-          {'name':'SCSS', 'percent':'49%', 'width':'49%'}
+          {'name':'JavaScript', 'percent':'3%', 'width':'100%'},
+          {'name':'CSS', 'percent':'5%', 'width':'97%'},
+          {'name':'SCSS', 'percent':'22%', 'width':'92%'},
+          {'name':'Vue', 'percent':'25%', 'width':'70%'},
+          {'name':'HTML', 'percent':'45%', 'width':'45%'}
         ]"
       />
       <GitCard
@@ -101,7 +103,6 @@ query {
 
 import GitCard from '~/components/GitCard.vue'
 import ImageCard from '~/components/ImageCard.vue'
-import GitCalendar from '~/components/GitCalendar.vue'
 
 export default {
   metaInfo: {
@@ -109,7 +110,6 @@ export default {
   },
   components: {
     ImageCard,
-    GitCalendar,
     GitCard
   }
 }

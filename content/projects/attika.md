@@ -2,13 +2,12 @@
 title: Attika Variable
 date: 2020-04-06
 published: true
-canonical_url: false
 
 tags: ['typography', 'design']
 description: "Attika is an exploration of typographical design through technological advancements introduced in OpenType Variable Fonts."
 
-thumbnail: /cdn/projects/attika/640/attika-thumbnail-a.jpg
-cover_image: /cdn/projects/attika/960/attika-thumbnail-a.jpg
+thumbnail: https://www.mattmcadams.com/images/projects/attika/640/attika-thumbnail-a.jpg
+cover_image: /images/projects/attika/1280/attika-thumbnail-a.jpg
 
 colors: ['#09edc2', '#474faf', '#e5e6e7']
 tools: ['Glyphs', 'Illustrator']
@@ -23,51 +22,50 @@ Attika is an exploration of typographical design through technological advanceme
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/960/attika-title.jpg)
+![Attika Title](/images/projects/attika/960/attika-title.jpg)
 
 <hr class="spacer">
 
 ::: div grid
-![](/cdn/projects/attika/960/attika-pangram.jpg)
+![Pangram](/images/projects/attika/640/attika-pangram.jpg)
 
-![](/cdn/projects/attika/960/attika-athens.jpg)
+![Athens Typeset](/images/projects/attika/640/attika-athens.jpg)
 :::
 ::: div grid
-![](/cdn/projects/attika/960/attika-repetition.jpg)
+![Repetition of the letter A, showing variable thickness](/images/projects/attika/640/attika-repetition.jpg)
 
-![](/cdn/projects/attika/960/attika-variable.jpg)
+![The word "Variable" typeset](/images/projects/attika/640/attika-variable.jpg)
 :::
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/960/attika-if.jpg)
+![Snippet of pseudocode](/images/projects/attika/960/attika-if.jpg)
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/960/attika-characters.jpg)
+![All characters of the font](/images/projects/attika/960/attika-characters.jpg)
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/attika.gif)
+![A gif showing the transition from thick to thin](/images/projects/attika/attika.gif)
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/960/attika-book-cover.jpg)
+![The cover of a book](/images/projects/attika/960/attika-book-cover.jpg)
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/960/attika-book-spread.jpg)
+![A spread in the book showing the construction of the "Q" letterform](/images/projects/attika/960/attika-book-spread.jpg)
 
 <hr class="spacer">
 
-![](/cdn/projects/attika/960/attika-exhibition.jpg)
+![A mockup of the exebition](/images/projects/attika/960/attika-exhibition.jpg)
 
 <hr class="spacer">
 
 <div class="video-wrapper">
-  <iframe src="/attika-pdf" style="width: 100%; height: 100%; overflow: hidden;" scrolling="no" allowtransparency="true"></iframe>
+  <iframe src="https://pdf.mattmcadams.com/attika/" style="width: 100%; height: 100%; overflow: hidden;" scrolling="no" allowtransparency="true"></iframe>
 </div>
-
 
 <hr class="spacer">
 

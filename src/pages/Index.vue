@@ -51,6 +51,9 @@
     50% { transform: translate(0, 10px) rotate(180deg); }
     100% { transform: translate(0, 0px) rotate(180deg); }
   }
+  .hidden-field {
+    display: none;
+  }
 </style>
 
 
@@ -119,8 +122,8 @@
         <div>
           <h2>Nice to meet you</h2>
           <p>I’m a front end developer with a background in graphic design currently living in the Birmingham area. Let’s make something cool together.</p>
-          <p class="txt-small">In the spring of 2020, I got my bachelor of fine arts from the <a href="https://www.uab.edu" target="_blank" rel="noopener">University of Alabama at Birmingham</a> while researching UX design, code semantics, and design systems. My award winning work is bold, precise, and modern, focusing on the division of space and the use of strong color. When I’m not pecking at code or pushing pixels, I enjoy exploring fantasy worlds through books and video games.</p>
-          <p><a class="button" href="/images/McAdams-CV-Jan-2020.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></p>
+          <p class="txt-small">In the spring of 2020, I got my bachelor of fine arts from the University of Alabama at Birmingham while researching UX design, code semantics, and design systems. My award winning work is bold, precise, and modern, focusing on the division of space and the use of strong color. When I’m not pecking at code or pushing pixels, I enjoy exploring fantasy worlds through books and video games.</p>
+          <p><a class="button" href="https://docs.google.com/document/d/1sIaX9Ixp5kGMlreyRg9CX_aXSw123y4ekV6RQ4riaiE/edit?usp=sharing" target="_blank" rel="noopener">Curriculum Vitae</a></p>
         </div>
         <div style="position: relative;">
           <img
@@ -178,20 +181,30 @@
             style="z-index: 5;"
             method="POST"
             data-netlify="true"
+            netlify-honeypot="potbox"
             name="contact"
             v-on:submit.prevent="handleSubmit"
             action="/success/"
           >
             <input type="hidden" name="form-name" value="contact" />
-            <label for="name" class="label" >Name</label>
-            <input id="name" type="text" name="name" v-model="formData.name" />
+            <label class="hidden-field" aria-hidden="true">Don’t fill this out if you're human: <input  aria-hidden="true" name="potbox" type="text"/></label>
 
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" v-model="formData.email" />
+            <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: var(--space);">
+              <div>
+                <label for="name" class="label" >Name</label>
+                <input id="name" type="text" name="name" v-model="formData.name" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" v-model="formData.email" />
+              </div>
+            </div>
+
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" name="subject" v-model="formData.subject" />
 
             <label for="message">Message</label>
             <textarea id="message" name="message" v-model="formData.message"></textarea>
-
             <p class="txt-right" style="margin-bottom: 0;"><button type="submit">Submit</button></p>
           </form>
           <div style="align-self: end;">
@@ -219,24 +232,19 @@
 
 
 <script>
-import respImg from '~/components/Image.vue'
 import FooterInfo from '~/components/Footer.vue'
 import TopNav from '~/components/NavigationBar.vue'
 
 export default {
   metaInfo: {
     title: 'Home',
-    meta: [
-      { name: 'description', content: 'Matt McAdams is an award winning web designer and developer working in Alabama.' }
-    ],
     bodyAttrs: {
       class: 'home-page'
     }
   },
   components: {
     FooterInfo,
-    TopNav,
-    respImg
+    TopNav
   },
   data() {
     return { formData: {} }

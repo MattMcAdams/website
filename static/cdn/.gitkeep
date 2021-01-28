@@ -1,3 +1,0 @@
-Images in this directory should be synced for local development by using
-
-$ gsutil -m rsync -r gs://mattmcadams.com/ static/images

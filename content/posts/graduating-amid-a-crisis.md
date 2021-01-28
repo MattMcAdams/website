@@ -2,9 +2,13 @@
 title: Graduating Amid a Crisis
 date: 2020-05-07
 published: false
+series: false
+
 tags: ['personal']
-series:
 description: "The graduation ceremony, at least for me, is about putting the book end on a chapter of life, having a moment to celebrate that achievement, but most importantly to saying goodbye to our peers and professors who had become our friends, supporters, mentors and colleagues."
+
+thumbnail: null
+cover_image: null
 ---
 
 I won’t repeat the same spiel about these being unprecedented and extraordinary times as we have all head this sentiment countless times the past several months as COVID-19 has evolved into a global pandemic. As we enter May, we enter graduation season where I and countless other students around the country will be leaving our college careers behind us to enter the wider world. Of course, there have been no in person commencements or ceremonies because of the virus but I want to reflect on my own thoughts after listening to [this episode of 1A](https://the1a.org/segments/coming-of-age-in-the-age-of-coronavirus/)) this morning.

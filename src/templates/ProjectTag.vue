@@ -71,7 +71,14 @@ export default {
   },
   metaInfo () {
     return {
-      title: this.$page.tag.title
+      title: this.$page.tag.title,
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: "Projects tagged with " + this.$page.tag.title
+        }
+      ]
     }
   }
 }

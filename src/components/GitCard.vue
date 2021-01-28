@@ -42,8 +42,10 @@
   <h3 class="mt-0 txt-normal font-body txt-bold" v-html="this.title"></h3>
   <p class="txt-small" v-html="this.description"></p>
 
-  <p class="txt-xsmall txt-gray-600">Languages:
-    <span v-for="language in this.languages.slice().reverse()" :key="language.id">{{language.name + " " + language.percent + " "}}</span>
+  <p class="txt-xsmall txt-gray-600">Languages:<br>
+    <span v-for="language in this.languages.slice().reverse()" :key="language.id">
+      <strong>{{language.name}}</strong>  {{language.percent}}
+    </span>
   </p>
   <div class="lang-bar bg-gray-300 rounded-small pos-relative" style="overflow: hidden;">
     <div v-for="language in this.languages" :key="language.id"
