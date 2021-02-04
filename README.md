@@ -9,12 +9,13 @@ Welcome to the repo for my personal website! I'm not really sure what to say her
 This website is built with [Gridsome](https://gridsome.org/) and hosted on [Netlify](https://www.netlify.com/).
 
 ### Requirements
-
-1. Install [Node & NPM](https://nodejs.org/en/download/)
-2. Install [git LFS](https://git-lfs.github.com/)
-3. Install [Netlify CLI](https://docs.netlify.com/cli/get-started/)
-4. Install [Netlify Large Media](https://docs.netlify.com/large-media/setup/)
-5. Install [node-gyp](https://github.com/nodejs/node-gyp)
+1. Install Git `sudo git --version` if not installed, accept prompt to install
+2. Install [Node & NPM](https://nodejs.org/en/download/)
+3. Install [Netlify CLI](https://docs.netlify.com/cli/get-started/) `sudo npm install netlify-cli -g`
+4. Login to netlify `netlify login`
+5. install [Homebrew](https://brew.sh/)
+6. Install [git LFS](https://git-lfs.github.com/) `brew install git-lfs`
+7. Install [Netlify Large Media](https://docs.netlify.com/large-media/setup/) `netlify plugins:install netlify-lm-plugin`
 
 Clone this repo, (Optional) Switch to the Dev branch for major work
 
@@ -40,6 +41,7 @@ netlify lm:setup
 
 This will usually solve any lfs errors you get during the push.
 
+<!--
 ## Technology & Links
 
 * [Vue.js](https://vuejs.org/)
@@ -49,6 +51,7 @@ This will usually solve any lfs errors you get during the push.
 * [Github Calendar](https://github.com/IonicaBizau/github-calendar)
 * [How to fix node-gyp on MacOS](https://github.com/nodejs/node-gyp/blob/master/macOS_Catalina.md)
 * [Parallax](https://simpleparallax.com/)
+-->
 
 ## Contribute
 
