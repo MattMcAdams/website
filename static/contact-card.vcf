@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+N:McAdams;Matt
+FN:Matt McAdams
+TITLE:Web Designer
+URL:https://mattmcadams.com/
+EMAIL;TYPE=INTERNET:mattmcadams@outlook.com
+TEL;TYPE=voice,cell,pref:+1 205 435 5745
+END:VCARD
