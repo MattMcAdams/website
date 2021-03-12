@@ -8,7 +8,7 @@ tags: ['personal']
 description: "Today I share one of my personal labors of love, a project I’ve worked on for a few years, and one that continues to evolve - my notebook."
 
 thumbnail: /images/posts/notebook-open.jpg
-cover_image: null
+cover_image: /images/posts/notebook-open.jpg
 ---
 
 I love stationary. I always have. In college, when I had to get a job and all I could find was retail, I was genuinely happy to work in the print department of Office Max. I was able to talk about different paper types, finishes, and features with clients and (much to their exhaustion) co-workers. I might go as far as to say that stationary is one of the things that got me into graphic design.
@@ -17,7 +17,7 @@ Today though, I want to share one of my personal labors of love, a project I’v
 
 ![Open notebook](/images/posts/notebook-open.jpg)
 
-Oh and one last thing, I’m not affiliated with	or sponsored by anyone. Everything I talk about or link to here,  I do because I think they’re genuinely good products.
+Oh and one last thing, I’m not affiliated with or sponsored by anyone. Everything I talk about or link to here, I do because I think they’re genuinely good products.
 
 ## Disc Binding
 
@@ -29,21 +29,21 @@ Disc bound notebooks and note taking systems have gathered a cult following, att
 
 ## A little note on size
 
-Choosing the right notebook size is a task in itself. I considered letter size, so that I could add things like hand outs and printed documents, but it always felt too cumbersome for me personally. I’m on the go a lot, and wanted something smaller. I also considered TUL’s junior size, but felt that the pages were too tall. I even tried designing my own paper size. This worked out well enough for a year or two but I eventually decided to move to a more standard paper size. I finally landed on a size from across the pond: A5. This size is the perfect balance of width and height, and is small enough to bring with me everywhere.
+Choosing the right notebook size is a task in itself. I considered letter size, so that I could add things like hand outs and printed documents, but it always felt too cumbersome for me personally. I’m on the go a lot, and wanted something smaller. I also considered TUL’s junior size, but felt that the pages were too tall. I even tried designing my own paper size. This worked out well enough for a year or two but I eventually decided to move to a more standard paper size. I finally landed on A5. This size is the perfect balance of width and height, and is small enough to bring with me everywhere.
 
 ## For the love of paper
 
-Paper is beautiful and versatile. All you need to do to see the wide applications of paper is take a stroll through the sketchbook isle of any art store. Some paper is art in its own right. One of my professors was so adamant about his paper that he made his own from scratch.
+Paper is beautiful and versatile. All you need to do to see a variety of paper is take a stroll through the sketchbook isle of any art store. Some paper is art in its own right. One of my professors was so adamant about his paper that he made his own from scratch.
 
-I too became fairly particular about what I write on. I wanted paper that feels luxurious, it good to draw on, is thick enough to hold up to highlighters, but thin enough to get a lot of sheets in a thin notebook. Ultimately, I decided on the [sketch paper from Strathmore](https://www.amazon.com/Strathmore-400-Sketch-Pads-12/dp/B0027A39PY/ref=sr_1_1?dchild=1&keywords=strathmore+sketch+9x12&qid=1615227393&sr=8-1). I had been using their sketchbooks for years through art school and it became something I loved to write and draw on.
+I too became fairly particular about what I write on. I wanted paper that feels luxurious, is good to draw on, is thick enough to hold up to highlighters, but thin enough to get a lot of sheets in a thin notebook. Ultimately, I decided on the [60lb sketch paper from Strathmore](https://www.amazon.com/Strathmore-400-Sketch-Pads-12/dp/B0027A39PY/ref=sr_1_1?dchild=1&keywords=strathmore+sketch+9x12&qid=1615227393&sr=8-1). I had been using their sketchbooks for years through art school and it became something I enjoied to write and draw on.
 
-I also love dot grid paper, and like disc bound systems, my love is based in the versatility it has to offer. The dots on dot grid paper give enough reference to keep lines of text straight, like lined paper, but they also provide enough reference to make more technical sketches and designs, like graph paper.
+I also love dot grid paper, and like disc bound systems, my interest is based in the versatility it has to offer. The dots on dot grid paper give enough reference to keep lines of text straight, like lined paper, but they also provide enough reference to make more technical sketches and designs, like graph paper.
 
 Now that I’ve decided on paper size and paper type, it comes the time to fill my notebook with paper. Spoiler alert, I’m going to cut, print, and finish my own filler paper:
 
 1. Remove paper from sketchbooks
 2. Cut paper down to A5 size (5.83in x 8.27 in or 14.81cm x 21.01 cm)
-3. Print paper double sided with the dot grid design I made
+3. Print paper double sided with the dot grid design
 4. Punch holes in each page
 5. Round the outside corners with the large rounder
 6. Round the inside corners with the small rounder
@@ -72,7 +72,7 @@ Next up are the discs. Short and sweet, I wanted the smallest size (0.75in) and 
 
 ## Finishing touches
 
-Even after all that, I felt it needed a little something extra. I like the aesthetics of the moleskin notebooks with the elastic strap, and decided to make one for my notebook too. I went to the local art supply store and bought a length of 0.5in black woven elastic. Wrapping it around the front cover, I cut it to length and clued the ends with my trusty e6000. Leave this overnight to bond, and when you stretch it around the whole notebook it should have the desired tightness. I also had a metal bookmark / paper clip thing that I thought made a nice decoration.
+Even after all that, I felt it needed a little something extra. I like the aesthetics of the moleskine notebooks with the elastic strap, and decided to make one for my notebook too. I went to the local art supply store and bought a length of 0.5in black woven elastic. Wrapping it around the front cover, I cut it to length and clued the ends with my trusty e6000. Leave this overnight to bond, and when you stretch it around the whole notebook it should have the desired tightness. I also had a metal bookmark / paper clip thing that I thought made a nice decoration.
 
 Despite all the work and consideration thats gone into it, it’s not done. I don’t know that it will ever be finished. Just like this website, it’s a place of experimentation and self expression. I want to make my own leather cover one day, or find one that fits my style even better. I also still love the idea of having covers made out of rotary mats haha.
 
