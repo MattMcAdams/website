@@ -21,4 +21,4 @@ Remix, transform, and build upon my art.
 - If you remix, transform, or build upon my artwork, you must distribute your contributions under the same license.
 - You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
-You can read more in-depth on the Creative Commons website. For any and all inquiries, email me at <mattmcadams@outlook.com>
+You can read more in-depth on the Creative Commons website. For any and all inquiries, email me at <contact@mattmcadams.com>
