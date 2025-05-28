@@ -5,7 +5,7 @@ description: A periodically updated, high level overview of what I'm currently d
 
 # Now
 
-A periodically updated, high level overview of what I'm currently doing, experimenting with, learning, reading, or am otherwise interested in. For my semi-weekly check-ins, take a look through my [adventure log](/log).
+A periodically updated, high level overview of what I'm currently doing, experimenting with, learning, reading, or am otherwise interested in.
 
 ## Occupation
 
@@ -23,16 +23,18 @@ Most of these topics are strictly professional development, like getting better 
 
 ## Projects
 
-My current project is my [color palette generator](https://colorscale.app), ColorScale. But I've also recently overhauled my [CSS Boilerplate](https://github.com/MattMcAdams/CSS-Boilerplate).
+My current project is building a little home lab. Some other projects I've been working on recently are my [color palette generator](https://colorscale.app), ColorScale, and my [CSS Boilerplate](https://github.com/MattMcAdams/CSS-Boilerplate).
 
 ## Down Time
 
 While I'm trying to reduce my screen time, I do still enjoy digital media. Here's a quick list of what I'm into right now.
 
-- Reading: *I hate you, don't leave me* - Jerold Kreisman & Hal Straus
-- Playing: *Slime Rancher 2*
+- Reading: *Foundation* - Isaac Asimov
+- Playing: *Oblivion Remastered*
 - Watching: *Kipo and the Age of Wonderbeasts*
-- Listening: *Madhouse* - Matt Maltese
+- Listening: *Lucy* - Claire Rosinkranz
+
+I've also started drawing again, mostly still life and gesture practices right now.
 
 ## Interests
 
