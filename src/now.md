@@ -15,29 +15,25 @@ In this role, I handle the day to day operations of our development team, as wel
 
 ## Learning
 
-Thanks to work, I'm learning a lot more about WordPress and PHP. The majority of my development work for UA has been in the design system and React component library, but I've wanted to get more familiar with how our WordPress theme works too.
+I've recently made the switch to Linux (cachyOS) from Windows. The process actually hasn't been too rough and I rediscovered a love for technology I haven't felt in a little bit. I love tinkering and making something my own, so this has been a really fun adventure.
 
-There's a lot of other stuff I'm interested in learning in my own time, some of which I'm actively exploring while others are merely on my radar for exploration in the near future.
-
-Most of these topics are strictly professional development, like getting better at code reviews, devops, and expanding my knowledge into other areas of computer science. Other than tech stuff, I'm brushing up on my fine art skills and am exploring other media like music and sculpture.
+Other things I'm spending time on are animations and more soft skills to grow as a leader.
 
 ## Projects
 
-My current project is building a little home lab. Some other projects I've been working on recently are my [color palette generator](https://colorscale.app), ColorScale, and my [CSS Boilerplate](https://github.com/MattMcAdams/CSS-Boilerplate).
+Some other projects I've been working on recently are my [color palette generator](https://colorscale.app), my [CSS Boilerplate](https://github.com/MattMcAdams/CSS-Boilerplate), and a little [Pokemon ability randomizer](https://abilityrng.mcdms.dev/) that I was inspired to make after watching some folks on YouTube doing ability RNG.
 
 ## Down Time
 
 While I'm trying to reduce my screen time, I do still enjoy digital media. Here's a quick list of what I'm into right now.
 
 - Reading: *Foundation* - Isaac Asimov
-- Playing: *Oblivion Remastered*
-- Watching: *Kipo and the Age of Wonderbeasts*
-- Listening: *Lucy* - Claire Rosinkranz
+- Playing: *Minecraft*
+- Watching: *Haikyu!!*
+- Listening: *Heaven or Las Vegas* - Cocteau Twins
 
 I've also started drawing again, mostly still life and gesture practices right now.
 
 ## Interests
 
-I don't think there's any one thing I'm super interested in at the moment. Maybe just the creative lifestyle, finding a rhythm where I can make stuff without getting burnt out. That's led me to research a lot of different perspectives, time management techniques, and a healthy relationship with the work. I had the privilege of hearing Emonee LaRussa speak on this topic at Adobe Max last October and I think it really got me thinking about my work and creativity in a new perspective.
-
-More in the back of my mind, but I'm still really interested in sustainable and portable technology. I watched a really cool [talk at Strange Loop by Devine Lu Linvega](https://www.youtube.com/watch?v=T3u7bGgVspM) that has had me really inspired. I've been looking into [permacomputing](https://wiki.xxiivv.com/site/permacomputing.html) as a result of my recent delves into this internet rabbit hole.
+I've been particularly busy with work lately, and keeping up with the AI hype is... not very inspiring. I'm thankful to have been able to work on a number of interesting projects but I'm using my time to learn and grow rather than write for my little website. To be totally honest, I'm considering de-listing my site from search and settling into a quieter corner of the web.

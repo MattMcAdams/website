@@ -21,11 +21,7 @@
     "watch": "eleventy --watch",
     "dev": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
-    "download": "gcloud storage cp -r gs://mattmcadams.com/* src/_static/images/",
-    "upload": "gcloud storage cp -r src/_static/images/* gs://mattmcadams.com",
-    "upload-sketchbook": "gcloud storage cp -r src/_static/images/sketchbook/* gs://mattmcadams.com/sketchbook",
-    "upload-posts": "gcloud storage cp -r src/_static/images/posts/* gs://mattmcadams.com/posts",
-    "upload-projects": "gcloud storage cp -r src/_static/images/projects/* gs://mattmcadams.com/projects"
+    "download": "set -a && . ./.env && set +a && rclone --config ./rclone.conf copy mcdms:cdn/website ./src/_static/images-test --progress"
   },
   "homepage": "https://github.com/mattmcadams/website",
   "devDependencies": {
@@ -35,6 +31,7 @@
     "luxon": "^2.5.2",
     "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^7.1.0",
-    "markdown-it-footnote": "^4.0.0"
+    "markdown-it-footnote": "^4.0.0",
+    "wrangler": "^4.128.0"
   }
 }
