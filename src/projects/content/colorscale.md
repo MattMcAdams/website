@@ -13,4 +13,4 @@ I've often had to generate a color scale based on a brand color, needing a tool 
 
 ![](/images/projects/colorful/960/screenshot.jpg)
 
-There's much more information about this project over on [GitHub](https://github.com/MattMcAdams/colorscale), and you can try it out live at [colorscale.app](https://colorscale.app).
+There's much more information about this project over on [GitHub](https://github.com/MattMcAdams/colorscale), and you can try it out live at [color.mcdms.dev](https://color.mcdms.dev).

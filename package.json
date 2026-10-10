@@ -21,7 +21,7 @@
     "watch": "eleventy --watch",
     "dev": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
-    "download": "set -a && . ./.env && set +a && rclone --config ./rclone.conf copy mcdms:cdn/website ./src/_static/images-test --progress"
+    "download": "set -a && . ./.env && set +a && rclone --config ./rclone.conf copy mcdms:cdn/website ./src/_static/images --progress"
   },
   "homepage": "https://github.com/mattmcadams/website",
   "devDependencies": {
