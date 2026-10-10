@@ -16,9 +16,6 @@ Matthew McAdams
 __Jackson McAdams__
 | My loving husband, who has supported my dreams
 
-__Devine Lu Linvega__
-| Steward of the XXIIVV Webring
-
 __Kyle Fondren__
 | Director of Web Strategy, UA
 
@@ -36,6 +33,9 @@ __Brenda Long__
 
 __Miriam Suzanne__
 | Artist, CSS Wizard, and an absolute inspiration
+
+__Devine Lu Linvega__
+| Steward of the XXIIVV Webring
 
 Special thanks to all the developers and technical writers responsible
 for the fantastic documentation and learning materials I relied on to make
